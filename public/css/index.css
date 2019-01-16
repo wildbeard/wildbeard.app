@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Domine");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  color: #333;
+  font-family: 'Domine';
+  font-size: 14pt;
+  line-height: 1.7;
+  background-color: #f2f2f2;
+}
+
+.fancy {
+  font-style: italic;
+}
+
+.i-dont-actually-use-css-like-this {
+  widows: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.lf {
+  color: #00aeef;
+}
+a.int {
+  color: #B3272D;
+}
+a.asa {
+  color: #152c53;
+}
+a.adv {
+  color: #f59433;
+}
+a.so {
+  color: #F48024;
+}
+
+div[class*='i-'] {
+  padding: 0 15px;
+}
+
+ul {
+  display: block;
+  width: auto;
+}
+
+li:not(:last-child) {
+  width: auto;
+  margin: 15px 0;
+}
+
+.a-container {
+  display: flex;
+  padding-bottom: 60px;
+}
+.a-container > div {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .a-container {
+    display: block;
+  }
+}
