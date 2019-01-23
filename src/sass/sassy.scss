@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'typography';
+@import 'the-grid';
+@import 'mixins';
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+}
+
+body {
+	background: #f2f2f2;
+}
