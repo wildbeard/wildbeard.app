@@ -1,8 +1,7 @@
 import VueRouter from 'vue-router';
-// const Home = require('../components/home.vue');
-// const Resume = require('../components/resume.vue');
 import Home from '../components/home.vue';
 import Resume from '../components/resume.vue';
+import NotFound from '../components/404.vue';
 const routes = [
 	{
 		path: '/',
@@ -12,6 +11,13 @@ const routes = [
 		path: '/resume',
 		component: Resume,
 	},
+	{
+		path: '*',
+		component: NotFound,
+	}
 ];
-const router = new VueRouter({routes});
+const router = new VueRouter({
+	mode: 'history',
+	routes,
+});
 export default router;

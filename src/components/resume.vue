@@ -11,7 +11,6 @@
 						<h1 class="col-6">Preston<br>Haddock</h1>
 						<ul class="col-6 side-by-side personal-info">
 							<li>prestonhaddock@gmail.com<br>405.990.5378</li>
-							<li>511 S. Loomis Ave.<br>Fort Collins, CO. 80521</li>
 						</ul>
 					</div>
 				</div>
