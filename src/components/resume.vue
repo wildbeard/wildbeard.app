@@ -38,8 +38,21 @@
 					<ul>
 						<li class="company">
 							<div class="company-info">
+								<div class="where"><span class="bold fx5">Fx5 Solutions,</span> <span class="fancy">Westminster, CO</span></div>
+								<div class="timeline">April 2019 - Present</div>
+								<div class="title">Software Engineer</div>
+							</div>
+							<ul class="callouts">
+								<li>Develop and maintain both Dx5 and Bx5 systems</li>
+								<li>Maintain the health of the servers Dx5 and Bx5 live on</li>
+								<li>Work with Support to ensure timely turn around on bugs and other issues</li>
+								<li>Refactor code as necessary -- Leave it better than you found it</li>
+							</ul>
+						</li>
+						<li class="company">
+							<div class="company-info">
 								<div class="where"><span class="bold int">Integer,</span> <span class="fancy">Lakewood, CO</span></div>
-								<div class="timeline">Oct. 2017 - Present</div>
+								<div class="timeline">Oct. 2017 - April 2019</div>
 								<div class="title">Full Stack Engineer</div>
 							</div>
 							<ul class="callouts">
@@ -70,8 +83,8 @@
 								<li>Independently responsible for full front/back-end development on over 20+ projects including:
 									<ul class="side-by-side small">
 										<li><a class="bold lf" href="https://readartdesk.com" target="_blank">Art Desk:</a> Extensive Vue &amp; Laravel Development</li>
-										<li><a class="bold lf" href="https://dockum.com" target="_blank">Dockum:</a> Extensive CSS Animations</li>
-										<li><a class="bold lf" href="https://titan2.energy" target="_blank">Titan2 Energy</a></li>
+										<li><a class="bold lf" href="http://dockum.com" target="_blank">Dockum:</a> Extensive CSS Animations</li>
+										<li><a class="bold lf" href="http://titan2.energy" target="_blank">Titan2 Energy</a></li>
 										<li><a class="bold lf" href="https://oucampuscorner.com" target="_blank">OU Campus Corner</a></li>
 										<li><a class="bold lf" href="https://trinitybrick.com" target="_blank">Trinity Brick</a></li>
 									</ul>
@@ -157,6 +170,7 @@
 			}
 			.personal-info {
 				text-align: right;
+				justify-content: flex-end;
 				li {
 					margin-bottom: 0;
 				}

@@ -20,7 +20,8 @@ module.exports = {
 		libraryExport: 'default',
 	},
 	devServer: {
-		contentBase: './public',
+		contentBase: path.join(__dirname, 'public'),
+		publicPath: '/js/',
 		historyApiFallback: true,
 	},
 	module: {

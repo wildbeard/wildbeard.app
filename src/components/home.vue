@@ -12,7 +12,7 @@
             <h2>Experience (2011 - Until I Die Prob.)</h2>
             <ul>
                 <li>
-                    <strong><a href="https://codepen.io/wildbeard" target="_blank">CodePen</a></strong>: <span class="fancy">Penwrite/Aspiring Front-Pager</span><br>
+                    <strong><a href="https://codepen.io/wildbeard" target="_blank">CodePen</a></strong>: <span class="fancy">Penwrite/Front-Pager</span><br>
                     I don't work for CodePen (wouldn't that be cool, though?) but I did have several picked pens. Also I tinker on it frequently.
                 </li>
                 <li>
@@ -20,7 +20,11 @@
                     I also do not work here but I do enjoy browsing the "Please Help Me" section of the site.
                 </li>
                 <li>
-                    <strong><a href="https://integer.com" target="_blank" class="int">The Integer Group</a>:</strong> <span class="fancy">Web Engineer | 2017 - now();</span><br>
+                    <strong><a href="https://fx5solutions.com" target="_blank" class="fx5">Fx5 Solutions</a>:</strong> <span class="fancy">Software Engineer | 2019 - now();</span><br>
+                    I write on every glass surface in the office I can find. I also maintain, with the help of others of course, the health of the Bx5 and Dx5 SaaS platforms as well as the servers the live on.
+                </li>
+                <li>
+                    <strong><a href="https://integer.com" target="_blank" class="int">The Integer Group</a>:</strong> <span class="fancy">Web Engineer | 2017 - 2019</span><br>
                     TL;DR: Develop, maintain, and Moonshot the majority of internal tools that powers the agency globally.<br>Time reporting? Got it. Onboarding? Yup. User management (including 1<sup>st</sup> and 3<sup>rd</sup> party management)? Got it. Slack integration? Sure why not. Custom Form, HR Documents, Password Management? Done. Real time notifications across the agency's internal sites? Nailed it.
                 </li>
                 <li>
@@ -50,21 +54,21 @@
 					<ul>
 						<li>HTML, CSS (Duh) | <span class="fancy">8 Years</span></li>
 						<li>Javascript (Obv.) | <span class="fancy">7 Years</span></li>
-						<li>Vue | <span class="fancy">2.5 Years</span></li>
+						<li>Vue | <span class="fancy">2.75 Years</span></li>
 						<li>PHP (It's good: Fight Me) | <span class="fancy">8 Years</span></li>
-						<li>Laravel: Making PHP "Fun" | <span class="fancy">2.5 Years</span></li>
-						<li>Mongo, MySql, PSql (I like relationships, okay?) | <span class="fancy">1, 6, .5 Years</span></li>
-						<li>NGINX | <span class="fancy">1.75 Year</span></li>
-						<li>Docker | <span class="fancy">1 Year</span></li>
+						<li>Laravel: Making PHP "Fun" | <span class="fancy">3 Years</span></li>
+						<li>Mongo, MySql, PSql (I like relationships, okay?) | <span class="fancy">1.5, 6.5, 1 Years</span></li>
+						<li>NGINX | <span class="fancy">2.5 Year</span></li>
+						<li>Docker | <span class="fancy">2 Years</span></li>
 					</ul>
 				</div> <!-- !.what-i-will-do-for-love -->
 				        
 				<div class="what-i-wont-do-for-love col-6">
 					<h3>What I Don't Do</h3>
 					<ul>
-						<li>Design (You can tell, right?) | <span class="fancy">25 Years</span></li>
+						<li>Design (You can tell, right?) | <span class="fancy">26 Years</span></li>
 						<li>.Net (Been There; Done That) | <span class="fancy">4 Years</span></li>
-						<li>Finish Lists | <span class="fancy">25 Years</span></li>
+						<li>Finish Lists | <span class="fancy">26 Years</span></li>
 					</ul>
 				</div> <!-- !.what-i-wont-do-for-love -->
 
