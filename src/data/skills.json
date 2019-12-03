@@ -1,0 +1,151 @@
+{
+    "types": [
+        {
+            "name": "Skills",
+            "type": "category",
+            "sections": [
+                {
+                    "name": "Stacks",
+                    "type": "section",
+                    "experience":  [
+                        {
+                            "name": "LAMP/LEMP",
+                            "type": "skill",
+                            "duration": 8
+                        },
+                        {
+                            "name": "Node.js",
+                            "type": "skill",
+                            "duration": 3.5
+                        }
+                    ]
+                },
+                {
+                    "name": "Databases",
+                    "type": "section",
+                    "experience":  [
+                        {
+                            "name": "Relational",
+                            "type": "section",
+                            "experience": [
+                                {
+                                    "name": "MySql",
+                                    "duration": 7,
+                                    "type": "skill"
+                                },
+                                {
+                                    "name": "MariaDB",
+                                    "duration": 1.5,
+                                    "type": "skill"
+                                },
+                                {
+                                    "name": "PSql",
+                                    "duration": 1.5,
+                                    "type": "skill"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "NoSql",
+                            "type": "section",
+                            "experience": [
+                                {
+                                    "name": "MongoDB",
+                                    "duration": 2.5,
+                                    "type": "skill"
+                                },
+                                {
+                                    "name": "Redis",
+                                    "duration": 1.25,
+                                    "type": "skill"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Task Runners/Builders",
+                    "experience": [
+                        {
+                            "name": "Grunt &amp; Gulp",
+                            "duration": 2,
+                            "type": "skill"
+                        },
+                        {
+                            "name": "Webpack",
+                            "duration": 2.5,
+                            "type": "skill"
+                        }
+                    ]
+                },
+                {
+                    "name": "Misc",
+                    "experience": [
+                        {
+                            "name": "git",
+                            "duration": 4,
+                            "type": "skill"
+                        },
+                        {
+                            "name": "Photoshop",
+                            "duration": 5,
+                            "type": "skill"
+                        },
+                        {
+                            "name": "Illustrator",
+                            "duration": 2,
+                            "type": "skill"
+                        },
+                        {
+                            "name": "Responsive Development",
+                            "duration": 6,
+                            "type": "skill"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Languages",
+            "type": "category",
+            "experience": [
+                {
+                    "name": "HTML, CSS, PHP",
+                    "duration": 8,
+                    "type": "skill"
+                },
+                {
+                    "name": "SASS",
+                    "duration": 4,
+                    "type": "skill"
+                }
+            ]
+        },
+        {
+            "name": "Frameworks/Libraries",
+            "type": "category",
+            "experience": [
+                {
+                    "name": "Laravel/Lumen",
+                    "duration": 4,
+                    "type": "skill"
+                },
+                {
+                    "name": "Vue.js",
+                    "duration": 3,
+                    "type": "skill"
+                },
+                {
+                    "name": "jQuery",
+                    "duration": 4,
+                    "type": "skill"
+                },
+                {
+                    "name": "Wordpress",
+                    "duration": 2,
+                    "type": "skill"
+                }
+            ]
+        }
+    ]
+}

@@ -10,7 +10,7 @@
 					<div class="row">
 						<h1 class="col-6">Preston<br>Haddock</h1>
 						<ul class="col-6 side-by-side personal-info">
-							<li>prestonhaddock@gmail.com<br>405.990.5378</li>
+							<li>prestonhaddock@gmail.com</li>
 						</ul>
 					</div>
 				</div>
@@ -20,18 +20,7 @@
 			<div class="row">
 
 				<div class="skills col-4">
-					<h3>Skills</h3>
-					<ul>
-						<li>LAMP/LEMP/MEAN Stacks</li>
-						<li>Responsive Development</li>
-						<li>Mongo, MySql, PSql, Sql</li>
-						<li>Grunt, Gulp, &amp; Webpack</li>
-						<li>git, Photoshop, Illustrator</li>
-					</ul>
-					<h3>Languages</h3>
-					<p>HTML, CSS, SASS, JS, PHP</p>
-					<h3>Frameworks</h3>
-					<p>Laravel, Vue.js, jQuery, Wordpress</p>
+					<skill-category :category="category" v-for="category in skills.types" :key="category.name"></skill-category>
 				</div> <!-- !.skills -->
 
 				<div class="experience col-8">
@@ -43,10 +32,12 @@
 								<div class="title">Software Engineer</div>
 							</div>
 							<ul class="callouts">
-								<li>Develop and maintain both Dx5 and Bx5 systems</li>
-								<li>Maintain the health of the servers Dx5 and Bx5 live on</li>
+								<li>Develop and maintain both Distillery and Brewery systems</li>
+								<li>Maintain the health of application servers</li>
 								<li>Work with Support to ensure timely turn around on bugs and other issues</li>
 								<li>Refactor code as necessary -- Leave it better than you found it</li>
+								<li>Migrating from a Monolith Structure to Microservices</li>
+								<li>Implement Redis Cache to significantly reduce load times of reports</li>
 							</ul>
 						</li>
 						<li class="company">
@@ -146,7 +137,18 @@
 
 </template>
 <script>
-	export default {}
+	import skills from '../data/skills.json';
+	import SkillCategory from './skill-category';
+	export default {
+		components: {
+			SkillCategory,
+		},
+		data() {
+			return {
+				skills: skills
+			}
+		}
+	}
 </script>
 <style>
 	.nav {
