@@ -38,7 +38,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+    /*
+        If I scope this the subCallout from above doesn't
+        receive the .company-name styles
+    */
     @import '~sass/_mixins.scss';
     @import '~sass/_variables.scss';
     .company {

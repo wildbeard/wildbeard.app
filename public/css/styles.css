@@ -1,90 +1,112 @@
 @import url(https://fonts.googleapis.com/css?family=Domine);
-.company[data-v-34a6530e] {
+/*
+        If I scope this the subCallout from above doesn't
+        receive the .company-name styles
+    */
+.company {
   margin-bottom: 25px;
 }
-.company .company-info[data-v-34a6530e] {
+.company .company-info {
     display: flex;
     flex-wrap: wrap;
 }
-.company .where[data-v-34a6530e] {
+.company .where {
     flex: 0 0 60%;
 }
-.company .title[data-v-34a6530e], .company .callouts[data-v-34a6530e] {
+.company .title, .company .callouts {
     flex: 0 0 100%;
 }
-.company .title[data-v-34a6530e] {
+.company .title {
     font-weight: bold;
 }
-.company .timeline[data-v-34a6530e] {
+.company .timeline {
     flex: 0 0 40%;
     text-align: right;
 }
 @media screen and (max-width: 800px) {
-.company .where[data-v-34a6530e], .company .title[data-v-34a6530e], .company .timeline[data-v-34a6530e] {
+.company .where, .company .title, .company .timeline {
       flex: 0 0 100%;
 }
-.company .where span[data-v-34a6530e] {
+.company .where span {
       display: block;
 }
-.company .timeline[data-v-34a6530e] {
+.company .timeline {
       text-align: left;
 }
 }
-.callouts > li[data-v-34a6530e] {
+.callouts > li {
   margin: 0;
 }
 @media screen and (max-width: 800px) {
-ul[data-v-34a6530e] {
+ul {
     padding-left: 25px;
 }
 }
-.company-lf a[data-v-34a6530e], .company-lf a[data-v-34a6530e]:hover, .company-lf a[data-v-34a6530e]:active, .company-lf a[data-v-34a6530e], .company-lf[data-v-34a6530e] :visited {
+.company-lf a, .company-lf a:hover, .company-lf a:active, .company-lf a, .company-lf :visited {
   color: #00aeef;
   font-weight: bold;
 }
-.company-lf strong[data-v-34a6530e] {
+.company-lf strong {
   color: #00aeef;
   font-weight: bold;
 }
-.company-asa a[data-v-34a6530e], .company-asa a[data-v-34a6530e]:hover, .company-asa a[data-v-34a6530e]:active, .company-asa a[data-v-34a6530e], .company-asa[data-v-34a6530e] :visited {
+.company-lf lf {
+  color: #00aeef;
+}
+.company-asa a, .company-asa a:hover, .company-asa a:active, .company-asa a, .company-asa :visited {
   color: #152c53;
   font-weight: bold;
 }
-.company-asa strong[data-v-34a6530e] {
+.company-asa strong {
   color: #152c53;
   font-weight: bold;
 }
-.company-tig a[data-v-34a6530e], .company-tig a[data-v-34a6530e]:hover, .company-tig a[data-v-34a6530e]:active, .company-tig a[data-v-34a6530e], .company-tig[data-v-34a6530e] :visited {
-  color: red;
+.company-asa asa {
+  color: #152c53;
+}
+.company-tig a, .company-tig a:hover, .company-tig a:active, .company-tig a, .company-tig :visited {
+  color: #B3272D;
   font-weight: bold;
 }
-.company-tig strong[data-v-34a6530e] {
-  color: red;
+.company-tig strong {
+  color: #B3272D;
   font-weight: bold;
 }
-.company-adv a[data-v-34a6530e], .company-adv a[data-v-34a6530e]:hover, .company-adv a[data-v-34a6530e]:active, .company-adv a[data-v-34a6530e], .company-adv[data-v-34a6530e] :visited {
+.company-tig tig {
+  color: #B3272D;
+}
+.company-adv a, .company-adv a:hover, .company-adv a:active, .company-adv a, .company-adv :visited {
   color: #f59433;
   font-weight: bold;
 }
-.company-adv strong[data-v-34a6530e] {
+.company-adv strong {
   color: #f59433;
   font-weight: bold;
 }
-.company-math a[data-v-34a6530e], .company-math a[data-v-34a6530e]:hover, .company-math a[data-v-34a6530e]:active, .company-math a[data-v-34a6530e], .company-math[data-v-34a6530e] :visited {
+.company-adv adv {
+  color: #f59433;
+}
+.company-math a, .company-math a:hover, .company-math a:active, .company-math a, .company-math :visited {
   color: #002B49;
   font-weight: bold;
 }
-.company-math strong[data-v-34a6530e] {
+.company-math strong {
   color: #002B49;
   font-weight: bold;
 }
-.company-fx5 a[data-v-34a6530e], .company-fx5 a[data-v-34a6530e]:hover, .company-fx5 a[data-v-34a6530e]:active, .company-fx5 a[data-v-34a6530e], .company-fx5[data-v-34a6530e] :visited {
+.company-math math {
+  color: #002B49;
+}
+.company-fx5 a, .company-fx5 a:hover, .company-fx5 a:active, .company-fx5 a, .company-fx5 :visited {
   color: #ba9c75;
   font-weight: bold;
 }
-.company-fx5 strong[data-v-34a6530e] {
+.company-fx5 strong {
   color: #ba9c75;
   font-weight: bold;
+}
+.company-fx5 fx5 {
+  color: #ba9c75;
 }
 
 
@@ -133,7 +155,7 @@ body {
 .int {
   color: #B3272D; }
 
-.int {
+.int, .tig {
   color: #B3272D; }
 
 .adv {
