@@ -1,0 +1,19 @@
+.side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    &.small {
+        font-size: .85em;
+        padding: 0 8px;
+    }
+    li {
+        flex: 0 0 50%;
+        margin: 0 0 10px;
+        padding: 0 15px;
+    }
+    @include media-screen(800px) {
+        li {
+            flex: 0 0 100%;
+        }
+    }
+}

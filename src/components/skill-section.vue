@@ -7,7 +7,7 @@
             </ul>
         </template>
         <template v-else>
-            {{ friendlySkillName(experience) }}
+            <div v-html="friendlySkillName(experience)"></div>
         </template>
     </li>
 </template>
