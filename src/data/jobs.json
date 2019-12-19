@@ -40,8 +40,10 @@
         "location": "Oklahoma City, OK",
         "duration": "May 2013 - Aug. 2015",
         "callouts": [
-            "Resolved complex issues with RegisterASA's design to cater to 300,000+ annual usuers, including the redesign of the RegisterASA site, improvement and in-housing of ACE Certification Testing, and development of a Premium Video Content System",
-            "Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- an in house eCommerce platform",
+            "<strong>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual usuers, including a redesign of the RegisterASA site.",
+            "<strong>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house.",
+            "<strong>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training.",
+            "<strong>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a from scratch eCommerce platform",
             "Developed a Bracket Challenge System for the Women's College World Series that was hosted on ESPN for the duration of the tournament",
             "Developed and managed two Android applications for the Umpire Rulebook"
         ]
@@ -95,8 +97,8 @@
             {
                 "desc": "Personally Developed: ",
                 "callouts": [
+                    "<strong>Hey Listen</strong>: NodeJS powered real time notification system. Used to push notifications to all internal web apps with custom triggers",
                     "<strong>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel &amp; Algolia",
-                    "<strong>Hey Listen</strong>: Real time notification system used to push notifications to all internal web apps with custom triggers",
                     "<strong>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
                     "<strong>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
                     "<strong>Model Encryption</strong>: Low level database model encryption for custom ORM",
@@ -119,7 +121,7 @@
             "Maintain the health of application servers",
             "Work with Support to ensure timely turn around on bugs and other issues",
             "Refactor code as necessary -- Leave it better than you found it",
-            "Migrating from a Monolith Structure to Microservices",
+            "Help migrate from a Monolith Structure to Microservices",
             "Implement Redis Cache to significantly reduce load times of reports"
         ]
     }

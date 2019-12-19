@@ -106,12 +106,17 @@
             ]
         },
         {
-            "name": "Languages",
+            "name": "Languages/Preprocessors",
             "type": "category",
             "experience": [
                 {
                     "name": "HTML, CSS, PHP",
                     "duration": 8,
+                    "type": "skill"
+                },
+                {
+                    "name": "Javascript",
+                    "duration": 6,
                     "type": "skill"
                 },
                 {

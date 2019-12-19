@@ -7,7 +7,7 @@
             </ul>
         </template>
         <template v-else>
-            <div v-html="friendlySkillName(experience)"></div>
+            <div style="display: inline-block;" v-html="friendlySkillName(experience)"></div>
         </template>
     </li>
 </template>

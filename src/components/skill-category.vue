@@ -12,7 +12,9 @@
             </ul>
         </template>
         <template v-else>
-            <skill-section v-for="(experience, expIndex) in category.experience" :key="expIndex" :experience="experience" />
+            <ul>
+                <skill-section v-for="(experience, expIndex) in category.experience" :key="expIndex" :experience="experience" />
+            </ul>
         </template>
     </div>
 </template>
