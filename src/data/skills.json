@@ -87,6 +87,11 @@
                             "type": "skill"
                         },
                         {
+                            "name": "Docker",
+                            "duration": 1.5,
+                            "type": "skill"
+                        },
+                        {
                             "name": "Photoshop",
                             "duration": 5,
                             "type": "skill"

@@ -122,6 +122,7 @@
             "Work with Support to ensure timely turn around on bugs and other issues",
             "Refactor code as necessary -- Leave it better than you found it",
             "Help migrate from a Monolith Structure to Microservices",
+            "Implement Lumen as a fork of the base application to serve as a central API",
             "Implement Redis Cache to significantly reduce load times of reports"
         ]
     }
