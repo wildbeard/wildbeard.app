@@ -11,6 +11,15 @@
         </template>
     </li>
 </template>
+
+<style lang="scss" scoped>
+    ul {
+        li, div {
+            vertical-align: middle;
+        }
+    }
+</style>
+
 <script>
 export default {
     props: [

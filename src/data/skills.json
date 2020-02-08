@@ -64,7 +64,7 @@
                     ]
                 },
                 {
-                    "name": "Task Runners/Builders",
+                    "name": "Task Runners &amp;<br>Builders",
                     "experience": [
                         {
                             "name": "Grunt &amp; Gulp",
@@ -100,18 +100,13 @@
                             "name": "Illustrator",
                             "duration": 2,
                             "type": "skill"
-                        },
-                        {
-                            "name": "Responsive Development",
-                            "duration": 6,
-                            "type": "skill"
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Languages/Preprocessors",
+            "name": "Languages &amp;<br>Preprocessors",
             "type": "category",
             "experience": [
                 {
@@ -132,7 +127,7 @@
             ]
         },
         {
-            "name": "Frameworks/Libraries",
+            "name": "Frameworks &amp;<br>Libraries",
             "type": "category",
             "experience": [
                 {
@@ -148,11 +143,6 @@
                 {
                     "name": "jQuery",
                     "duration": 4,
-                    "type": "skill"
-                },
-                {
-                    "name": "Wordpress",
-                    "duration": 2,
                     "type": "skill"
                 }
             ]

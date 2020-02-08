@@ -24,10 +24,9 @@
         "location": "Oklahoma City, OK",
         "duration": "June 2012 - Jan. 2013",
         "callouts": [
-            "Resolved complex issues with RegisterASA's design to cater to 300,000+ annual usuers, including the redesign of the RegisterASA site, improvement and in-housing of ACE Certification Testing, and development of a Premium Video Content System",
-            "Lead the development of Softball Outlet an in house eCommerce platform",
-            "Developed a Bracket Challenge System for the Women's College World Series that was hosted on ESPN for the duration of the tournament",
-            "Developed and managed two Android applications for the Umpire Rulebook"
+            "Help maintain Mathis Brother's eCommerce platforms",
+            "Increased website performance through image, style, and code optimization",
+            "Lead developer on updating and refreshing Mathis Sleep Studio and Big Red Warehouse"
         ]
     },
     {
@@ -40,12 +39,12 @@
         "location": "Oklahoma City, OK",
         "duration": "May 2013 - Aug. 2015",
         "callouts": [
-            "<strong>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual usuers, including a redesign of the RegisterASA site.",
-            "<strong>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house.",
-            "<strong>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training.",
-            "<strong>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a from scratch eCommerce platform",
-            "Developed a Bracket Challenge System for the Women's College World Series that was hosted on ESPN for the duration of the tournament",
-            "Developed and managed two Android applications for the Umpire Rulebook"
+            "<strong>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
+            "<strong>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
+            "<strong>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
+            "<strong>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
+            "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
+            "Developed and managed the Umpire Rulebook Android application"
         ]
     },
     {
@@ -58,8 +57,8 @@
         "location": "Oklahoma City, OK",
         "duration": "Aug. 2015 - Oct. 2017",
         "callouts": [
-            "Collaborate and interact directly with account executive, project manager, graphic degisner, and copywriter to meet clients' case-by-case needs",
-            "Integrate features into an in-house CMS",
+            "Collaborate and interact directly with account executive, project manager, designers, and copywriter to meet clients' case-by-case needs",
+            "Help maintain and improve an in-house CMS",
             {
                 "desc": "Independently responsible for full front/back-end development on over 20+ projects including:",
                 "callouts": [
@@ -89,16 +88,14 @@
         "location": "Denver, CO",
         "duration": "Oct. 2017 - April 2019",
         "callouts": [
-            "Sole developer managing all internal web apps that run the agency across all global offices",
-            "Oversee all new incoming requests for issues and projects",
-            "Worked with client teams to create extensions to internal apps for client usse",
-            "Create and maintain internal Composer Packages",
-            "Integrating internal web apps with Slack",
+            "Maintain internal web apps that are utilized by all global offices",
+            "Managed incoming bug reports and feature requests",
+            "Collaborate with client facing teams to create extensions to internal apps for client use",
             {
-                "desc": "Personally Developed: ",
+                "desc": "Personally Responsible for: ",
                 "callouts": [
                     "<strong>Hey Listen</strong>: NodeJS powered real time notification system. Used to push notifications to all internal web apps with custom triggers",
-                    "<strong>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel &amp; Algolia",
+                    "<strong>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel, Vue, and Algolia",
                     "<strong>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
                     "<strong>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
                     "<strong>Model Encryption</strong>: Low level database model encryption for custom ORM",
@@ -117,13 +114,12 @@
         "location": "Westminster, CO",
         "duration": "April 2019 - Present",
         "callouts": [
-            "Develop and maintain both Distillery and Brewery systems",
-            "Maintain the health of application servers",
-            "Work with Support to ensure timely turn around on bugs and other issues",
-            "Refactor code as necessary -- Leave it better than you found it",
-            "Help migrate from a Monolith Structure to Microservices",
-            "Implement Lumen as a fork of the base application to serve as a central API",
-            "Implement Redis Cache to significantly reduce load times of reports"
+            "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
+            "Implement the Lumen Framework to serve as a central API",
+            "Implement Redis to improve system and report service performance",
+            "Help maintain server health and performance including planning maintenance windows for deployments, transitions, and upgrades",
+            "Create internal tooling to help the overall performance of all departments",
+            "Work with Support and QA to ensure proper resolution to incoming issues"
         ]
     }
 ]
