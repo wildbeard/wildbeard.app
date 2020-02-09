@@ -7,6 +7,10 @@ body {
 	line-height: 1.7;
 }
 
+h1 {
+	letter-spacing: 1px;
+}
+
 .fancy {
 	font-style: italic;
 }
@@ -45,4 +49,30 @@ body {
 
 .text-center {
 	text-align: center;
+}
+
+.strikethrough {
+	position: relative;
+	&::before {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		height: 1px;
+		background-color: #000;
+		content: ' ';
+	}
+}
+
+blockquote {
+	display: inline-block;
+	margin: 0;
+	padding: 0.5em 1em;
+	background-color: #fff;
+	border-left: 2px solid #333;
+	.author {
+		display: block;
+		font-size: 0.8em;
+		font-style: italic;
+	}
 }
