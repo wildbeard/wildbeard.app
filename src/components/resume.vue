@@ -23,13 +23,7 @@
 					<skill-category :category="category" v-for="category in skills.types" :key="category.name"></skill-category>
 				</div> <!-- !.skills -->
 
-				<div class="experience col-8">
-					
-					<ul>
-						<job v-for="job in jobs" :key="job.company.name" :job="job" />
-					</ul>
-
-				</div>
+				<job v-for="job in jobs" :key="job.company.name" :job="job" />
 
 			</div> <!-- !.row -->
 			

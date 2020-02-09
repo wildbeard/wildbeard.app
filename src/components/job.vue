@@ -1,6 +1,6 @@
 <template>
     
-    <li class="company" :class="companyClass">
+    <div class="company" :class="companyClass">
         <div class="company-info">
             <div class="where">
                 <span class="bold" :class="job.company.class">{{ job.company.name }},</span> <span class="fancy">{{ job.location }}</span>
@@ -23,7 +23,7 @@
                 </li>
             </ul>
         </div>
-    </li>
+    </div>
 
 </template>
 
@@ -99,6 +99,11 @@ export default {
             #{$name} {
                 color: $color;
             }
+        }
+    }
+    @media print {
+        .company.company-tig {
+            margin-bottom: 60px;
         }
     }
 </style>

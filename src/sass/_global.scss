@@ -1,3 +1,9 @@
+@media print {
+    body {
+        padding: 0 2em;
+    }
+}
+
 .side-by-side {
     display: flex;
     flex-wrap: wrap;
