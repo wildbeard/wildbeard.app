@@ -7,6 +7,7 @@
             </div>
             <div class="timeline">{{ job.duration }}</div>
             <div class="title">{{ job.title }}</div>
+            <div class="technologies"><strong>Technologies Used</strong>: {{ job.technologies }}</div>
             <ul class="callouts">
                 <li v-for="(callout, index) in job.callouts" :key="index">
                     <template v-if="typeof callout === 'object'">
@@ -46,7 +47,10 @@ export default {
     @import '~sass/_mixins.scss';
     @import '~sass/_variables.scss';
     .company {
-		margin-bottom: 25px;
+        margin-bottom: 25px;
+        .where, .title, .technologies, .timeline {
+            font-family: $serif;
+        }
 		.company-info {
 			display: flex;
 			flex-wrap: wrap;
@@ -60,6 +64,9 @@ export default {
 		.title {
 			font-weight: bold;
 		}
+        .technologies {
+            font-size: 0.85em;
+        }
 		.timeline {
 			flex: 0 0 40%;
 			text-align: right;

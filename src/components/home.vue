@@ -82,7 +82,11 @@
 </template>
 
 <style lang="scss" scoped>
+    @import '~sass/_variables.scss';
     ol > li {
         margin-bottom: 1em;
+    }
+    strong {
+        font-family: $serif;
     }
 </style>

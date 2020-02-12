@@ -6,6 +6,7 @@
             "site": "http://advancedacademics.com/" 
         },
         "title": "508 Compliance Specialist",
+        "technologies": "HTML, CSS, Javascript",
         "location": "Oklahoma City, OK",
         "duration": "June - Dec. 2011",
         "callouts": [
@@ -21,6 +22,7 @@
             "site": "https://www.mathisbrothers.com/"
         },
         "title": "Front End Developer",
+        "technologies": ".Net, ASP, ASP.Net, HTML, CSS, Javascript",
         "location": "Oklahoma City, OK",
         "duration": "June 2012 - Jan. 2013",
         "callouts": [
@@ -36,6 +38,7 @@
             "site": "https://www.teamusa.org/usa-softball/"
         },
         "title": "Full Stack Developer",
+        "technologies": ".Net, ASP, ASP.Net, PHP, HTML, CSS, Javascript",
         "location": "Oklahoma City, OK",
         "duration": "May 2013 - Aug. 2015",
         "callouts": [
@@ -54,26 +57,22 @@
             "site": "https://liquid.fish"
         },
         "title": "Full Stack Developer",
+        "technologies": "PHP, Laravel, HTML, CSS/SASS, Vue, Javascript",
         "location": "Oklahoma City, OK",
         "duration": "Aug. 2015 - Oct. 2017",
         "callouts": [
-            "Collaborate and interact directly with account executive, project manager, designers, and copywriter to meet clients' case-by-case needs",
-            "Help maintain and improve an in-house CMS",
+            "Work closely with clients, designers, and project managers in a creative agency environment",
+            "Produced over 30 custom built sites and helped maintain over 100 client sites",
+            "Help maintain and build onto an in-house Laravel based CMS",
+            "Collaborated on the <a href='https://kevindurant.com/' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' target='_blank'>Blake Griffin</a> projects",
             {
-                "desc": "Independently responsible for full front/back-end development on over 20+ projects including:",
+                "desc": "Notable Projects",
                 "callouts": [
-                    "<a href='https://readartdesk.com/' target='_blank'>Art Desk</a>: Extensive Vue & Laravel Development",
-                    "<a href='http://dockum.com/' target='_blank'>Dockum</a>: Extensive CSS Animations",
+                    "<a href='https://readartdesk.com/' target='_blank'>Art Desk</a>",
+                    "<a href='http://dockum.com/' target='_blank'>Dockum</a>",
                     "<a href='http://titan2.energy/' target='_blank'>Titan2 Energy</a>",
-                    "<a href='https://trinitybrick.com/' target='_blank'>Trinity Brick</a>"
-                ]
-            },
-            {
-                "desc": "Collaborations on:",
-                "callouts": [
-                    "<a href='https://kevindurant.com/' target='_blank'>Kevin Durant</a>",
-                    "<a href='https://blakegriffin.com/' target='_blank'>Blake Griffin</a>",
-                    "<a href='https://liquid.fish/' target='_blank'>liquidfish</a>: Custom CMS Blogging & Profiles Integration"
+                    "<a href='https://blackbeltmag.com/' target='_blank'>Black Belt Magazine</a>",
+                    "<a href='https://kirkpatrickbank.com/' target='_blank'>Kirkpatrick Bank</a>"
                 ]
             }
         ]
@@ -85,6 +84,7 @@
             "site": "https://integer.com"
         },
         "title": "Full Stack Developer",
+        "technologies": "PHP, Docker, Active Directory/LDAP, HTML, CSS/SASS, NodeJs, Vue, Javascript",
         "location": "Denver, CO",
         "duration": "Oct. 2017 - April 2019",
         "callouts": [
@@ -111,6 +111,7 @@
             "site": "https://fx5solutions.com"
         },
         "title": "Software Developer",
+        "technologies": "PHP, Lumen, Python, Docker, HTML, CSS/SASS, Vue, Javascript",
         "location": "Westminster, CO",
         "duration": "April 2019 - Present",
         "callouts": [

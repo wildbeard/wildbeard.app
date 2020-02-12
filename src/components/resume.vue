@@ -19,11 +19,16 @@
 			
 			<div class="row">
 
-				<div class="skills col-4">
-					<skill-category :category="category" v-for="category in skills.types" :key="category.name"></skill-category>
+				<div class="skills col-12">
+					<h2>Skills</h2>
+					<skill :skill="skill" v-for="skill in skills" :key="skill.name" />
 				</div> <!-- !.skills -->
 
-				<job v-for="job in jobs" :key="job.company.name" :job="job" />
+				<div class="col-12">
+					<hr>
+					<h2>Experience</h2>
+					<job v-for="job in jobs" :key="job.company.name" :job="job" />
+				</div>
 
 			</div> <!-- !.row -->
 			
@@ -35,11 +40,11 @@
 <script>
 	import jobs from '../data/jobs.json';
 	import skills from '../data/skills.json';
-	import SkillCategory from './skill-category';
+	import Skill from './skill';
 	import Job from './job';
 	export default {
 		components: {
-			SkillCategory,
+			Skill,
 			Job,
 		},
 		data() {
