@@ -2,12 +2,13 @@
 
 body {
 	color: #333;
-	font-family: 'Domine';
+	font-family: sans-serif;
 	font-size: 14pt;
 	line-height: 1.7;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+	font-family: $serif;
 	letter-spacing: 1px;
 }
 
@@ -68,6 +69,7 @@ blockquote {
 	display: inline-block;
 	margin: 0;
 	padding: 0.5em 1em;
+	font-family: $serif;
 	background-color: #fff;
 	border-left: 2px solid #333;
 	.author {
