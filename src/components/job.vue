@@ -7,7 +7,10 @@
             </div>
             <div class="timeline">{{ job.duration }}</div>
             <div class="title">{{ job.title }}</div>
-            <div class="technologies"><strong>Technologies Used</strong>: {{ job.technologies }}</div>
+            <div class="technologies">
+                <span class="bold" :class="job.company.class">Technologies Used</span>:
+                {{ job.technologies }}
+            </div>
             <ul class="callouts">
                 <li v-for="(callout, index) in job.callouts" :key="index">
                     <template v-if="typeof callout === 'object'">
@@ -48,8 +51,11 @@ export default {
     @import '~sass/_variables.scss';
     .company {
         margin-bottom: 25px;
-        .where, .title, .technologies, .timeline {
+        .where, .title, .timeline {
             font-family: $serif;
+            .bold {
+                letter-spacing: 1px;
+            }
         }
 		.company-info {
 			display: flex;
@@ -63,8 +69,13 @@ export default {
 		}
 		.title {
 			font-weight: bold;
+            letter-spacing: 1px;
 		}
         .technologies {
+            span {
+                font-family: $serif;
+                letter-spacing: 1px;
+            }
             font-size: 0.85em;
         }
 		.timeline {
