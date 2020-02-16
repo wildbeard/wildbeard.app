@@ -84,7 +84,7 @@
             "site": "https://integer.com"
         },
         "title": "Full Stack Developer",
-        "technologies": "PHP, Docker, Active Directory/LDAP, HTML, CSS/SASS, NodeJs, Vue, Javascript",
+        "technologies": "PHP, Algolia, Docker, Active Directory/LDAP, HTML, CSS/SASS, NodeJs, Vue, Javascript",
         "location": "Denver, CO",
         "duration": "Oct. 2017 - April 2019",
         "callouts": [
