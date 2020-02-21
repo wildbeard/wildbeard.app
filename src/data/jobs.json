@@ -98,7 +98,6 @@
                     "<strong>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel, Vue, and Algolia",
                     "<strong>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
                     "<strong>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
-                    "<strong>Model Encryption</strong>: Low level database model encryption for custom ORM",
                     "<strong>Lincoln Logs</strong>: Unified logging system across internal web apps"
                 ]
             }
@@ -111,7 +110,7 @@
             "site": "https://fx5solutions.com"
         },
         "title": "Software Developer",
-        "technologies": "PHP, Lumen, Docker, HTML, CSS/SASS, Vue, Javascript",
+        "technologies": "PHP, Lumen, Redis, Docker, HTML, CSS/SASS, Vue, Javascript",
         "location": "Westminster, CO",
         "duration": "April 2019 - Present",
         "callouts": [
