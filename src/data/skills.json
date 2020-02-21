@@ -18,15 +18,9 @@
         "desc": "Multi service builds and configuration"
     },
     {
-        "name": "Redis",
-        "duration": "1 Year",
-        "additional": "",
-        "desc": "Implemented as a caching layer to boost performance of SaaS applications"
-    },
-    {
         "name": "Database &amp; Database Management",
         "duration": "7 Years",
-        "additional": "MySql (7 years), MariaDB (1.5 year), PSql (1.5 year), MongoDB (2 years), MsSql (1.5 year)",
+        "additional": "MySql (7 years), MariaDB (1.5 year), PSql (1.5 year), Redis (1 year), MongoDB (2 years), MsSql (1.5 year)",
         "desc": ""
     },
     {
