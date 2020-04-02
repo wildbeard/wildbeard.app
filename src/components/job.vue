@@ -16,7 +16,7 @@
                     <template v-if="typeof callout === 'object'">
                         {{ callout.desc }}
                         <ul class="side-by-side small">
-                            <li v-for="( subCallout, subIndex) in callout.callouts" :key="subIndex">
+                            <li v-for="(subCallout, subIndex) in callout.callouts" :key="subIndex">
                                 <div v-html="subCallout"></div>
                             </li>
                         </ul>
@@ -100,8 +100,8 @@ export default {
 		}
 	}
 	@include media-screen(800px) {
-		ul {
-			padding-left: $gutter + 10;
+		ul, .callouts {
+			padding-left: $gutter;
 		}
 	}
     @each $name, $color in $colors {
