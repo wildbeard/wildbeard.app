@@ -88,7 +88,12 @@ export default {
 		@include media-screen(800px) {
 			.where, .title, .timeline {
 				flex: 0 0 100%;
-			}
+            }
+            .title {
+                margin-bottom: $gutter * .75;
+                padding-bottom: $gutter * .15;
+                border-bottom: 2px solid #333;
+            }
 			.where span {
 				display: block;
 			}
