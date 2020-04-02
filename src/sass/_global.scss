@@ -29,3 +29,15 @@ hr {
         }
     }
 }
+
+.mobile-only {
+    @media screen and ( min-width: 801px ) {
+        display: none;
+    }
+}
+
+.desktop-only {
+    @media screen and ( max-width: 800px ) {
+        display: none !important;
+    }
+}

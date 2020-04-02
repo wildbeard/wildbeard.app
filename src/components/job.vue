@@ -3,7 +3,10 @@
     <div class="company" :class="companyClass">
         <div class="company-info">
             <div class="where">
-                <span class="bold" :class="job.company.class">{{ job.company.name }},</span> <span class="fancy">{{ job.location }}</span>
+                <span class="bold company-name" :class="job.company.class">
+                    {{ job.company.name }}<span class="desktop-only">,</span>
+                </span>
+                <span class="fancy company-location">{{ job.location }}</span>
             </div>
             <div class="timeline">{{ job.duration }}</div>
             <div class="title">{{ job.title }}</div>
@@ -16,7 +19,7 @@
                     <template v-if="typeof callout === 'object'">
                         {{ callout.desc }}
                         <ul class="side-by-side small">
-                            <li v-for="( subCallout, subIndex) in callout.callouts" :key="subIndex">
+                            <li v-for="(subCallout, subIndex) in callout.callouts" :key="subIndex">
                                 <div v-html="subCallout"></div>
                             </li>
                         </ul>
@@ -100,9 +103,23 @@ export default {
 		}
 	}
 	@include media-screen(800px) {
-		ul {
-			padding-left: $gutter + 10;
-		}
+		ul, .callouts {
+			padding-left: $gutter;
+        }
+        .company-info {
+            .company-name {
+                font-size: 1.3em;
+                span {
+                    display: inline;
+                }
+            }
+            .company-location {
+                font-size: 0.85em;
+            }
+            .timeline {
+                font-size: 0.85em;
+            }
+        }
 	}
     @each $name, $color in $colors {
         .company-#{$name} {
