@@ -1,3 +1,11 @@
+[build]
+    [context.production]
+        publish = 'public/'
+        command = 'npm run prod'
+    [context.staging]
+        publish = 'dist/'
+        command = 'npm run generate'    
+
 [[redirects]]
     from = "/*"
     to = "index.html"
