@@ -120,5 +120,21 @@
             "Create internal tooling to help the overall performance of all departments",
             "Work with Support and QA to ensure proper resolution to incoming issues"
         ]
+    },
+    {
+        "company": {
+            "name": "Wild Alaskan",
+            "class": "wild",
+            "site": "https://wildalaskancompany.com"
+        },
+        "title": "Sr. Software Engineer",
+        "technologies": "PHP, Laravel, Vue, Vuex",
+        "location": "",
+        "duration": "October 2020 - Present",
+        "callouts": [
+            "Maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
+            "Improve the usage of Vue to include Vuex streamlining the onboarding and checkout process",
+            "Ongoing improvement to page speeds",
+        ]
     }
 ]
