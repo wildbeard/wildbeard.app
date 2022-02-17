@@ -111,7 +111,7 @@
         "title": "Software Developer",
         "technologies": "PHP, Lumen, Redis, Docker, HTML, CSS/SASS, Vue, Javascript",
         "location": "Westminster, CO",
-        "duration": "April 2019 - Present",
+        "duration": "April 2019 - October 2020",
         "callouts": [
             "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
             "Implement the Lumen Framework to serve as a central API",
@@ -133,8 +133,9 @@
         "duration": "October 2020 - Present",
         "callouts": [
             "Maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
-            "Improve the usage of Vue to include Vuex streamlining the onboarding and checkout process",
-            "Ongoing improvement to page speeds"
+            "Work closely with design and product to update, maintain, and improve the marketing performance of the application",
+            "Work with engineering to improve site performance and reliability",
+            "Migrate fragmented Vue/Laravel SPA to Nuxt"
         ]
     }
 ]
