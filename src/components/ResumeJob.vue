@@ -92,7 +92,7 @@ const companyClass = computed(() => {
     @apply flex-none basis-2/5 text-right;
   }
   .callouts {
-    @apply mt-3 pl-8 list-disc;
+    @apply mt-3 pl-8 list-disc font-sans;
   }
 }
 .company-info {
