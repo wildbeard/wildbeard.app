@@ -1,5 +1,5 @@
 <template>
-  <div class="home container mx-auto">
+  <div class="home container mx-auto px-5 md:px-0">
     <h1 class="font-bold">
       I Break, Build, and Tinker with Things
     </h1>
@@ -121,7 +121,7 @@ ol,
 ul {
   @apply pl-8;
   li {
-    @apply mb-4 pl-1;
+    @apply mb-4 pl-1 leading-relaxed;
   }
 }
 ul li {
