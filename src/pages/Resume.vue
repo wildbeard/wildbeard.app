@@ -15,8 +15,8 @@
         </ul>
       </div> <!-- !.row -->
 			
-      <div class="row">
-        <div class="skills col-12">
+      <div>
+        <div class="skills">
           <h2 class="my-4 text-2xl">
             Skills
           </h2>
@@ -26,9 +26,9 @@
             :skill="skill" />
         </div> <!-- !.skills -->
 
-        <div class="col-12">
-          <hr>
-          <h2 class="my-4 text-2xl">
+        <div class="mt-9">
+          <hr class="mb-9">
+          <h2 class="mb-4 text-2xl">
             Experience
           </h2>
           <ResumeJob
@@ -36,7 +36,7 @@
             :key="job.company.name"
             :job="job" />
         </div>
-      </div> <!-- !.row -->
+      </div>
     </div> <!-- !.container -->
   </div>
 </template>
