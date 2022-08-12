@@ -42,10 +42,10 @@
         "location": "Oklahoma City, OK",
         "duration": "May 2013 - Aug. 2015",
         "callouts": [
-            "<strong>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
-            "<strong>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
-            "<strong>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
-            "<strong>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
+            "<strong class='text-asa'>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
+            "<strong class='text-asa'>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
+            "<strong class='text-asa'>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
+            "<strong class='text-asa'>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
             "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
             "Developed and managed the Umpire Rulebook Android application"
         ]
@@ -68,10 +68,10 @@
             {
                 "desc": "Notable Projects",
                 "callouts": [
-                    "<a href='https://readartdesk.com/' target='_blank'>Art Desk</a>",
-                    "<a href='http://dockum.com/' target='_blank'>Dockum</a>",
-                    "<a href='http://titan2.energy/' target='_blank'>Titan2 Energy</a>",
-                    "<a href='https://kirkpatrickbank.com/' target='_blank'>Kirkpatrick Bank</a>"
+                    "<a class='text-lf' href='https://readartdesk.com/' target='_blank'>Art Desk</a>",
+                    "<a class='text-lf' href='http://dockum.com/' target='_blank'>Dockum</a>",
+                    "<a class='text-lf' href='http://titan2.energy/' target='_blank'>Titan2 Energy</a>",
+                    "<a class='text-lf' href='https://kirkpatrickbank.com/' target='_blank'>Kirkpatrick Bank</a>"
                 ]
             }
         ]
@@ -91,13 +91,13 @@
             "Managed incoming bug reports and feature requests",
             "Collaborate with client facing teams to create extensions to internal apps for client use",
             {
-                "desc": "Personally Responsible for: ",
+                "desc": "Notable Projects: ",
                 "callouts": [
-                    "<strong>Hey Listen</strong>: NodeJS powered real time notification system. Used to push notifications to all internal web apps with custom triggers",
-                    "<strong>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel, Vue, and Algolia",
-                    "<strong>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
-                    "<strong>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
-                    "<strong>Lincoln Logs</strong>: Unified logging system across internal web apps"
+                    "<strong class='text-tig'>Hey Listen</strong>: NodeJS powered real time notification system. Used to push notifications to all internal web apps with custom triggers",
+                    "<strong class='text-tig'>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel, Vue, and Algolia",
+                    "<strong class='text-tig'>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
+                    "<strong class='text-tig'>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
+                    "<strong class='text-tig'>Lincoln Logs</strong>: Unified logging system across internal web apps"
                 ]
             }
         ]
@@ -129,7 +129,7 @@
         },
         "title": "Sr. Software Engineer",
         "technologies": "PHP, Laravel, Vue, Vuex",
-        "location": "",
+        "location": "Remote",
         "duration": "October 2020 - Present",
         "callouts": [
             "Maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
