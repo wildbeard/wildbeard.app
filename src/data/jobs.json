@@ -1,0 +1,141 @@
+[
+    {
+        "company": {
+            "name": "Advanced Academics",
+            "class": "adv",
+            "site": "http://advancedacademics.com/" 
+        },
+        "title": "508 Compliance Specialist",
+        "technologies": "HTML, CSS, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "June - Dec. 2011",
+        "callouts": [
+            "Converted old course material to the updated 508 Compliance standards",
+            "Lead a small team of four to complete several courses ahead of schedule",
+            "Created scripts and styles to be implemented by other teams for future use"
+        ]
+    },    
+    {
+        "company": {
+            "name": "Mathis Brother's Studio",
+            "class": "math",
+            "site": "https://www.mathisbrothers.com/"
+        },
+        "title": "Front End Developer",
+        "technologies": ".Net, ASP, ASP.Net, HTML, CSS, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "June 2012 - Jan. 2013",
+        "callouts": [
+            "Help maintain Mathis Brother's eCommerce platforms",
+            "Increased website performance through image, style, and code optimization",
+            "Lead developer on updating and refreshing Mathis Sleep Studio and Big Red Warehouse"
+        ]
+    },
+    {
+        "company": {
+            "name": "Amateur Softball Association",
+            "class": "asa",
+            "site": "https://www.teamusa.org/usa-softball/"
+        },
+        "title": "Full Stack Developer",
+        "technologies": ".Net, ASP, ASP.Net, PHP, HTML, CSS, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "May 2013 - Aug. 2015",
+        "callouts": [
+            "<strong>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
+            "<strong>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
+            "<strong>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
+            "<strong>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
+            "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
+            "Developed and managed the Umpire Rulebook Android application"
+        ]
+    },
+    {
+        "company": {
+            "name": "liquidfish",
+            "class": "lf",
+            "site": "https://liquid.fish"
+        },
+        "title": "Full Stack Developer",
+        "technologies": "PHP, Laravel, HTML, CSS/SASS, Vue, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "Aug. 2015 - Oct. 2017",
+        "callouts": [
+            "Work closely with clients, designers, and project managers in a creative agency environment",
+            "Produced over 30 custom built sites and helped maintain over 100 client sites",
+            "Help maintain and build onto an in-house Laravel based CMS",
+            "Collaborated on the <a href='https://kevindurant.com/' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' target='_blank'>Blake Griffin</a> projects",
+            {
+                "desc": "Notable Projects",
+                "callouts": [
+                    "<a href='https://readartdesk.com/' target='_blank'>Art Desk</a>",
+                    "<a href='http://dockum.com/' target='_blank'>Dockum</a>",
+                    "<a href='http://titan2.energy/' target='_blank'>Titan2 Energy</a>",
+                    "<a href='https://kirkpatrickbank.com/' target='_blank'>Kirkpatrick Bank</a>"
+                ]
+            }
+        ]
+    },
+    {
+        "company": {
+            "name": "The Integer Group",
+            "class": "tig",
+            "site": "https://integer.com"
+        },
+        "title": "Full Stack Developer",
+        "technologies": "PHP, Algolia, Docker, Active Directory/LDAP, HTML, CSS/SASS, NodeJs, Vue, Javascript",
+        "location": "Denver, CO",
+        "duration": "Oct. 2017 - April 2019",
+        "callouts": [
+            "Maintain internal web apps that are utilized by all global offices",
+            "Managed incoming bug reports and feature requests",
+            "Collaborate with client facing teams to create extensions to internal apps for client use",
+            {
+                "desc": "Personally Responsible for: ",
+                "callouts": [
+                    "<strong>Hey Listen</strong>: NodeJS powered real time notification system. Used to push notifications to all internal web apps with custom triggers",
+                    "<strong>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel, Vue, and Algolia",
+                    "<strong>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
+                    "<strong>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
+                    "<strong>Lincoln Logs</strong>: Unified logging system across internal web apps"
+                ]
+            }
+        ]
+    },
+    {
+        "company": {
+            "name": "Fx5 Solutions",
+            "class": "fx5",
+            "site": "https://fx5solutions.com"
+        },
+        "title": "Software Developer",
+        "technologies": "PHP, Lumen, Redis, Docker, HTML, CSS/SASS, Vue, Javascript",
+        "location": "Westminster, CO",
+        "duration": "April 2019 - October 2020",
+        "callouts": [
+            "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
+            "Implement the Lumen Framework to serve as a central API",
+            "Implement Redis to improve system and report service performance",
+            "Help maintain server health and performance including planning maintenance windows for deployments, transitions, and upgrades",
+            "Create internal tooling to help the overall performance of all departments",
+            "Work with Support and QA to ensure proper resolution to incoming issues"
+        ]
+    },
+    {
+        "company": {
+            "name": "Wild Alaskan",
+            "class": "wild",
+            "site": "https://wildalaskancompany.com"
+        },
+        "title": "Sr. Software Engineer",
+        "technologies": "PHP, Laravel, Vue, Vuex",
+        "location": "",
+        "duration": "October 2020 - Present",
+        "callouts": [
+            "Maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
+            "Work closely with design and product to update, maintain, and improve the marketing performance of the application",
+            "Work with engineering to improve site performance and reliability",
+            "Migrate fragmented Vue/Laravel SPA to Nuxt"
+        ]
+    }
+]
