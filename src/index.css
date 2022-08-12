@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Domine");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color: #333;
+    font-size: 14pt;
+  }
+  body {
+    background-color: #f2f2f2;
+  }
+}

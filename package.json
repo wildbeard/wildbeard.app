@@ -1,39 +1,24 @@
 {
   "name": "wildbeard.app",
-  "version": "1.0.0",
-  "description": "This is my website. It isn't much but here it is. They say you're supposed to create something to showcase your talents. There's no **_way_** I can showcase everything I know on a simple site.",
   "private": true,
+  "version": "2.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "webpack": "^4.28.4"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "css-loader": "^2.1.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.13.1",
-    "sass-loader": "^7.1.0",
-    "vue": "^2.5.22",
-    "vue-loader": "^15.5.1",
-    "vue-router": "^3.0.2",
-    "vue-template-compiler": "^2.5.22",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules",
-    "prod": "NODE_ENV=production webpack --progress --hide-modules",
-    "start": "NODE_ENV=development webpack-dev-server --open",
-    "start-windows": "set NODE_ENV=development&&webpack-dev-server --open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wildbeard/wildbeard.app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wildbeard/wildbeard.app/issues"
-  },
-  "homepage": "https://github.com/wildbeard/wildbeard.app#readme"
+    "@vitejs/plugin-vue": "^3.0.2",
+    "autoprefixer": "^10.4.8",
+    "eslint-plugin-vue": "^9.3.0",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.4",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.0.6",
+    "vue-router": "^4.1.3"
+  }
 }

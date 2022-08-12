@@ -1,10 +1,10 @@
 [build]
     [context.production]
-        publish = 'public/'
-        command = 'npm run prod'
+        publish = 'dist/'
+        command = 'npm run build'
     [context.staging]
         publish = 'dist/'
-        command = 'npm run generate'    
+        command = 'npm run build'    
 
 [[redirects]]
     from = "/*"

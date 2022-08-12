@@ -1,32 +1,38 @@
 [
-    {
-        "name": "PHP",
-        "duration": "8 Years (5.3, 5.6, 7, 7.2)",
-        "additional": "<strong>Frameworks</strong>: Laravel/Lumen 4 years",
-        "desc": "Custom Sites &amp; Data Driven Apps | Resourceful API Integration | Custom MVC Frameworks &amp; ORMs | Reporting &amp; CRM SaaS Applications"
-    },
-    {
-        "name": "Javascript",
-        "duration": "6 Years",
-        "additional": "<strong>Frameworks/Libraries</strong>: jQuery (4 years), Knockout (1.5 year), Vue (2.5 years)",
-        "desc": ""
-    },
-    {
-        "name": "Docker",
-        "duration": "1.5 Years",
-        "additional": "",
-        "desc": "Multi service builds and configuration"
-    },
-    {
-        "name": "Database &amp; Database Management",
-        "duration": "7 Years",
-        "additional": "MySql (7 years), MariaDB (1.5 year), PSql (1.5 year), Redis (1 year), MongoDB (2 years), MsSql (1.5 year)",
-        "desc": ""
-    },
-    {
-        "name": "Misc",
-        "duration": "",
-        "additional": "",
-        "desc": "git 4 years, Grunt/Gulp 1.5 years, Webpack 2 years, Eloquent ORM 4 years, Active Directory/LDAP 1.5 year, SASS 3 years, nginx 2.5 years"
-    }    
+  {
+    "name": "PHP",
+    "duration": "8 Years (5.3, 5.6, 7, 7.2)",
+    "additional": "<strong>Frameworks</strong>: Laravel/Lumen 5 years",
+    "desc": "Custom Sites &amp; Data Driven Apps | Resourceful API Integration | Custom MVC Frameworks &amp; ORMs | Reporting &amp; CRM SaaS Applications"
+  },
+  {
+    "name": "Javascript",
+    "duration": "8 Years",
+    "additional": "<strong>Frameworks/Libraries</strong>: jQuery (4 years), Knockout (1.5 year), Vue 2 (4 years), Vue 3 (<1 year), Nuxt (1.5 years)",
+    "desc": ""
+  },
+  {
+    "name": "Docker",
+    "duration": "1.5 Years",
+    "additional": "",
+    "desc": "Multi service builds and configuration"
+  },
+  {
+    "name": "Database &amp; Database Management",
+    "duration": "8 Years",
+    "additional": "MySql (7 years), MariaDB (1.5 year), PSql (1.5 year), Redis (1 year), MongoDB (2 years), MsSql (1.5 year)",
+    "desc": ""
+  },
+  {
+    "name": "Misc",
+    "duration": "",
+    "additional": "",
+    "desc": "git 5 years, Grunt/Gulp 1.5 years, Webpack 2 years, Eloquent ORM 5 years, Active Directory/LDAP 1.5 year, SASS 4 years, nginx 2.5 years"
+  },    
+  {
+    "name": "nvim",
+    "duration": "1 Year",
+    "additional": "",
+    "desc": "I use nvim, btw. Checkout my <a href='https://github.com/wildbeard/dotfiles' target='_blank'>dotfiles</a>"
+  }
 ]
