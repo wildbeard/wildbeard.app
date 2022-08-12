@@ -4,7 +4,7 @@
       <div class="where">
         <span
           class="company-name font-serif font-bold"
-          :class="`text-${job.company.class}`">
+          :class="job.company.class">
           {{ job.company.name }}<span class="hidden md:inline-block">,</span>
         </span>
         <span class="italic font-sans company-location">&nbsp;{{ job.location }}</span>
@@ -18,7 +18,7 @@
       <div class="technologies">
         <span
           class="font-bold"
-          :class="`text-${job.company.class}`">
+          :class="job.company.class">
           Technologies Used:
         </span>
         <span class="font-sans">
@@ -100,5 +100,26 @@ const companyClass = computed(() => {
 }
 .company-name {
   @apply tracking-wider;
+}
+.wild {
+  @apply text-wild;
+}
+.fx5 {
+  @apply text-fx5;
+}
+.tig {
+  @apply text-tig;
+}
+.lf {
+  @apply text-lf;
+}
+.asa {
+  @apply text-asa;
+}
+.math {
+  @apply text-math;
+}
+.adv {
+  @apply text-adv;
 }
 </style>
