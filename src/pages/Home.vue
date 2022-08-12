@@ -1,5 +1,5 @@
 <template>
-  <div class="home container mx-auto px-5 md:px-0">
+  <div class="home container mt-4 mx-auto px-5 md:px-0">
     <h1 class="font-bold">
       I Break, Build, and Tinker with Things
     </h1>
