@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from './pages/Home.vue';
 import Resume from './pages/Resume.vue';
+import NotFound from './pages/404.vue';
 
 const router = createRouter({
   routes: [
@@ -11,6 +12,10 @@ const router = createRouter({
     {
       path: '/resume',
       component: Resume,
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      component: NotFound,
     },
   ],
   history: createWebHistory(),
