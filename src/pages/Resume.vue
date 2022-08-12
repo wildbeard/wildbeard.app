@@ -20,7 +20,7 @@
           <h2 class="my-4 text-2xl">
             Skills
           </h2>
-          <skill
+          <ResumeSkill
             v-for="skill in skills"
             :key="skill.name"
             :skill="skill" />
@@ -43,6 +43,7 @@
 
 <script setup>
 import ResumeJob from '../components/ResumeJob.vue';
+import ResumeSkill from '../components/ResumeSkill.vue';
 import jobs from '../data/jobs.json';
 import skills from '../data/skills.json';
 

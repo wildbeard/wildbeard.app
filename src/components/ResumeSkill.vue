@@ -1,8 +1,12 @@
 <template>
   <div class="skill">
     <div class="name">
-      <span v-html="skill.name"></span>
-      <span v-if="skill.duration != ''"> | {{ skill.duration }}</span>
+      <span
+        class="font-bold font-serif"
+        v-html="skill.name"></span>
+      <span
+        v-if="skill.duration != ''"
+        class="font-sans"> | {{ skill.duration }}</span>
     </div>
     <div
       v-if="skill.additional != ''"
@@ -23,3 +27,12 @@ defineProps({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.skill {
+  @apply mb-4 leading-relaxed;
+}
+.additional ::v-deep strong {
+  @apply font-serif;
+}
+</style>
