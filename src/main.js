@@ -1,12 +1,16 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import router from './routes/router';
+import { createApp } from 'vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import App from './App.vue'
+import Home from './pages/Home.vue';
+import './index.css';
 
-Vue.use(VueRouter);
+const router = createRouter({
+  routes: [
+    { path: '/', component: Home },
+  ],
+  history: createWebHistory(),
+});
 
-// SASS
-require('./sass/sassy.scss');
-
-new Vue({
-	router
-}).$mount('#app');
+createApp(App)
+  .use(router)
+  .mount('#app')
