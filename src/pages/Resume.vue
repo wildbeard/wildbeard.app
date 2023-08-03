@@ -1,12 +1,14 @@
 <template>
   <div id="resume">
-    <div class="resume container mt-4 mx-auto">
-      <div class="flex headline-row items-center">
-        <h1 class="basis-1/2 leading-none">
+    <div class="resume container mt-4 mx-auto px-4">
+      <div class="flex flex-wrap headline-row items-center">
+        <h1 class="basis-full md:basis-1/2 leading-none">
           Preston<br>Haddock
         </h1>
-        <ul class="basis-1/2 side-by-side personal-info text-right">
-          <li><a href="mailto:prestonhaddock@gmail.com">prestonhaddock@gmail.com</a></li>
+        <ul class="basis-full md:basis-1/2 mt-4 md:mt-0 side-by-side personal-info md:text-right">
+          <li>
+            <a href="mailto:prestonhaddock@gmail.com">prestonhaddock@gmail.com</a>
+          </li>
           <li>
             <a
               href="https://github.com/wildbeard"
@@ -14,7 +16,7 @@
           </li>
         </ul>
       </div> <!-- !.row -->
-			
+
       <div>
         <div class="skills">
           <h2 class="my-4 text-2xl">

@@ -7,7 +7,10 @@
           :class="job.company.class">
           {{ job.company.name }}<span class="hidden md:inline-block">,</span>
         </span>
-        <span class="italic font-sans company-location">&nbsp;{{ job.location }}</span>
+        <span class="italic font-sans company-location">
+          <span class="hidden md:inline-block">&nbsp;</span>
+          {{ job.location }}
+        </span>
       </div>
       <div class="timeline">
         {{ job.duration }}
@@ -35,7 +38,7 @@
               <li
                 v-for="(subCallout, subIndex) in callout.callouts"
                 :key="subIndex"
-                class="basis-1/2 mb-4">
+                class="basis-full md:basis-1/2 mb-4">
                 <div v-html="subCallout"></div>
               </li>
             </ul>
@@ -82,17 +85,24 @@ const companyClass = computed(() => {
     @apply flex-none font-serif;
   }
   .where {
-    @apply flex-none basis-3/5;
+    @apply flex flex-wrap basis-4/6 md:basis-3/5;
+    .company-name,
+    .company-location {
+      @apply flex-auto basis-full;
+    }
   }
   .title,
   .callouts {
     @apply flex-none basis-full;
   }
   .timeline {
-    @apply flex-none basis-2/5 text-right;
+    @apply flex-none basis-1/3 text-right;
   }
   .callouts {
     @apply mt-3 pl-8 list-disc font-sans;
+  }
+  .technologies {
+    @apply flex flex-wrap flex-1 max-w-full mt-4;
   }
 }
 .company-info {
