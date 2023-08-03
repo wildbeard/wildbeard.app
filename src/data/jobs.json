@@ -3,7 +3,7 @@
         "company": {
             "name": "Advanced Academics",
             "class": "adv",
-            "site": "http://advancedacademics.com/" 
+            "site": "http://advancedacademics.com/"
         },
         "title": "508 Compliance Specialist",
         "technologies": "HTML, CSS, Javascript",
@@ -14,7 +14,7 @@
             "Lead a small team of four to complete several courses ahead of schedule",
             "Created scripts and styles to be implemented by other teams for future use"
         ]
-    },    
+    },
     {
         "company": {
             "name": "Mathis Brother's Studio",
@@ -124,12 +124,12 @@
         "duration": "October 2020 - Present",
         "callouts": [
             "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
-            "Sole Growth Engineer working across multiple teams to maintain and improve the marketing performance of our platform",
-            "Create one-off tools for SEO/Performance Marketing to help manage and improve the SEO ranking of our marketing site",
+            "Primary Growth Workstream Engineer working across multiple teams to maintain and improve the marketing performance of our platform",
+            "Created interal tools for SEO/Performance Marketing Teams to help manage and improve the SEO ranking of our marketing site",
+            "Transitioning fragmented Vue/Laravel SPA to Vue 3 &amp; Nuxt 3",
             "Work with engineering to maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
             "Work with engineering to improve site performance and reliability",
-            "Implement code standards and linting in our Vue app",
-            "Transitioning fragmented Vue/Laravel SPA to Nuxt"
+            "Implemented code styles/standards in the Javascript ecosystem"
         ]
     }
 ]
