@@ -88,7 +88,7 @@ const companyClass = computed(() => {
     @apply flex flex-wrap basis-4/6 md:basis-3/5;
     .company-name,
     .company-location {
-      @apply flex-auto basis-full;
+      @apply flex-auto basis-full md:flex-none;
     }
   }
   .title,
@@ -96,13 +96,13 @@ const companyClass = computed(() => {
     @apply flex-none basis-full;
   }
   .timeline {
-    @apply flex-none basis-1/3 text-right;
+    @apply flex-none basis-1/3 md:basis-2/5 text-right;
   }
   .callouts {
     @apply mt-3 pl-8 list-disc font-sans;
   }
   .technologies {
-    @apply flex flex-wrap flex-1 max-w-full mt-4;
+    @apply flex flex-wrap flex-1 max-w-full mt-4 md:mt-0;
   }
 }
 .company-info {
