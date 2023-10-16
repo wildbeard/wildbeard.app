@@ -15,6 +15,7 @@ module.exports = {
         math: '#002B49',
         fx5: '#ba9c75',
         wild: '#0d334c',
+        yardzen: '#4e5a44',
       },
       fontFamily: {
         serif: 'Domine',
@@ -26,7 +27,7 @@ module.exports = {
       addBase({
         'h1': {
           fontFamily: theme('fontFamily.serif'),
-          fontSize: theme('fontSize.4xl'), 
+          fontSize: theme('fontSize.4xl'),
         },
         'h2': {
           fontFamily: theme('fontFamily.serif'),

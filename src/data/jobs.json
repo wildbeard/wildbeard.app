@@ -8,7 +8,7 @@
         "title": "508 Compliance Specialist",
         "technologies": "HTML, CSS, Javascript",
         "location": "Oklahoma City, OK",
-        "duration": "June - Dec. 2011",
+        "duration": "June 2011 - Dec. 2011",
         "callouts": [
             "Converted old course material to the updated 508 Compliance standards",
             "Lead a small team of four to complete several courses ahead of schedule",
@@ -102,7 +102,7 @@
         "title": "Software Developer",
         "technologies": "PHP, Lumen, Redis, Docker, HTML, CSS/SASS, Vue, Javascript",
         "location": "Westminster, CO & Remote",
-        "duration": "April 2019 - October 2020",
+        "duration": "April 2019 - Oct. 2020",
         "callouts": [
             "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
             "Implement the Lumen Framework to serve as a central API",
@@ -121,7 +121,7 @@
         "title": "Sr. Software Engineer",
         "technologies": "PHP, Laravel, Vue, Vuex",
         "location": "Remote",
-        "duration": "October 2020 - Present",
+        "duration": "Oct. 2020 - Oct. 2023",
         "callouts": [
             "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
             "Worked closely with Performance Marketing and Growth teams to help increase overall on-boarding conversion rates",
@@ -131,5 +131,17 @@
             "Work with engineering to improve site performance and reliability",
             "Implemented code styles/standards in the Javascript ecosystem"
         ]
+    },
+    {
+      "company": {
+        "name": "Yardzen",
+        "class": "yardzen",
+        "site": "https://yardzen.com"
+      },
+      "title": "Sr. Growth Engineer",
+      "technologies": "",
+      "location": "Remote",
+      "duration": "Oct. 2023 - Present",
+      "callouts": []
     }
 ]

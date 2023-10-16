@@ -18,16 +18,18 @@
       <div class="title font-bold">
         {{ job.title }}
       </div>
-      <div class="technologies">
-        <span
-          class="font-bold"
-          :class="job.company.class">
-          Technologies Used:
-        </span>
-        <span class="font-sans">
-          {{ job.technologies }}
-        </span>
-      </div>
+      <template v-if="job.technologies">
+        <div class="technologies">
+          <span
+            class="font-bold"
+            :class="job.company.class">
+            Technologies Used:
+          </span>
+          <span class="font-sans">
+            {{ job.technologies }}
+          </span>
+        </div>
+      </template>
       <ul class="callouts">
         <li
           v-for="(callout, index) in job.callouts"
@@ -103,6 +105,10 @@ const companyClass = computed(() => {
   }
   .technologies {
     @apply flex flex-wrap flex-1 max-w-full mt-4 md:mt-0;
+
+    span {
+      @apply mr-2;
+    }
   }
 }
 .company-info {
@@ -110,6 +116,9 @@ const companyClass = computed(() => {
 }
 .company-name {
   @apply tracking-wider;
+}
+.yardzen {
+  @apply text-yardzen;
 }
 .wild {
   @apply text-wild;
