@@ -8,7 +8,7 @@
   {
     "name": "Javascript",
     "duration": "10 Years",
-    "additional": "<strong>Frameworks/Libraries</strong>: Vue 2 (6 years), Vue 3 (1.5 year), Nuxt 2 (2.5 years), Nuxt 3 (1 year), jQuery (4 years), Knockout (1.5 year)<br><strong>Typescript</strong> 1.5 years",
+    "additional": "<strong>Frameworks/Libraries</strong><br><strong>Vue Ecosystem:</strong> Vue 2 (6 years), Vue 3 (2.5 year), Nuxt 2 (3 years), Nuxt 3 (1.5 year)<br><strong>React Ecosystem:</strong> React (0.5 year), Next (0.5 year)<br><strong>Typescript</strong> 1.5 years",
     "desc": ""
   },
   {
