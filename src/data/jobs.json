@@ -123,13 +123,14 @@
         "location": "Remote",
         "duration": "Oct. 2020 - Oct. 2023",
         "callouts": [
-            "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
             "Worked closely with Performance Marketing and Growth teams to help increase overall on-boarding conversion rates",
-            "Created interal tools for SEO/Performance Marketing Teams to help manage and improve the SEO ranking of our marketing site",
-            "Transitioning fragmented Vue/Laravel SPA to Vue 3 &amp; Nuxt 3",
+            "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
+            "Collaborated with Performance Marketing to create internal tools tailored for SEO/Marketing, reducing the pain points of managing SEO meta data",
+            "Collaborate with Product and Design as a strong voice for better UI/UX",
+            "Lead the transition of the fragmented Vue/Laravel SPA to Vue 3 &amp; Nuxt 3",
             "Work with engineering to maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
             "Work with engineering to improve site performance and reliability",
-            "Implemented code styles/standards in the Javascript ecosystem"
+            "Spearheaded the implementation of standardized code styles/standards within the Javascript ecosystem"
         ]
     },
     {
@@ -143,9 +144,9 @@
       "location": "Remote",
       "duration": "Oct. 2023 - Present",
       "callouts": [
-        "Collaborated with product and design teams to create impactful high-performing web pages with a focus on UI/UX",
+        "Collaborated with Product and Design teams to create impactful high-performing web pages with a focus on UI/UX",
         "Contributed to the development of a marketplace using React, Next, Nest, and GraphQL in collaboration with Product, Design, and Engineering teams",
-        "Engaged in growth strategy discussions with marketing, product, and design."
+        "Engaged in growth strategy discussions with Marketing, Product, and Design."
       ]
     }
 ]
