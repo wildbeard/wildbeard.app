@@ -139,13 +139,13 @@
         "site": "https://yardzen.com"
       },
       "title": "Sr. Growth Engineer",
-      "technologies": "React, Next, Nest, Typescript, WordPress, PHP",
+      "technologies": "React, Next, Nest, Typescript",
       "location": "Remote",
       "duration": "Oct. 2023 - Present",
       "callouts": [
-        "Help manage and maintain existing WordPress marketing site",
-        "Create and update WordPress components to help support marketing goals",
-        "Work closely with engineering and product to rapidly develop new products with Next.js"
+        "Collaborated with product and design teams to create impactful high-performing web pages with a focus on UI/UX",
+        "Contributed to the development of a marketplace using React, Next, Nest, and GraphQL in collaboration with Product, Design, and Engineering teams",
+        "Engaged in growth strategy discussions with marketing, product, and design."
       ]
     }
 ]
