@@ -8,17 +8,11 @@
   {
     "name": "Javascript",
     "duration": "10 Years",
-    "additional": "<strong>Frameworks/Libraries</strong><br><strong>Vue Ecosystem:</strong> Vue 2 (6 years), Vue 3 (2.5 year), Nuxt 2 (3 years), Nuxt 3 (1.5 year)<br><strong>React Ecosystem:</strong> React (0.5 year), Next (0.5 year)<br><strong>Typescript</strong> 1.5 years",
+    "additional": "<strong>Vue</strong>: Vue 2 (6 years), Vue 3 (2.5 year), Nuxt 2 (3 years), Nuxt 3 (1.5 year)<br><strong>React</strong>: React (0.5 year), Next (0.5 year)<br><strong>Typescript</strong>: 2 years",
     "desc": ""
   },
   {
-    "name": "Docker",
-    "duration": "1.5 Years",
-    "additional": "",
-    "desc": "Multi service builds and configuration"
-  },
-  {
-    "name": "Database",
+    "name": "Databases",
     "duration": "9 Years",
     "additional": "MySql (9 years), MariaDB (1.5 year), PSql (1.5 year), Redis (1 year), MongoDB (2 years), MsSql (1.5 year)",
     "desc": ""
@@ -26,13 +20,7 @@
   {
     "name": "Misc",
     "duration": "",
-    "additional": "",
-    "desc": "git 6 years, Grunt/Gulp 1.5 years, Webpack 2 years, Active Directory/LDAP 1.5 year, nginx 2.5 years"
-  },
-  {
-    "name": "nvim",
-    "duration": "2 Years",
-    "additional": "",
-    "desc": "Checkout my <a href='https://github.com/wildbeard/dotfiles' target='_blank'>dotfiles</a>"
+    "additional": "Where do you even classify these?",
+    "desc": "TailwindCSS (3 years), Sass (6 years), Figma (2 years), Docker (2 years), nginx (2.5 years)"
   }
 ]
