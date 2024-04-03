@@ -1,23 +1,74 @@
 <template>
-  <div class="relative bg-bossanova h-screen">
+  <nav class="fixed right-0 py-3 px-5 z-10">
+    <ul class="flex justify-end p-0 text-xl">
+      <li>
+        <router-link
+          to="/resume"
+          class="text-white py-3 px-2">
+          Resume
+        </router-link>
+      </li>
+      <li class="text-white">
+        <a
+          href="https://codepen.io/wildbeard"
+          target="_blank"
+          class="text-white py-3 px-2">
+          <FontAwesomeIcon
+            :icon="faCodepen"
+            title="Link to my CodePen" />
+        </a>
+      </li>
+      <li class="text-white">
+        <a
+          href="https://linkedin.com/in/prestonhaddock"
+          target="_blank"
+          class="text-white py-3 px-2">
+          <FontAwesomeIcon
+            :icon="faLinkedin"
+            title="Link to my LinkedIn" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="relative bg-bossanova h-[75vh]">
     <div class="absolute inset-y-0 right-0 w-1/2 h-1/2 flex items-center">
       <h1 class="text-7xl font-hobo text-white">
         Dev Logs
       </h1>
     </div>
-    <canvas
-      ref="canvas"
-      class="w-screen h-screen z-0"></canvas>
+    <canvas ref="canvas"></canvas>
+  </div>
+
+  <div class="bg-bossanova py-8">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-8 font-hobo text-3xl text-white text-center leading-10">
+        Hey, I'm Press: Software Engineer
+      </h2>
+
+      <p class="mb-2 text-white">
+        While the header above <span class="italic">says</span> Software
+        Engineer what it means is: I'm a passionate engineer who loves focusing
+        on the user experience and page performance.
+      </p>
+      <p class="text-white">
+        I love building websites and tools that anyone can use and enjoy. I've
+        found myself helping out across various industries ranging from sports,
+        distilling, and creative agencies to direct to consumer food delivery
+        and outdoor landscape design.
+      </p>
+    </div>
   </div>
 </template>
 
 <script setup>
 // @todo: Get TS to work w/nvim
 import { ref, onMounted } from 'vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const canvas = ref(null);
 onMounted(() => {
-  console.log('mounted');
   init();
 });
 
@@ -134,10 +185,10 @@ function resetCanvas(ctx, width, height) {
 
 function init() {
   const ctx = canvas.value.getContext('2d');
-  const width = document.body.offsetWidth;
-  const height = document.body.offsetHeight;
-  const stars = generateStars(width, height * 0.75);
-  const trees = generateTrees(-150, height * 0.75);
+  const width = innerWidth;
+  const height = innerHeight * 0.75;
+  const stars = generateStars(width, height);
+  const trees = generateTrees(-150, height);
 
   canvas.value.width = width;
   canvas.value.height = height;
@@ -145,7 +196,7 @@ function init() {
   // @todo: Implement an update and render fn
   resetCanvas(ctx, width, height);
   drawStars(ctx, stars);
-  drawSun(ctx, width * 0.75, height * 0.75);
+  drawSun(ctx, width * 0.75, height);
   drawTrees(ctx, trees);
 }
 </script>
