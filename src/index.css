@@ -3,11 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: BudgetHobo;
+  src: url('../public/Hobo.TTF');
+}
+
 @layer base {
   html {
     color: #333;
     font-size: 14pt;
   }
+
   body {
     background-color: #f2f2f2;
   }
