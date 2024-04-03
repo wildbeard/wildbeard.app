@@ -1,5 +1,6 @@
 <template>
-  <nav class="fixed right-0 py-3 px-5 z-10">
+  <nav
+    class="fixed right-0 py-2 px-5 bg-bossanova-600/50 border-bossanova-50 border-l-[1px] border-b-[1px] rounded-bl-xl z-10">
     <ul class="flex justify-end p-0 text-xl">
       <li>
         <router-link
