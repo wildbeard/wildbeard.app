@@ -93,39 +93,59 @@ function generateStars(width, maxHeight) {
  * @property {number[][]} points
  * @property {number} x
  * @property {number} y
+ * @property {string} color
  */
 
 /**
  * @param {Number} xOffset
  * @param {Number} yOffset
+ * @param {'small' | 'medium' | 'large'} size
  *
- * @returns {Tree[]}
+ * @returns {Tree[]} trees
  */
-function generateTrees(xOffset, yOffset) {
+function generateTrees(xOffset, yOffset, size) {
   const trees = [];
   const sizes = {
     small: [
-      [75, 150],
-      [150, 0],
+      [50, 100],
+      [100, 0],
     ],
-    medium: {},
-    large: {},
+    medium: [
+      [100, 200],
+      [200, 0],
+    ],
+    large: [
+      [150, 300],
+      [300, 0],
+    ],
   };
   let lastX = xOffset;
 
   for (let i = 0; i < 100; i++) {
+    const points = sizes[size];
     const randX = Math.floor(Math.random() * 100) + lastX;
-    const randY = Math.floor(
+    let randY = Math.floor(
       Math.random() * (yOffset + 75 - (yOffset + 1)) + yOffset,
     );
+    let color = null;
 
-    trees.push({
-      points: sizes.small,
-      x: randX,
-      y: randY,
-    });
+    if (size === 'small') {
+      color = '#5fbb85';
+    } else if (size === 'medium') {
+      randY += 40;
+      color = '#4e966c';
+    } else if (size === 'large') {
+      randY += 90;
+      color = '#45835f';
+    }
 
     lastX = randX;
+    trees.push({
+      points: points,
+      x: randX,
+      y: randY,
+      color,
+    });
   }
 
   return trees;
@@ -147,20 +167,22 @@ function drawStars(ctx, stars) {
 
 /**
  * @param {CanvasRenderingContext2D} ctx
- * @param {Tree[]} trees
+ * @param {{ small: Tree[], medium: Tree[], large: Tree[] }} trees
  */
 function drawTrees(ctx, trees) {
-  for (let tree of trees) {
-    ctx.beginPath();
-    ctx.moveTo(tree.x, tree.y);
+  for (let size of ['large', 'medium', 'small']) {
+    for (let tree of trees[size]) {
+      ctx.beginPath();
+      ctx.moveTo(tree.x, tree.y);
 
-    for (let point of tree.points) {
-      ctx.lineTo(tree.x + point[0], tree.y + -1 * point[1]);
+      for (let point of tree.points) {
+        ctx.lineTo(tree.x + point[0], tree.y + -1 * point[1]);
+      }
+
+      ctx.fillStyle = tree.color;
+      ctx.fill();
+      ctx.closePath();
     }
-
-    ctx.fillStyle = '#5fbb85';
-    ctx.fill();
-    ctx.closePath();
   }
 }
 
@@ -178,9 +200,18 @@ function drawSun(ctx, x, y) {
   ctx.closePath();
 }
 
+/**
+ * @param {CanvasRenderingContext2D} ctx
+ * @param {number} width
+ * @param {number} height
+ */
 function resetCanvas(ctx, width, height) {
+  const gradient = ctx.createLinearGradient(width / 2, 0, width / 2, height);
+  gradient.addColorStop(0, '#432951');
+  gradient.addColorStop(1, '#BD584C');
+
   ctx.clearRect(0, 0, width, height);
-  ctx.fillStyle = '#432951';
+  ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, width, height);
 }
 
@@ -189,7 +220,11 @@ function init() {
   const width = innerWidth;
   const height = innerHeight * 0.75;
   const stars = generateStars(width, height);
-  const trees = generateTrees(-150, height);
+  const trees = {
+    small: generateTrees(-150, height, 'small'),
+    medium: generateTrees(-150, height, 'medium'),
+    large: generateTrees(-150, height, 'large'),
+  };
 
   canvas.value.width = width;
   canvas.value.height = height;
