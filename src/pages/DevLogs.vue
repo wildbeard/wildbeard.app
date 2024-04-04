@@ -216,20 +216,24 @@ function resetCanvas(ctx, width, height, yOffset) {
   const gradient = ctx.createLinearGradient(width / 2, 0, width / 2, height);
   const offsetDiff =
     ((height - (height - yOffset)) / ((height + (height - yOffset)) / 2)) * 100;
+  const steps = [5, 10, 20, 25, 30, 35, 40, 45, 50, 55];
+  const step = steps.findIndex((n) => n >= offsetDiff);
+  const colorSteps = [
+    '#442a51',
+    '#482b51',
+    '#4b2c51',
+    '#553050',
+    '#5d3350',
+    '#653650',
+    '#6a384f',
+    '#743c4f',
+    '#7a3e4f',
+    '#7f404f',
+  ];
   let endColor = '#BD584c';
+
   gradient.addColorStop(0, '#432951');
-
-  // Works for now but we need more steps to make the transition smoother
-  if (offsetDiff >= 15 && offsetDiff <= 25) {
-    endColor = '#90474e';
-  } else if (offsetDiff >= 25 && offsetDiff <= 35) {
-    endColor = '#89444e';
-  } else if (offsetDiff >= 35 && offsetDiff <= 55) {
-    endColor = '#713b4f';
-  } else if (offsetDiff >= 55) {
-    endColor = '#432951';
-  }
-
+  endColor = colorSteps.reverse()[step] ?? '#432951';
   gradient.addColorStop(1, endColor);
 
   ctx.clearRect(0, 0, width, height);
