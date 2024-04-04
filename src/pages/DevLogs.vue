@@ -41,7 +41,7 @@
     <canvas ref="canvas"></canvas>
   </div>
 
-  <div class="bg-bossanova py-8">
+  <div class="bg-bossanova py-8 h-[75vh]">
     <div class="container mx-auto px-4">
       <h2 class="mb-8 font-hobo text-3xl text-white text-center leading-10">
         Hey, I'm Press: Software Engineer
@@ -132,10 +132,10 @@ function generateTrees(xOffset, yOffset, size) {
     if (size === 'small') {
       color = '#5fbb85';
     } else if (size === 'medium') {
-      randY += 40;
+      randY += 20;
       color = '#4e966c';
     } else if (size === 'large') {
-      randY += 90;
+      randY += 60;
       color = '#45835f';
     }
 
@@ -186,15 +186,22 @@ function drawTrees(ctx, trees) {
   }
 }
 
+function getSunPosition(xPos, yPos, yOffset) {
+  console.log(yPos);
+  return {
+    x: xPos,
+    y: yPos + yOffset / 2,
+  };
+}
+
 /**
  * @param {CanvasRenderingContext2D} ctx
- * @param {number} x
- * @param {number} y
+ * @param {{ x: number, y: number }} position
  */
-function drawSun(ctx, x, y) {
-  ctx.moveTo(x, y);
+function drawSun(ctx, position) {
+  ctx.moveTo(position.x, position.y);
   ctx.beginPath();
-  ctx.arc(x, y, 250, 0, Math.PI, Math.PI, true);
+  ctx.arc(position.x, position.y, 250, 0, Math.PI, Math.PI, true);
   ctx.fillStyle = '#BD584C';
   ctx.fill();
   ctx.closePath();
@@ -225,14 +232,29 @@ function init() {
     medium: generateTrees(-150, height, 'medium'),
     large: generateTrees(-150, height, 'large'),
   };
+  let sunPosition = getSunPosition(width * 0.75, height - 100, 0);
 
   canvas.value.width = width;
   canvas.value.height = height;
 
-  // @todo: Implement an update and render fn
-  resetCanvas(ctx, width, height);
-  drawStars(ctx, stars);
-  drawSun(ctx, width * 0.75, height);
-  drawTrees(ctx, trees);
+  const update = () => {
+    const { scrollY } = window;
+    sunPosition = getSunPosition(width * 0.75, height - 100, scrollY);
+  };
+
+  const render = () => {
+    resetCanvas(ctx, width, height);
+    drawStars(ctx, stars);
+    drawSun(ctx, sunPosition);
+    drawTrees(ctx, trees);
+  };
+
+  update();
+  render();
+
+  window.addEventListener('scroll', () => {
+    update();
+    render();
+  });
 }
 </script>
