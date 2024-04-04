@@ -6,6 +6,7 @@
 @font-face {
   font-family: BudgetHobo;
   src: url('../public/Hobo.TTF');
+  font-display: swap;
 }
 
 @layer base {
