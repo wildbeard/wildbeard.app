@@ -187,7 +187,6 @@ function drawTrees(ctx, trees) {
 }
 
 function getSunPosition(xPos, yPos, yOffset) {
-  console.log(yPos);
   return {
     x: xPos,
     y: yPos + yOffset / 2,
@@ -211,11 +210,27 @@ function drawSun(ctx, position) {
  * @param {CanvasRenderingContext2D} ctx
  * @param {number} width
  * @param {number} height
+ * @param {number} yOffset
  */
-function resetCanvas(ctx, width, height) {
+function resetCanvas(ctx, width, height, yOffset) {
   const gradient = ctx.createLinearGradient(width / 2, 0, width / 2, height);
+  const offsetDiff =
+    ((height - (height - yOffset)) / ((height + (height - yOffset)) / 2)) * 100;
+  let endColor = '#BD584c';
   gradient.addColorStop(0, '#432951');
-  gradient.addColorStop(1, '#BD584C');
+
+  // Works for now but we need more steps to make the transition smoother
+  if (offsetDiff >= 15 && offsetDiff <= 25) {
+    endColor = '#90474e';
+  } else if (offsetDiff >= 25 && offsetDiff <= 35) {
+    endColor = '#89444e';
+  } else if (offsetDiff >= 35 && offsetDiff <= 55) {
+    endColor = '#713b4f';
+  } else if (offsetDiff >= 55) {
+    endColor = '#432951';
+  }
+
+  gradient.addColorStop(1, endColor);
 
   ctx.clearRect(0, 0, width, height);
   ctx.fillStyle = gradient;
@@ -233,6 +248,7 @@ function init() {
     large: generateTrees(-150, height, 'large'),
   };
   let sunPosition = getSunPosition(width * 0.75, height - 100, 0);
+  let gradientOffset = 0;
 
   canvas.value.width = width;
   canvas.value.height = height;
@@ -240,10 +256,11 @@ function init() {
   const update = () => {
     const { scrollY } = window;
     sunPosition = getSunPosition(width * 0.75, height - 100, scrollY);
+    gradientOffset = scrollY;
   };
 
   const render = () => {
-    resetCanvas(ctx, width, height);
+    resetCanvas(ctx, width, height, gradientOffset);
     drawStars(ctx, stars);
     drawSun(ctx, sunPosition);
     drawTrees(ctx, trees);
