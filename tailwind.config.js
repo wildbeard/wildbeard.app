@@ -46,6 +46,9 @@ module.exports = {
         serif: 'Domine',
         hobo: 'BudgetHobo',
       },
+      screens: {
+        md: '810px',
+      },
     },
   },
   plugins: [

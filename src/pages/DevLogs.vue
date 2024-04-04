@@ -34,7 +34,7 @@
 
   <div class="relative bg-bossanova h-[75vh]">
     <div class="absolute inset-y-0 right-0 w-1/2 h-1/2 flex items-center">
-      <h1 class="text-7xl font-hobo text-white leading-10 tracking-wide">
+      <h1 class="text-7xl font-hobo text-white md:leading-10 tracking-wide">
         Dev Logs
       </h1>
     </div>
@@ -50,8 +50,8 @@
     </div>
 
     <div class="container mx-auto px-4">
-      <div class="flex -mx-4">
-        <div class="flex w-1/2 px-4">
+      <div class="flex flex-wrap -mx-4">
+        <div class="flex w-full md:w-1/2 px-4">
           <div class="py-2 px-4 bg-bossanova-600 rounded-lg">
             <h3 class="mb-4 text-xl text-[#f2f2f2] leading-8">
               Work Related
@@ -109,7 +109,7 @@
           </div>
         </div>
 
-        <div class="flex w-1/2 px-4">
+        <div class="flex w-full md:w-1/2 px-4">
           <div class="py-2 px-4 bg-bossanova-600 rounded-lg">
             <h3 class="mb-4 text-xl text-[#f2f2f2] leading-8">
               Working On:
