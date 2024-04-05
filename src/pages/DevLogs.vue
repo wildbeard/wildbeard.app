@@ -45,7 +45,7 @@
     <div class="container mx-auto px-4">
       <h2
         class="mb-8 font-hobo text-3xl text-[#f2f2f2] text-center tracking-wide leading-10">
-        Hey, I'm Press: Software Engineer
+        What I Do
       </h2>
     </div>
 
@@ -65,18 +65,32 @@
                 of taking designs of any kind and turning them into usuable
                 features on the web.
               </p>
-              <p class="">
+              <p>
                 I love building websites and tools that anyone can use and
                 enjoy. I've found myself helping out across various industries
                 ranging from sports, distilling, and creative agencies to direct
                 to consumer food delivery and outdoor landscape design.
+              </p>
+
+              <h4 class="my-3 text-lg leading-6">
+                Skills
+              </h4>
+
+              <p>
+                I love working with most web based technologies but love
+                <span class="text-[#42b883] font-semibold">Vue</span>,
+                <span class="text-[#8993be] font-semibold">PHP</span>,
+                <span class="text-[#38bdf8] font-semibold">TailwindCSS</span>,
+                and <span class="font-semibold">Javascript</span>. Well, loving
+                Javascript might be pushing it. No one really
+                <span class="font-semibold italic">loves</span> Javascript.
               </p>
             </div>
           </BasicCard>
 
           <BasicCard>
             <div>
-              <h3 class="my-4 text-xl leading-8">
+              <h3 class="mb-4 text-xl leading-8">
                 Work Un-related
               </h3>
               <p class="mb-2">
