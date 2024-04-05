@@ -79,10 +79,10 @@ function generateTrees(xOffset, yOffset, size) {
     if (size === 'small') {
       color = '#5fbb85';
     } else if (size === 'medium') {
-      randY += 20;
+      randY += 40;
       color = '#4e966c';
     } else if (size === 'large') {
-      randY += 60;
+      randY += 100;
       color = '#45835f';
     }
 
@@ -117,6 +117,126 @@ function drawStars(ctx, stars, height, yOffset) {
     ctx.beginPath();
     ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
     ctx.fillStyle = `rgba(255 255 255 / ${opacity}%)`;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+
+/**
+ * @param {CanvasRenderingContext2D} ctx
+ * @param {number} xOffset
+ * @param {number} yOffset
+ */
+function drawMountains(ctx, xOffset, yOffset) {
+  const mountains = [
+    {
+      shadow: [
+        [0, 100],
+        [200, 275],
+        [235, 200],
+        [215, 140],
+        [300, yOffset],
+        [0, yOffset],
+      ],
+      notShadow: [
+        [200, 275],
+        [450, yOffset],
+        [200, yOffset],
+        [200, 275],
+      ],
+    },
+    {
+      notShadow: [
+        [xOffset - 250, 75],
+        [xOffset - 100, 175],
+        [xOffset, yOffset],
+        [xOffset - 250, yOffset],
+      ],
+      shadow: [
+        [xOffset - 100, 175],
+        [xOffset + 175, yOffset],
+        [xOffset - 175, yOffset],
+      ],
+    },
+    {
+      shadow: [
+        [xOffset - 325, 250],
+        [xOffset - 100, yOffset],
+        [xOffset - 500, yOffset],
+        [xOffset - 390, 150],
+        [xOffset - 350, 160],
+      ],
+      notShadow: [
+        [xOffset - 600, yOffset],
+        [xOffset - 450, yOffset],
+        [xOffset - 390, 140],
+        [xOffset - 335, 140],
+        [xOffset - 325, 250],
+      ],
+    },
+    {
+      shadow: [
+        [xOffset - 699, yOffset],
+        [xOffset - 749, 200],
+        [xOffset - 925, yOffset],
+      ],
+      notShadow: [
+        [xOffset - 535, yOffset],
+        [xOffset - 750, 200],
+        [xOffset - 700, yOffset],
+      ],
+    },
+    {
+      shadow: [
+        [xOffset - 900, yOffset],
+        [xOffset - 984, 150],
+        [xOffset - 934, 200],
+        [xOffset - 924, 265],
+        [xOffset - 1115, 175],
+        [xOffset - 1250, 200],
+        [250, yOffset],
+      ],
+      notShadow: [
+        [xOffset - 699, yOffset],
+        [xOffset - 925, 265],
+        [xOffset - 935, 200],
+        [xOffset - 985, 150],
+        [xOffset - 900, yOffset],
+      ],
+    },
+  ];
+  const shadeColor = '#97869b';
+  const lightColor = '#cbbcce';
+
+  for (let { shadow, notShadow } of mountains) {
+    // Light Side
+    ctx.beginPath();
+    for (let i = 0; i < notShadow.length; i++) {
+      const yPos =
+        notShadow[i][1] === yOffset ? yOffset : yOffset - notShadow[i][1];
+
+      if (i === 0 || i === notShadow.length) {
+        ctx.moveTo(notShadow[i][0], yPos);
+      } else {
+        ctx.lineTo(notShadow[i][0], yPos);
+      }
+    }
+    ctx.fillStyle = lightColor;
+    ctx.fill();
+    ctx.closePath();
+
+    // Shadow
+    ctx.beginPath();
+    for (let i = 0; i < shadow.length; i++) {
+      const yPos = shadow[i][1] === yOffset ? yOffset : yOffset - shadow[i][1];
+
+      if (i === 0 || i === shadow.length) {
+        ctx.moveTo(shadow[i][0], yPos);
+      } else {
+        ctx.lineTo(shadow[i][0], yPos);
+      }
+    }
+    ctx.fillStyle = shadeColor;
     ctx.fill();
     ctx.closePath();
   }
@@ -162,7 +282,7 @@ function getSunPosition(xPos, yPos, yOffset) {
 function drawSun(ctx, position) {
   ctx.moveTo(position.x, position.y);
   ctx.beginPath();
-  ctx.arc(position.x, position.y, 250, 0, Math.PI, Math.PI, true);
+  ctx.arc(position.x, position.y, 250, 0, Math.PI * 2, Math.PI, true);
   ctx.fillStyle = '#BD584C';
   ctx.fill();
   ctx.closePath();
@@ -236,6 +356,7 @@ function init() {
     resetCanvas(ctx, width, height, scrollY);
     drawStars(ctx, stars, height, scrollY);
     drawSun(ctx, sunPosition);
+    drawMountains(ctx, width, height);
     drawTrees(ctx, trees);
   };
 
