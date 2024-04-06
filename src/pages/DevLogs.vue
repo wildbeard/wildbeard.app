@@ -262,6 +262,5 @@ import {
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
 //
 import BasicCard from '../components/BasicCard.vue';
-import CampfireIcon from '../components/svg/CampfireIcon.vue';
 import NightSky from '../components/NightSky.vue';
 </script>
