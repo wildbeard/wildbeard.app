@@ -3,7 +3,7 @@
     ref="nightsky"
     class="night-sky relative h-lvh md:h-[75vh] w-lvw bg-gradient-to-b from-40% from-[#2a2c3b] to-chestnut-600">
     <div class="stars absolute w-full h-full"></div>
-    <div class="trees absolute w-full h-full"></div>
+    <div class="trees absolute w-full h-full z-[11]"></div>
     <div class="wild-beard z-10">
       <img
         class="absolute -bottom-[20%] left-[18%] md:left-[32%] w-64 z-[11]"
@@ -265,22 +265,37 @@ function drawMountains(ctx, xOffset, yOffset) {
 }
 
 /**
- * @param {CanvasRenderingContext2D} ctx
  * @param {{ small: Tree[], medium: Tree[], large: Tree[] }} trees
  */
-function drawTrees(ctx, trees) {
+function drawTrees(trees) {
+  const container = document.querySelector('.trees');
+
   for (let size of ['large', 'medium', 'small']) {
     for (let tree of trees[size]) {
-      ctx.beginPath();
-      ctx.moveTo(tree.x, tree.y);
+      const t = document.createElement('span');
+      let p1 = '35px';
+      let p2 = '100px';
 
-      for (let point of tree.points) {
-        ctx.lineTo(tree.x + point[0], tree.y + -1 * point[1]);
+      if (size === 'medium') {
+        p1 = '53px';
+        p2 = '150px';
+      } else if (size === 'large') {
+        p1 = '75px';
+        p2 = '200px';
       }
 
-      ctx.fillStyle = tree.color;
-      ctx.fill();
-      ctx.closePath();
+      t.classList.add('tree', `tree--${size}`);
+      t.style.position = 'absolute';
+      t.style.left = `${tree.x}px`;
+      t.style.bottom = 0;
+      t.style.width = 0;
+      t.style.height = 0;
+
+      t.style.borderLeft = `${p1} solid transparent`;
+      t.style.borderRight = `${p1} solid transparent`;
+      t.style.borderBottom = `${p2} solid ${tree.color}`;
+
+      container.appendChild(t);
     }
   }
 }
@@ -378,7 +393,7 @@ function init() {
     drawStars(ctx, stars, height, scrollY);
     drawSun(ctx, sunPosition);
     drawMountains(ctx, width, height);
-    drawTrees(ctx, trees);
+    drawTrees(trees);
   };
 
   update();
@@ -392,8 +407,14 @@ function init() {
 
 onMounted(() => {
   const stars = generateStars(innerWidth, innerHeight);
+  const trees = {
+    small: generateTrees(-150, 0, 'small'),
+    medium: generateTrees(-150, 0, 'medium'),
+    large: generateTrees(-150, 0, 'large'),
+  };
 
   drawStars(stars, innerHeight, 0);
+  drawTrees(trees);
 });
 </script>
 
