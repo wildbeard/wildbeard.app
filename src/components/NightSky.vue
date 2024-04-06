@@ -6,10 +6,10 @@
     <div class="trees absolute w-full h-full z-[11]"></div>
     <div class="wild-beard z-10">
       <img
-        class="absolute -bottom-[20%] left-[18%] md:left-[32%] w-64 z-[11]"
+        class="absolute -bottom-[20%] left-[18%] md:left-[32%] w-64 lg:w-56 2xl:-bottom-[15%] z-[11]"
         src="@/assets/wildbeard.svg">
       <img
-        class="absolute bottom-0 -left-1/2 w-[200%] max-w-none z-10"
+        class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[110%] 2xl:left-0 z-10"
         src="@/assets/mountains.svg">
     </div>
   </div>
@@ -273,14 +273,14 @@ function drawTrees(trees) {
   for (let size of ['large', 'medium', 'small']) {
     for (let tree of trees[size]) {
       const t = document.createElement('span');
-      let p1 = '35px';
+      let p1 = '45px';
       let p2 = '100px';
 
       if (size === 'medium') {
-        p1 = '53px';
+        p1 = '65px';
         p2 = '150px';
       } else if (size === 'large') {
-        p1 = '75px';
+        p1 = '85px';
         p2 = '200px';
       }
 
@@ -442,6 +442,14 @@ onMounted(() => {
       left: 25%;
       width: 50vw;
       height: 50vw;
+    }
+
+    @media (min-width: 1024px) {
+      right: 15%;
+      bottom: -15%;
+      left: initial;
+      width: 500px;
+      height: 500px;
     }
   }
 }
