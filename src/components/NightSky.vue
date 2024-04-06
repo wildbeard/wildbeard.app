@@ -1,12 +1,24 @@
 <template>
-  <canvas ref="canvas"></canvas>
+  <div
+    ref="nightsky"
+    class="night-sky relative h-lvh md:h-[75vh] w-lvw bg-gradient-to-b from-40% from-[#2a2c3b] to-chestnut-600">
+    <div class="stars absolute w-full h-full"></div>
+    <div class="trees absolute w-full h-full"></div>
+    <div class="wild-beard z-10">
+      <img
+        class="absolute -bottom-[20%] left-[18%] md:left-[32%] w-64 z-[11]"
+        src="@/assets/wildbeard.svg">
+      <img
+        class="absolute bottom-0 -left-1/2 w-[200%] max-w-none z-10"
+        src="@/assets/mountains.svg">
+    </div>
+  </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
-const canvas = ref(null);
-
+const nightsky = ref(null);
 /**
  * @typedef {object} Tree
  * @property {number[][]} points
@@ -19,6 +31,7 @@ const canvas = ref(null);
  * @typedef {object} Star
  * @property {number} x
  * @property {number} y
+ * @property {number} r
  * @property {string} o
  */
 
@@ -33,7 +46,7 @@ function generateStars(maxX, maxY) {
 
   for (let i = 0; i < 500; i++) {
     stars.push({
-      r: Math.floor(Math.random() * 2 + 1),
+      r: Math.floor(Math.random() * 5 + 1),
       x: Math.floor(Math.random() * maxX + 1),
       y: Math.floor(Math.random() * maxY + 1),
       o: `${Math.floor(Math.random() * 50 + 1)}%`,
@@ -99,26 +112,35 @@ function generateTrees(xOffset, yOffset, size) {
 }
 
 /**
- * @param {CanvasRenderingContext2D} ctx
  * @param {Star[]} stars
  * @param {number} height
  * @param {number} yOffset
  */
-function drawStars(ctx, stars, height, yOffset) {
+function drawStars(stars, height, yOffset) {
   const offsetDiff = percentDifference(height, height - yOffset);
   const steps = [3, 8, 12, 17, 22, 27, 32, 37, 42, 47];
   const step = steps.findIndex((n) => n >= offsetDiff);
+  const container = document.querySelector('.stars');
 
   for (const star of stars) {
     const opacity =
       yOffset <= 0
         ? star.o.replace('%', '')
         : parseInt(star.o.replace('%', '')) + steps[step] * 3;
-    ctx.beginPath();
-    ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(255 255 255 / ${opacity}%)`;
-    ctx.fill();
-    ctx.closePath();
+    const s = document.createElement('span');
+
+    s.classList.add('star');
+    s.style.position = 'absolute';
+    s.style.top = `${star.y}px`;
+    s.style.left = `${star.x}px`;
+    s.style.display = 'block';
+    s.style.width = `${star.r}px`;
+    s.style.height = `${star.r}px`;
+    s.style.backgroundColor = 'white';
+    s.style.borderRadius = '50%';
+    s.style.opacity = `${opacity / 100}`;
+    s.style.zIndex = 1;
+    container.appendChild(s);
   }
 }
 
@@ -280,12 +302,9 @@ function getSunPosition(xPos, yPos, yOffset) {
  * @param {{ x: number, y: number }} position
  */
 function drawSun(ctx, position) {
-  ctx.moveTo(position.x, position.y);
-  ctx.beginPath();
   ctx.arc(position.x, position.y, 250, 0, Math.PI * 2, Math.PI, true);
   ctx.fillStyle = '#BD584C';
   ctx.fill();
-  ctx.closePath();
 }
 
 /**
@@ -349,7 +368,9 @@ function init() {
 
   const update = () => {
     const { scrollY } = window;
-    sunPosition = getSunPosition(width * 0.75, height - 100, scrollY);
+    const isMobile = matchMedia('(max-width: 810px)').matches;
+    const sunX = isMobile ? width / 2 : width * 0.75;
+    sunPosition = getSunPosition(sunX, height - 100, scrollY);
   };
 
   const render = () => {
@@ -370,6 +391,37 @@ function init() {
 }
 
 onMounted(() => {
-  init();
+  const stars = generateStars(innerWidth, innerHeight);
+
+  drawStars(stars, innerHeight, 0);
 });
 </script>
+
+<style lang="scss" scoped>
+.night-sky {
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    bottom: -25%;
+    left: -25%;
+    display: block;
+    width: 150vw;
+    height: 150vw;
+    // background-color: #8d3d3e;
+    border-radius: 50%;
+    content: ' ';
+    z-index: 1;
+
+    @apply bg-chestnut;
+
+    @media (min-width: 810px) {
+      bottom: -5%;
+      left: 25%;
+      width: 50vw;
+      height: 50vw;
+    }
+  }
+}
+</style>

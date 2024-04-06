@@ -1,4 +1,9 @@
 <template>
+  <img
+    class="absolute top-4 left-4 z-10"
+    src="@/assets/logo.svg"
+    title="The Wild Beard"
+    alt="Wild Beard">
   <nav
     class="fixed right-0 py-2 px-5 bg-bossanova-600/50 border-bossanova-50 border-l-[1px] border-b-[1px] rounded-bl-xl z-10">
     <ul class="flex justify-end p-0 text-xl">
@@ -32,12 +37,15 @@
     </ul>
   </nav>
 
-  <div class="relative bg-bossanova h-[75vh]">
-    <div class="absolute inset-y-0 right-0 w-1/2 h-1/2 flex items-center">
-      <h1 class="text-7xl font-hobo text-white md:leading-10 tracking-wide">
-        Dev Logs
+  <div class="relative bg-bossanova">
+    <div class="absolute w-3/4 top-[20%] left-[12.5%] z-10">
+      <h1
+        class="font-sans font-extrabold text-6xl text-center text-[#cbbccf] md:leading-10 tracking-wide z-10">
+        Hey! I'm Press.
+        <span class="block font-bold text-2xl text-[#9b899f] mt-6">I like turning pretty pictures into code.</span>
       </h1>
     </div>
+
     <NightSky />
   </div>
 
