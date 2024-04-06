@@ -51,7 +51,7 @@
   </div>
 
   <div class="relative bg-bossanova">
-    <div class="absolute w-3/4 top-[15%] left-[12.5%] z-10">
+    <div class="absolute w-3/4 top-[15%] left-[12.5%] xl:top-[25%] z-10">
       <h1
         class="font-sans font-extrabold text-6xl text-center text-[#cbbccf] md:leading-10 tracking-wide z-10">
         Hey! I'm Press.
