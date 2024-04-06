@@ -1,41 +1,54 @@
 <template>
-  <img
-    class="absolute top-4 left-4 z-10"
-    src="@/assets/logo.svg"
-    title="The Wild Beard"
-    alt="Wild Beard">
-  <nav
-    class="fixed right-0 py-2 px-5 bg-bossanova-600/50 border-bossanova-50 border-l-[1px] border-b-[1px] rounded-bl-xl z-10">
-    <ul class="flex justify-end p-0 text-xl">
-      <li>
-        <router-link
-          to="/resume"
-          class="text-[#f2f2f2] py-3 px-2">
-          Resume
-        </router-link>
-      </li>
-      <li class="text-[#f2f2f2]">
-        <a
-          href="https://codepen.io/wildbeard"
-          target="_blank"
-          class="text-[#f2f2f2] py-3 px-2">
-          <FontAwesomeIcon
-            :icon="faCodepen"
-            title="Link to my CodePen" />
-        </a>
-      </li>
-      <li class="text-[#f2f2f2]">
-        <a
-          href="https://linkedin.com/in/prestonhaddock"
-          target="_blank"
-          class="text-[#f2f2f2] py-3 px-2">
-          <FontAwesomeIcon
-            :icon="faLinkedin"
-            title="Link to my LinkedIn" />
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <div class="absolute top-0 right-0 left-0 py-4 z-10">
+    <div
+      class="container mx-auto px-4 lg:px-0 lg:flex lg:items-center lg:justify-between">
+      <img
+        class="mx-auto lg:mx-0"
+        src="@/assets/logo.svg"
+        title="The Wild Beard"
+        alt="Wild Beard">
+      <nav
+        class="fixed right-0 bottom-0 left-0 lg:relative lg:right-[unset] lg:bottom-[unset] lg:left-[unset] lg:w-max py-2 px-5 lg:p-0 lg:text-xl bg-slate-200 lg:bg-transparent border-t-bossanova-800 border-t-4 lg:border-t-transparent lg:border-t-0 z-10">
+        <ul class="flex justify-between">
+          <li class="lg:mr-2">
+            <router-link
+              to="/resume"
+              class="text-bossanova lg:text-white py-3 px-2">
+              <FontAwesomeIcon
+                :icon="faFileCode"
+                class="mr-1"
+                aria-hidden="true" />
+              Resume
+            </router-link>
+          </li>
+          <li class="lg:mr-2">
+            <a
+              href="https://codepen.io/wildbeard"
+              target="_blank"
+              class="text-bossanova lg:text-white py-3 px-2">
+              <FontAwesomeIcon
+                :icon="faCodepen"
+                class="mr-1"
+                aria-hidden="true " />
+              Codepen
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/prestonhaddock"
+              target="_blank"
+              class="text-bossanova lg:text-white py-3 px-2">
+              <FontAwesomeIcon
+                :icon="faLinkedin"
+                class="mr-1"
+                aria-hidden="true " />
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <div class="relative bg-bossanova">
     <div class="absolute w-3/4 top-[20%] left-[12.5%] z-10">
@@ -57,7 +70,7 @@
       </h2>
     </div>
 
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 pb-12 lg:pb-0">
       <div class="flex flex-wrap -mx-4">
         <div class="flex flex-wrap w-full md:w-1/2 px-4">
           <BasicCard class="mb-4">
@@ -241,13 +254,14 @@
 <script setup>
 // @todo: Get TS to work w/nvim
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import BasicCard from '../components/BasicCard.vue';
-
 import {
   faCodepen,
   faLinkedin,
   faSteamSquare,
 } from '@fortawesome/free-brands-svg-icons';
+import { faFileCode } from '@fortawesome/free-regular-svg-icons';
 //
+import BasicCard from '../components/BasicCard.vue';
+import CampfireIcon from '../components/svg/CampfireIcon.vue';
 import NightSky from '../components/NightSky.vue';
 </script>
