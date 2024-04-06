@@ -35,14 +35,14 @@
           </li>
           <li>
             <a
-              href="https://linkedin.com/in/prestonhaddock"
+              href="https://github.com/wildbeard"
               target="_blank"
               class="text-bossanova lg:text-white py-3 px-2">
               <FontAwesomeIcon
-                :icon="faLinkedin"
+                :icon="faGithub"
                 class="mr-1"
-                aria-hidden="true " />
-              LinkedIn
+                aria-hidden="true" />
+              Github
             </a>
           </li>
         </ul>
@@ -131,11 +131,8 @@
                 Brothers on NES. Recently, I've been going through the process
                 of writing down ideas for a game. Are they good? Probably not.
                 But aside from that, I am learning game dev using the Godot
-                engine. Learning is slow but you checkout
-                <a
-                  href="https://github.com/wildbeard/into-the-arena"
-                  target="_blank"
-                  class="underline">the game here</a>.
+                engine. It's taking the back burner but I setup a Trello board
+                so you know it's serious.
               </p>
 
               <p class="mb-2">
@@ -256,7 +253,7 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
   faCodepen,
-  faLinkedin,
+  faGithub,
   faSteamSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';

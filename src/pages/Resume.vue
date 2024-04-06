@@ -13,7 +13,22 @@
           <li>
             <a
               href="https://github.com/wildbeard"
-              target="_blank">github/wildbeard</a>
+              target="_blank">
+              <FontAwesomeIcon
+                :icon="faGithub"
+                aria-hidden="true" />
+              github/wildbeard
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/wildbeard"
+              target="_blank">
+              <FontAwesomeIcon
+                :icon="faCodepen"
+                aria-hidden="true" />
+              codepen/wildbeard
+            </a>
           </li>
         </ul>
       </div>
@@ -61,10 +76,13 @@
 </template>
 
 <script setup>
-import ResumeJob from "../components/ResumeJob.vue";
-import ResumeSkill from "../components/ResumeSkill.vue";
-import jobs from "../data/jobs.json";
-import skills from "../data/skills.json";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons';
+//
+import ResumeJob from '../components/ResumeJob.vue';
+import ResumeSkill from '../components/ResumeSkill.vue';
+import jobs from '../data/jobs.json';
+import skills from '../data/skills.json';
 
 jobs.reverse();
 </script>
