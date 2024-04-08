@@ -13,7 +13,7 @@
           <li class="lg:mr-2">
             <router-link
               to="/resume"
-              class="text-bossanova lg:text-white py-3 px-2">
+              class="text-bossanova lg:text-white md:py-3 md:px-2">
               <FontAwesomeIcon
                 :icon="faFileCode"
                 class="mr-1"
@@ -25,7 +25,7 @@
             <a
               href="https://codepen.io/wildbeard"
               target="_blank"
-              class="text-bossanova lg:text-white py-3 px-2">
+              class="text-bossanova lg:text-white md:py-3 md:px-2">
               <FontAwesomeIcon
                 :icon="faCodepen"
                 class="mr-1"
@@ -37,7 +37,7 @@
             <a
               href="https://github.com/wildbeard"
               target="_blank"
-              class="text-bossanova lg:text-white py-3 px-2">
+              class="text-bossanova lg:text-white md:py-3 md:px-2">
               <FontAwesomeIcon
                 :icon="faGithub"
                 class="mr-1"
@@ -51,9 +51,10 @@
   </div>
 
   <div class="relative bg-bossanova">
-    <div class="absolute w-3/4 top-[15%] left-[12.5%] xl:top-[25%] z-10">
+    <div
+      class="absolute w-3/4 top-[20%] min-[420px]:top-[15%] left-[12.5%] xl:top-[25%] z-10">
       <h1
-        class="font-sans font-extrabold text-6xl text-center text-[#cbbccf] md:leading-10 tracking-wide z-10">
+        class="font-sans font-extrabold text-3xl min-[420px]:text-5xl md:text-6xl text-center text-[#cbbccf] md:leading-10 tracking-wide z-10">
         Hey! I'm Press.
         <span class="block font-bold text-2xl text-[#9b899f] mt-6">I like turning pretty pictures into code.</span>
       </h1>
@@ -62,7 +63,7 @@
     <NightSky />
   </div>
 
-  <div class="bg-bossanova py-8">
+  <div class="bg-bossanova pt-8 pb-20">
     <div class="container mx-auto px-4">
       <h2
         class="mb-8 font-hobo text-3xl text-white text-center tracking-wide leading-10">
@@ -72,14 +73,14 @@
 
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
-        <div class="w-1/4 px-4">
+        <div class="hidden md:block w-1/4 px-4">
           <img
             src="@/assets/showering.svg"
             class="w-full"
             alt="A portrait of me lost in the shower">
         </div>
 
-        <div class="w-3/4 px-4">
+        <div class="md:w-3/4 px-4">
           <div class="text-white">
             <p class="mb-2">
               I'm a frontend developer who enjoys translating designs into
@@ -131,7 +132,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto mt-6 px-4">
       <h2
         class="mb-8 font-hobo text-3xl text-white text-center tracking-wide leading-10">
         How I Unwind
@@ -140,7 +141,7 @@
 
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
-        <div class="w-3/4 px-4 text-white">
+        <div class="md:w-3/4 px-4 text-white">
           <p class="mb-2">
             While not working you can usually find me spending time with my
             better half, playing games, working on project cars, or doing
@@ -149,7 +150,7 @@
             free time.
           </p>
 
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap mt-4">
             <div class="lg:w-1/2 lg:pr-4">
               <h4 class="text-white text-lg border-b-2 mb-4">
                 Cars
@@ -253,7 +254,7 @@
             </div>
           </div>
         </div>
-        <div class="w-1/4 px-4">
+        <div class="hidden md:block w-1/4 px-4">
           <img
             src="@/assets/showering.svg"
             class="w-full"
