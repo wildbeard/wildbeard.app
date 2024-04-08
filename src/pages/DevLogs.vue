@@ -65,183 +65,199 @@
   <div class="bg-bossanova py-8">
     <div class="container mx-auto px-4">
       <h2
-        class="mb-8 font-hobo text-3xl text-[#f2f2f2] text-center tracking-wide leading-10">
-        What I Do
+        class="mb-8 font-hobo text-3xl text-white text-center tracking-wide leading-10">
+        How I Work
       </h2>
     </div>
 
-    <div class="container mx-auto px-4 pb-12 lg:pb-0">
+    <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
-        <div class="flex flex-wrap w-full md:w-1/2 px-4">
-          <BasicCard class="mb-4">
-            <div>
-              <h3 class="mb-4 text-xl leading-8">
-                Work Related
-              </h3>
-              <p class="mb-2">
-                The header above
-                <span class="italic font-semibold">says</span> Software Engineer
-                what it means is: I'm a passionate engineer who loves focusing
-                on the user experience and page performance. I enjoy the process
-                of taking designs of any kind and turning them into usuable
-                features on the web.
-              </p>
-              <p>
-                I love building websites and tools that anyone can use and
-                enjoy. I've found myself helping out across various industries
-                ranging from sports, distilling, and creative agencies to direct
-                to consumer food delivery and outdoor landscape design.
-              </p>
-
-              <h4 class="my-3 text-lg leading-6">
-                Skills
-              </h4>
-
-              <p>
-                I love working with most web based technologies but love
-                <span class="text-[#42b883] font-semibold">Vue</span>,
-                <span class="text-[#8993be] font-semibold">PHP</span>,
-                <span class="text-[#38bdf8] font-semibold">TailwindCSS</span>,
-                and <span class="font-semibold">Javascript</span>. Well, loving
-                Javascript might be pushing it. No one really
-                <span class="font-semibold italic">loves</span> Javascript.
-              </p>
-            </div>
-          </BasicCard>
-
-          <BasicCard>
-            <div>
-              <h3 class="mb-4 text-xl leading-8">
-                Work Un-related
-              </h3>
-              <p class="mb-2">
-                While not working you can usually find me spending time with my
-                better half, playing games, working on project cars, or doing
-                something outdoors. I also try and maintain a healthy amount of
-                incomplete projects (*ahem* cars) to keep myself busy when I
-                have free time.
-              </p>
-
-              <h3 class="my-4 text-xl leading-8">
-                Learnings
-              </h3>
-              <p class="mb-2">
-                <span class="block font-semibold">Game Dev</span>
-                I've always played games -- all the way back to Super Mario
-                Brothers on NES. Recently, I've been going through the process
-                of writing down ideas for a game. Are they good? Probably not.
-                But aside from that, I am learning game dev using the Godot
-                engine. It's taking the back burner but I setup a Trello board
-                so you know it's serious.
-              </p>
-
-              <p class="mb-2">
-                <span class="block font-semibold">Neovim</span>
-                At the time the Vue LSP Vetur had a memory leak (or something)
-                in vscode. It would consume insane amounts of CPU and RAM on my
-                poor little Macbook. Stage left enters Neovim. I quit vscode
-                cold turkey and jumped straight into hljk. Now, anytime I need
-                to write some form of text if there's no vim-motions I feel a
-                deep sadness.
-              </p>
-            </div>
-          </BasicCard>
+        <div class="w-1/4 px-4">
+          <img
+            src="@/assets/showering.svg"
+            class="w-full"
+            alt="A portrait of me lost in the shower">
         </div>
 
-        <div class="flex flex-wrap w-full md:w-1/2 px-4">
-          <BasicCard class="mb-4">
-            <h3 class="mb-4 text-xl leading-8">
-              Working On:
-            </h3>
-
+        <div class="w-3/4 px-4">
+          <div class="text-white">
             <p class="mb-2">
-              <span class="block font-semibold">22 Tacoma 6MT:</span>
-              This is my go-to truck and daily driver. While it's mostly a
-              grocery getter it does serve a bigger purpose. From snow travel to
-              logging and taking us up and over mountain tops and into the
-              wilderness.
+              I'm a frontend developer who enjoys translating designs into
+              pixel-perfect websites and components. On top of that, it's a joy
+              to create websites and tools anyone can use and enjoy. I like
+              looking at something and saying "We did that and I was a part of
+              it."<br>
+              Lately, I've found myself doing a lot of development for growth
+              teams. It wasn't something I knew I wanted to do until I fell
+              headfirst into it. I enjoy helping product, marketing, and design
+              teams increase conversion through better page performance, A/B
+              testing, and better UI/UX patterns.
             </p>
 
-            <p class="mb-2">
-              <span class="block font-semibold">'93 F150:</span>
-              This was my grandfather's farm truck. I've spent more time in this
-              truck's bed as a kid going fishing and helping out around the farm
-              than I have spent driving it. It's beat up and not pretty but it
-              runs and it made the trip from OK. to CO. during the heat of
-              summer.
-            </p>
+            <h4 class="my-3 text-lg leading-6">
+              What I Work With
+            </h4>
 
             <p class="mb-2">
-              <span class="block font-semibold">'95 240sx:</span>
-              Arguably the worst lawn ornament I own. It doesn't run, the trunk
-              doesn't latch, and there's a spare motor in the passenger seat.
-              What started out as a high school project has become the "I'll get
-              to it someday" project.
-              <span class="block font-semibold">The Goal:</span> Auto or Rally
-              Cross. <span class="block font-semibold">The Plan:</span> There is
-              no plan.
+              I've worked with a lot more web technologies than I'd like to
+              admit. I've written backend code in ASP, ASP.NET, .Net, and
+              <span class="text-[#8993be] font-semibold">PHP</span>. On the
+              frontend I started with vanilla JS and jQuery. From there, I've
+              dabbled in Knockout and React before settling on
+              <span class="text-[#42b883] font-semibold">Vue</span>. After
+              bouncing around I finally decided to settle on the my holy
+              trinity:
+              <span class="text-[#f9322c] font-semibold">Laravel</span>,
+              <span class="text-[#42b883] font-semibold">Vue</span>, and
+              <span class="text-[#38bdf8] font-semibold">TailwindCSS</span>.
+              Despite convience of
+              <span class="text-[#38bdf8] font-semibold">TailwindCSS</span>, I
+              absolutely love writing with
+              <span class="text-[#cf649a] font-semibold">Sass</span>.
             </p>
-          </BasicCard>
 
-          <BasicCard>
-            <h3 class="mb-4 text-xl leading-8">
-              Playing:
-            </h3>
+            <p>
+              During my time as a dev, I've bounced between editors. I started
+              school with Notepad++, moved to Brackets, Atom, and settled on
+              VSCode. However, when a bug with Vetur was causing significant
+              memory and cpu usage (crippling my laptop!) I swapped to
+              <span class="text-[#00b952] font-semibold">Neovim</span>. It needs
+              no introduction but there's nothing better than those sweet,
+              sweet, vim motions. As a bonus, I'm a bit more efficient when
+              SSH'ing into servers!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <ul class="">
-              <li class="mb-2">
-                <FontAwesomeIcon
-                  :icon="faSteamSquare"
-                  class="mr-1" />
-                <a
-                  href="https://store.steampowered.com/app/892970/Valheim/"
-                  target="_blank"
-                  class="font-semibold underline">Valheim</a>
-                It's like Minecraft but with Vikings and better in every way.
-              </li>
-              <li class="mb-2">
-                <FontAwesomeIcon
-                  :icon="faSteamSquare"
-                  class="mr-1" />
-                <a
-                  href="https://store.steampowered.com/app/251570/7_Days_to_Die/"
-                  target="_blank"
-                  class="font-semibold underline">7DTD</a>
-                This game is beyond scuffed. But it's fun.
-              </li>
-              <li class="mb-2">
-                <FontAwesomeIcon
-                  :icon="faSteamSquare"
-                  class="mr-1" />
-                <a
-                  href="https://store.steampowered.com/app/1604030/V_Rising/"
-                  target="_blank"
-                  class="font-semibold underline">V-Rising</a>
-                Vampires &amp; Gothic Castles. Need I say more?
-              </li>
-              <li class="mb-2">
-                <FontAwesomeIcon
-                  :icon="faSteamSquare"
-                  class="mr-1" />
-                <a
-                  href="https://store.steampowered.com/app/671860/BattleBit_Remastered/"
-                  target="_blank"
-                  class="font-semibold underline">Battlebit Remastered</a>
-                This is what Battlefield would look like if EA cared.
-              </li>
-              <li class="mb-2">
-                <FontAwesomeIcon
-                  :icon="faSteamSquare"
-                  class="mr-1" />
-                <a
-                  href="https://store.steampowered.com/app/1063730/New_World/"
-                  target="_blank"
-                  class="font-semibold underline">New World</a>
-                There's no better David &amp; Goliath story. Except AGS is both
-                David and Goliath.
-              </li>
-            </ul>
-          </BasicCard>
+    <div class="container mx-auto px-4">
+      <h2
+        class="mb-8 font-hobo text-3xl text-white text-center tracking-wide leading-10">
+        How I Unwind
+      </h2>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-3/4 px-4 text-white">
+          <p class="mb-2">
+            While not working you can usually find me spending time with my
+            better half, playing games, working on project cars, or doing
+            something outdoors. I also try and maintain a healthy amount of
+            incomplete projects (*ahem* cars) to keep myself busy when I have
+            free time.
+          </p>
+
+          <div class="flex flex-wrap">
+            <div class="lg:w-1/2 lg:pr-4">
+              <h4 class="text-white text-lg border-b-2 mb-4">
+                Cars
+              </h4>
+
+              <p class="mb-2">
+                <span class="block font-semibold">22 Tacoma 6MT:</span>
+                This is my go-to truck and daily driver. While it's mostly a
+                grocery getter it does serve a bigger purpose. From snow travel
+                to logging and taking us up and over mountain tops and into the
+                wilderness.
+              </p>
+
+              <p class="mb-2">
+                <span class="block font-semibold">'93 F150:</span>
+                This was my grandfather's farm truck. I've spent more time in
+                this truck's bed as a kid going fishing and helping out around
+                the farm than I have spent driving it. It's beat up and not
+                pretty but it runs and it made the trip from OK. to CO. during
+                the heat of summer.
+              </p>
+
+              <p class="mb-2">
+                <span class="block font-semibold">'95 240sx:</span>
+                Arguably the worst lawn ornament I own. It doesn't run, the
+                trunk doesn't latch, and there's a spare motor in the passenger
+                seat. What started out as a high school project has become the
+                "I'll get to it someday" project.
+              </p>
+            </div>
+
+            <div class="lg:w-1/2 lg:pl-4">
+              <h4 class="text-white text-lg border-b-2 mb-4">
+                Games
+              </h4>
+              <ul>
+                <li class="mb-2">
+                  <FontAwesomeIcon
+                    :icon="faSteamSquare"
+                    class="mr-1" />
+                  <a
+                    href="https://store.steampowered.com/app/892970/Valheim/"
+                    target="_blank"
+                    class="text-white font-semibold underline">Valheim</a>
+                  It's like Minecraft but with Vikings and better in every way.
+                </li>
+                <li class="mb-2">
+                  <FontAwesomeIcon
+                    :icon="faSteamSquare"
+                    class="mr-1" />
+                  <a
+                    href="https://store.steampowered.com/app/251570/7_Days_to_Die/"
+                    target="_blank"
+                    class="text-white font-semibold underline">7DTD</a>
+                  This game is beyond scuffed. But it's fun.
+                </li>
+                <li class="mb-2">
+                  <FontAwesomeIcon
+                    :icon="faSteamSquare"
+                    class="mr-1" />
+                  <a
+                    href="https://store.steampowered.com/app/1604030/V_Rising/"
+                    target="_blank"
+                    class="text-white font-semibold underline">V-Rising</a>
+                  Vampires &amp; Gothic Castles. Need I say more?
+                </li>
+                <li class="mb-2">
+                  <FontAwesomeIcon
+                    :icon="faSteamSquare"
+                    class="mr-1" />
+                  <a
+                    href="https://store.steampowered.com/app/671860/BattleBit_Remastered/"
+                    target="_blank"
+                    class="text-white font-semibold underline">Battlebit Remastered</a>
+                  This is what Battlefield would look like if EA cared.
+                </li>
+                <li class="mb-2">
+                  <FontAwesomeIcon
+                    :icon="faSteamSquare"
+                    class="mr-1" />
+                  <a
+                    href="https://store.steampowered.com/app/1063730/New_World/"
+                    target="_blank"
+                    class="text-white font-semibold underline">New World</a>
+                  There's no better David &amp; Goliath story. Except AGS is
+                  both David and Goliath.
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    :icon="faGithub"
+                    class="mr-1" />
+                  <a
+                    href="https://github.com/wildbeard/into-the-arena"
+                    target="_blank"
+                    class="text-white font-semibold underline">A Godot Game</a>
+                  I've always wanted to make a game and now's my chance. I've
+                  been learning the Godot game engine in my spare time and
+                  tinkering with some concepts on pen &amp; paper.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4 px-4">
+          <img
+            src="@/assets/showering.svg"
+            class="w-full"
+            alt="A portrait of me lost in the shower">
         </div>
       </div>
     </div>
@@ -258,6 +274,5 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
 //
-import BasicCard from '../components/BasicCard.vue';
 import NightSky from '../components/NightSky.vue';
 </script>
