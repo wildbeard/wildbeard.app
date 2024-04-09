@@ -75,7 +75,7 @@
       <div class="flex flex-wrap -mx-4">
         <div class="hidden md:block w-1/4 px-4">
           <img
-            src="@/assets/showering.svg"
+            src="@/assets/desk.svg"
             class="w-full"
             alt="A portrait of me lost in the shower">
         </div>
