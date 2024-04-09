@@ -1,7 +1,7 @@
 <template>
   <div
     ref="nightsky"
-    class="night-sky relative h-lvh md:h-[75vh] w-lvw bg-gradient-to-b from-[#2a2c3b] to-chestnut-600">
+    class="night-sky relative h-[calc(100vh-50px)] md:h-[75vh] w-lvw bg-gradient-to-b from-[#2a2c3b] to-chestnut-600">
     <div
       ref="sun"
       class="sun"></div>
@@ -9,7 +9,7 @@
     <div class="trees absolute w-full h-full z-[11]"></div>
     <div class="wild-beard z-10">
       <img
-        class="absolute -bottom-[20%] left-[20%] md:left-[32%] w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]"
+        class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]"
         src="@/assets/wildbeard.svg">
       <img
         class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[90%] 2xl:left-[unset] 2xl:right-0 z-10"
@@ -200,10 +200,14 @@ onMounted(() => {
    * @param {number} scrollY
    */
   const updateSunPosition = (height, starting, scrollY) => {
-    const startingPerc = percentDifference(height, height - (500 - starting));
-    const offsetDiff = percentDifference(height, height - scrollY) * 0.75;
-    const bottomPer = startingPerc + offsetDiff;
-    sun.value.style.bottom = `-${bottomPer}%`;
+    const startingPerc = percentDifference(height, height - starting);
+    let val = (startingPerc + scrollY / 10) * -1;
+
+    if (val > 0 || val > startingPerc) {
+      val = startingPerc;
+    }
+
+    sun.value.style.bottom = `${val}%`;
   };
 
   /**
@@ -253,6 +257,7 @@ onMounted(() => {
 
   drawStars(stars, innerHeight, 0);
   drawTrees(trees);
+  updateSunPosition(innerHeight, startingSunPos, 0);
 
   window.addEventListener('scroll', () => {
     update(innerHeight, scrollY);
@@ -267,11 +272,11 @@ onMounted(() => {
 
   .sun {
     position: absolute;
-    bottom: -25%;
-    left: -15%;
+    bottom: -20%;
+    left: 5%;
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     // background-color: #8d3d3e;
     border-radius: 50%;
     content: ' ';
@@ -279,10 +284,11 @@ onMounted(() => {
 
     @apply bg-chestnut;
 
-    @media (min-width: 420px) {
-      left: -25%;
-      width: 150vw;
-      height: 150vw;
+    @media (min-width: 400px) {
+      bottom: -10%;
+      left: 3%;
+      width: 400px;
+      height: 400px;
     }
 
     @media (min-width: 810px) {
