@@ -63,7 +63,7 @@
     <NightSky />
   </div>
 
-  <div class="bg-bossanova pt-8 pb-20">
+  <div class="bg-bossanova py-8">
     <div class="container mx-auto px-4">
       <h2
         class="mb-8 font-hobo text-3xl text-white text-center tracking-wide leading-10">
@@ -128,8 +128,10 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container mx-auto mt-6 px-4">
+  <div class="pt-8 pb-20 bg-[#2a2c3b]">
+    <div class="container mx-auto px-4">
       <h2
         class="mb-8 font-hobo text-3xl text-white text-center tracking-wide leading-10">
         How I Unwind
