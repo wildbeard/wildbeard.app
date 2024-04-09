@@ -74,10 +74,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
         <div class="hidden md:block w-1/4 px-4">
-          <img
-            src="@/assets/desk.svg"
-            class="w-full"
-            alt="A portrait of me lost in the shower">
+          <AnimatedDesk class="w-full" />
         </div>
 
         <div class="md:w-3/4 px-4">
@@ -276,4 +273,5 @@ import {
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
 //
 import NightSky from '../components/NightSky.vue';
+import AnimatedDesk from '../components/SVG/AnimatedDesk.vue';
 </script>
