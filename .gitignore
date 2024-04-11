@@ -4,3 +4,10 @@
 /public/css
 /public/js
 /dist
+
+.output
+.nuxt
+.data
+.nitro
+.cache
+dist

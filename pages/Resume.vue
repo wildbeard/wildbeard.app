@@ -11,22 +11,14 @@
             <a href="mailto:prestonhaddock@gmail.com">prestonhaddock@gmail.com</a>
           </li>
           <li>
-            <a
-              href="https://github.com/wildbeard"
-              target="_blank">
-              <FontAwesomeIcon
-                :icon="faGithub"
-                aria-hidden="true" />
+            <a href="https://github.com/wildbeard" target="_blank">
+              <FontAwesomeIcon :icon="faGithub" aria-hidden="true" />
               github/wildbeard
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/wildbeard"
-              target="_blank">
-              <FontAwesomeIcon
-                :icon="faCodepen"
-                aria-hidden="true" />
+            <a href="https://github.com/wildbeard" target="_blank">
+              <FontAwesomeIcon :icon="faCodepen" aria-hidden="true" />
               codepen/wildbeard
             </a>
           </li>
@@ -64,10 +56,7 @@
           <h2 class="mb-4 text-2xl">
             Experience
           </h2>
-          <ResumeJob
-            v-for="job in jobs"
-            :key="job.company.name"
-            :job="job" />
+          <ResumeJob v-for="job in jobs" :key="job.company.name" :job="job" />
         </div>
       </div>
     </div>
@@ -79,15 +68,18 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons';
 //
-import ResumeJob from '../components/ResumeJob.vue';
-import ResumeSkill from '../components/ResumeSkill.vue';
-import jobs from '../data/jobs.json';
-import skills from '../data/skills.json';
+import jobs from '~/assets/data/jobs.json';
+import skills from '~/assets/data/skills.json';
 
 jobs.reverse();
 </script>
 
 <style lang="scss" scoped>
+#resume {
+  color: #333;
+  background-color: #f2f2f2;
+}
+
 .headline-row {
   @apply mb-9 pb-5 border-b-2;
   border-bottom-color: #333;
