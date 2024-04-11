@@ -76,7 +76,7 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap -mx-4">
           <div class="hidden md:block w-1/4 px-4">
-            <SVGAnimatedDesk class="w-full" />
+            <LazySVGAnimatedDesk class="w-full" />
           </div>
 
           <div class="md:w-3/4 px-4">
