@@ -3,7 +3,7 @@
         publish = 'dist/'
         command = 'npm run build'
     [context.staging]
-        publish = '.output/public'
+        publish = 'dist/'
         command = 'npx nuxi generate'    
 
 [[redirects]]
