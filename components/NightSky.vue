@@ -275,9 +275,7 @@ onMounted(() => {
     display: block;
     width: 350px;
     height: 350px;
-    // background-color: #8d3d3e;
     border-radius: 50%;
-    content: ' ';
     z-index: 10;
 
     @apply bg-chestnut;
