@@ -14,11 +14,12 @@
           <ul class="flex justify-between">
             <li class="lg:mr-2">
               <nuxt-link
+                deferred
                 to="/resume"
                 class="text-bossanova lg:text-white md:py-3 md:px-2">
                 <FontAwesomeIcon
                   :icon="faFileCode"
-                  class="mr-1"
+                  class="w-[0.875rem] lg:w-4 mr-1"
                   aria-hidden="true" />
                 Resume
               </nuxt-link>
@@ -30,7 +31,7 @@
                 class="text-bossanova lg:text-white md:py-3 md:px-2">
                 <FontAwesomeIcon
                   :icon="faCodepen"
-                  class="mr-1"
+                  class="w-[0.875rem] lg:w-4 mr-1"
                   aria-hidden="true " />
                 Codepen
               </a>
@@ -42,7 +43,7 @@
                 class="text-bossanova lg:text-white md:py-3 md:px-2">
                 <FontAwesomeIcon
                   :icon="faGithub"
-                  class="mr-1"
+                  class="w-[0.875rem] lg:w-4 mr-1"
                   aria-hidden="true" />
                 Github
               </a>
