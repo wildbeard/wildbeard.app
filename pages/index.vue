@@ -14,7 +14,7 @@
           <ul class="flex justify-between">
             <li class="lg:mr-2">
               <nuxt-link
-                deferred
+                no-prefetch
                 to="/resume"
                 class="text-bossanova lg:text-white md:py-3 md:px-2">
                 <FontAwesomeIcon
@@ -25,7 +25,8 @@
               </nuxt-link>
             </li>
             <li class="lg:mr-2">
-              <a
+              <NuxtLink
+                external
                 href="https://codepen.io/wildbeard"
                 target="_blank"
                 class="text-bossanova lg:text-white md:py-3 md:px-2">
@@ -34,10 +35,11 @@
                   class="w-[0.875rem] lg:w-4 mr-1"
                   aria-hidden="true " />
                 Codepen
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
+              <NuxtLink
+                external
                 href="https://github.com/wildbeard"
                 target="_blank"
                 class="text-bossanova lg:text-white md:py-3 md:px-2">
@@ -46,7 +48,7 @@
                   class="w-[0.875rem] lg:w-4 mr-1"
                   aria-hidden="true" />
                 Github
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </nav>
