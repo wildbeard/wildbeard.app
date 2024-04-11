@@ -265,7 +265,4 @@ import {
   faSteamSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
-//
-import NightSky from '../components/NightSky.vue';
-import AnimatedDesk from '../components/SVG/AnimatedDesk.vue';
 </script>

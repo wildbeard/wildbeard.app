@@ -20,7 +20,6 @@
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import { NuxtImg } from '#build/components';
 
 const sun = ref(null);
 const nightsky = ref(null);
