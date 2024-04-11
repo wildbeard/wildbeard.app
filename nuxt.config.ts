@@ -32,10 +32,10 @@ export default defineNuxtConfig({
     netlify: {
       baseURL: (() => {
         if (process.env.APP_ENV === 'production') {
-          return 'https://wildbeard.app';
+          return 'https://wildbeard.app/.netlify/images';
         }
 
-        return `https://${process.env.APP_ENV}--wildbeard.netlify.app`;
+        return `https://${process.env.APP_ENV}--wildbeard.netlify.app/.netlify/images`;
       })(),
     },
   },
