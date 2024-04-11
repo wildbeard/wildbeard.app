@@ -30,13 +30,13 @@ export default defineNuxtConfig({
   image: {
     provider: 'netlify',
     netlify: {
-      baseURL: () => {
+      baseURL: (() => {
         if (process.env.APP_ENV === 'production') {
-          return 'https://wildbeard.dev/';
+          return 'https://wildbeard.app';
         }
 
-        return 'https://staging--wildbeard.netlify.app';
-      },
+        return `https://${process.env.APP_ENV}--wildbeard.netlify.app`;
+      })(),
     },
   },
 });
