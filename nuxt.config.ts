@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       title: 'Wild Beard',
       meta: [
         {
-          property: 'og:description',
+          property: 'description',
           content: 'Building and breaking things on the web.',
         },
         {
