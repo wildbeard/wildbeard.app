@@ -2,6 +2,14 @@ module.exports = {
   extends: ['@nuxtjs/eslint-config-typescript'],
   rules: {
     'comma-dangle': ['error', 'only-multiline'],
+    'space-before-function-paren': [
+      'error',
+      {
+        named: 'never',
+        asyncArrow: 'always',
+        anonymous: 'always',
+      },
+    ],
     semi: ['error', 'always'],
     'vue/html-closing-bracket-newline': [
       'error',

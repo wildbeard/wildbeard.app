@@ -19,8 +19,6 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-
 const sun = ref(null);
 const nightsky = ref(null);
 /**
@@ -67,7 +65,7 @@ function generateStars(maxX, maxY) {
  *
  * @returns {Tree[]} trees
  */
-function generateTrees (xOffset, yOffset, size) {
+function generateTrees(xOffset, yOffset, size) {
   const trees = [];
   const sizes = {
     small: [
@@ -118,7 +116,7 @@ function generateTrees (xOffset, yOffset, size) {
 /**
  * @param {Star[]} stars
  */
-function drawStars (stars) {
+function drawStars(stars) {
   const container = document.querySelector('.stars');
 
   for (const star of stars) {
@@ -143,7 +141,7 @@ function drawStars (stars) {
 /**
  * @param {{ small: Tree[], medium: Tree[], large: Tree[] }} trees
  */
-function drawTrees (trees) {
+function drawTrees(trees) {
   const container = document.querySelector('.trees');
 
   for (const size of ['large', 'medium', 'small']) {
@@ -182,7 +180,7 @@ function drawTrees (trees) {
  *
  * @returns {number}
  */
-function percentDifference (a, b) {
+function percentDifference(a, b) {
   return ((a - b) / (a + b) / 2) * 100;
 }
 
