@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '/Le-Beard.png' }],
     },
   },
-  css: ['~/assets/css/index.css'],
+  // css: ['~/assets/css/index.css'],
   devtools: {
     enabled: true,
   },

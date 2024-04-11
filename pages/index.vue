@@ -5,7 +5,7 @@
         class="container mx-auto px-4 lg:px-0 lg:flex lg:items-center lg:justify-between">
         <NuxtImg
           preload
-          class="mx-auto lg:mx-0"
+          class="mx-auto lg:mx-0 w-32"
           src="logo.svg"
           title="The Wild Beard"
           alt="Wild Beard" />
@@ -76,7 +76,7 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap -mx-4">
           <div class="hidden md:block w-1/4 px-4">
-            <LazySVGAnimatedDesk class="w-full" />
+            <SVGAnimatedDesk class="w-full" />
           </div>
 
           <div class="md:w-3/4 px-4">
