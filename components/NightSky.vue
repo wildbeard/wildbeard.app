@@ -2,24 +2,25 @@
   <div
     ref="nightsky"
     class="night-sky relative h-[calc(100vh-50px)] md:h-[75vh] w-lvw bg-gradient-to-b from-[#2a2c3b] to-chestnut-600">
-    <div
-      ref="sun"
-      class="sun"></div>
+    <div ref="sun" class="sun"></div>
     <div class="stars absolute w-full h-full"></div>
     <div class="trees absolute w-full h-full z-[11]"></div>
     <div class="wild-beard z-10">
-      <img
+      <NuxtImg
         class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]"
-        src="@/assets/wildbeard.svg">
-      <img
+        preload
+        src="~/assets/wildbeard.svg" />
+      <NuxtImg
         class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[90%] 2xl:left-[unset] 2xl:right-0 z-10"
-        src="@/assets/mountains.svg">
+        preload
+        src="~/assets/mountains.svg" />
     </div>
   </div>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue';
+import { NuxtImg } from '#build/components';
 
 const sun = ref(null);
 const nightsky = ref(null);
@@ -67,7 +68,7 @@ function generateStars(maxX, maxY) {
  *
  * @returns {Tree[]} trees
  */
-function generateTrees(xOffset, yOffset, size) {
+function generateTrees (xOffset, yOffset, size) {
   const trees = [];
   const sizes = {
     small: [
@@ -105,7 +106,7 @@ function generateTrees(xOffset, yOffset, size) {
 
     lastX = randX;
     trees.push({
-      points: points,
+      points,
       x: randX,
       y: randY,
       color,
@@ -118,7 +119,7 @@ function generateTrees(xOffset, yOffset, size) {
 /**
  * @param {Star[]} stars
  */
-function drawStars(stars) {
+function drawStars (stars) {
   const container = document.querySelector('.stars');
 
   for (const star of stars) {
@@ -143,11 +144,11 @@ function drawStars(stars) {
 /**
  * @param {{ small: Tree[], medium: Tree[], large: Tree[] }} trees
  */
-function drawTrees(trees) {
+function drawTrees (trees) {
   const container = document.querySelector('.trees');
 
-  for (let size of ['large', 'medium', 'small']) {
-    for (let tree of trees[size]) {
+  for (const size of ['large', 'medium', 'small']) {
+    for (const tree of trees[size]) {
       const t = document.createElement('span');
       let p1 = '45px';
       let p2 = '100px';
@@ -182,7 +183,7 @@ function drawTrees(trees) {
  *
  * @returns {number}
  */
-function percentDifference(a, b) {
+function percentDifference (a, b) {
   return ((a - b) / (a + b) / 2) * 100;
 }
 
@@ -234,7 +235,7 @@ onMounted(() => {
     updateSunPosition(height, startingSunPos, scrollY);
     const offsetDiff = percentDifference(height, height - scrollY) * 2;
     const steps = [3, 8, 12, 17, 22, 27, 32, 37, 42, 47];
-    const step = steps.findIndex((n) => n >= offsetDiff);
+    const step = steps.findIndex(n => n >= offsetDiff);
     const colorSteps = [
       '#442a51',
       '#482b51',
@@ -251,7 +252,7 @@ onMounted(() => {
     endColor = colorSteps.reverse()[step] ?? '#432951';
     nightsky.value.style.setProperty('--tw-gradient-to', endColor);
   };
-  let startingSunPos = parseInt(
+  const startingSunPos = parseInt(
     getComputedStyle(sun.value).bottom.replace('px', ''),
   );
 
