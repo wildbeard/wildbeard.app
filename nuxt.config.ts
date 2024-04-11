@@ -29,5 +29,14 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   image: {
     provider: 'netlify',
+    netlify: {
+      baseURL: () => {
+        if (process.env.APP_ENV === 'production') {
+          return 'https://wildbeard.dev/';
+        }
+
+        return 'https://staging--wildbeard.netlify.app';
+      },
+    },
   },
 });
