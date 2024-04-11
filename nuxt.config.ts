@@ -31,7 +31,10 @@ export default defineNuxtConfig({
     // dir: 'assets',
     provider: 'netlify',
     netlify: {
-      baseURL: 'https://wildbeard.netlify.app',
+      baseURL: () => {
+        const prefix = process.env.APP_ENV === 'staging' ? 'staging--' : null;
+        return `https://${prefix}wildbeard.netlify.app/.netlify/images`;
+      },
     },
   },
 });
