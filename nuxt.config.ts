@@ -28,7 +28,10 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   image: {
-    dir: 'assets',
+    // dir: 'assets',
+    provider: 'netlify',
+    netlify: {
+      baseURL: 'https://wildbeard.netlify.app',
+    },
   },
 });
-

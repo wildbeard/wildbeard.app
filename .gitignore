@@ -11,3 +11,6 @@
 .nitro
 .cache
 dist
+
+# Local Netlify folder
+.netlify
