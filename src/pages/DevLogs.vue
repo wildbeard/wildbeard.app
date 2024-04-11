@@ -182,7 +182,7 @@
             </div>
 
             <div class="lg:w-1/2 lg:pl-4">
-              <h4 class="text-white text-lg border-b-2 mb-4">
+              <h4 class="mt-4 lg:mt-0 text-white text-lg border-b-2 mb-4">
                 Games
               </h4>
               <ul>
