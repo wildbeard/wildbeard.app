@@ -39,21 +39,6 @@ export default defineNuxtConfig({
   },
   ssr: true,
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
-  image: {
-    dir: 'assets',
-    /*
-    provider: 'netlify',
-    netlify: {
-      baseURL: (() => {
-        if (process.env.APP_ENV === 'production') {
-          return 'https://wildbeard.app/.netlify/images';
-        }
-
-        return `https://${process.env.APP_ENV}--wildbeard.netlify.app/.netlify/images`;
-      })(),
-    },
-    */
-  },
   // See: https://nuxt.com/docs/getting-started/styling#lcp-advanced-optimizations
   // However, some of the CSS files are still being included even though
   // everything is inlined.
