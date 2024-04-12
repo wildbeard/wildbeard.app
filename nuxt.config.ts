@@ -20,7 +20,12 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/Le-Beard.png' },
-        { rel: 'preload', type: 'font/ttf', href: '/fonts/Hobo.TTF' },
+        {
+          rel: 'preload',
+          type: 'font/ttf',
+          as: 'font',
+          href: '/fonts/Hobo.ttf',
+        },
         {
           rel: 'preconnect',
           href: 'https://fonts.gstatic.com',
