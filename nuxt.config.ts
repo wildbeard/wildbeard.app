@@ -18,7 +18,14 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Wild Beard' },
         { property: 'og:url', content: 'https://wildbeard.dev' },
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/Le-Beard.png' }],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/Le-Beard.png' },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'anonymous',
+        },
+      ],
     },
   },
   devtools: {
