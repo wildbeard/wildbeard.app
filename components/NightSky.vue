@@ -6,10 +6,10 @@
     <div class="stars absolute w-full h-full"></div>
     <div class="trees absolute w-full h-full z-[11]"></div>
     <div class="wild-beard z-10">
-      <NuxtImg
-        class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]"
-        preload
-        src="/wildbeard.svg" />
+      <div
+        class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]">
+        <SVGWildBeard class="w-full h-full" />
+      </div>
       <NuxtImg
         class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[90%] 2xl:left-[unset] 2xl:right-0 z-10"
         preload
