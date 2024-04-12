@@ -1,31 +1,16 @@
 module.exports = {
-  extends: [
-    'plugin:vue/vue3-recommended',
-  ],
-  //settings: {
-  //  'import/resolver': {
-  //    'eslint-import-resolver-custom-alias': {
-  //      alias: {
-  //        '@': path.resolve(__dirname, './src'),
-  //      },
-  //      extensions: [
-  //        '.js',
-  //        '.vue',
-  //      ],
-  //    },
-  //  },
-  //},
-  overrides: [
-    {
-      files: [
-        "src/pages/**/*.vue",
-      ],
-      rules: {
-        "vue/multi-word-component-names": "off",
-      },
-    },
-  ],
+  extends: ['@nuxtjs/eslint-config-typescript'],
   rules: {
+    'comma-dangle': ['error', 'only-multiline'],
+    'space-before-function-paren': [
+      'error',
+      {
+        named: 'never',
+        asyncArrow: 'always',
+        anonymous: 'always',
+      },
+    ],
+    semi: ['error', 'always'],
     'vue/html-closing-bracket-newline': [
       'error',
       {
@@ -48,7 +33,17 @@ module.exports = {
       {
         ignoreWhenNoAttributes: true,
         ignoreWhenEmpty: true,
-        ignores: ['router-link', 'b', 'span', 'strong', 'sup', 'sub', 'em', 'i', 'a'],
+        ignores: [
+          'router-link',
+          'b',
+          'span',
+          'strong',
+          'sup',
+          'sub',
+          'em',
+          'i',
+          'a',
+        ],
       },
     ],
     'max-len': [
@@ -58,10 +53,7 @@ module.exports = {
         ignorePattern: 'd="([\\s\\S]*?)"', // svg path d=".."
       },
     ],
-    'no-return-assign': [
-      'error',
-      'except-parens',
-    ],
+    'no-return-assign': ['error', 'except-parens'],
     'no-plusplus': [
       'error',
       {

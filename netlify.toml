@@ -4,7 +4,7 @@
         command = 'npm run build'
     [context.staging]
         publish = 'dist/'
-        command = 'npm run build'    
+        command = 'npx nuxi generate'    
 
 [[redirects]]
     from = "/*"

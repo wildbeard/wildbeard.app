@@ -2,25 +2,23 @@
   <div
     ref="nightsky"
     class="night-sky relative h-[calc(100vh-50px)] md:h-[75vh] w-lvw bg-gradient-to-b from-[#2a2c3b] to-chestnut-600">
-    <div
-      ref="sun"
-      class="sun"></div>
+    <div ref="sun" class="sun"></div>
     <div class="stars absolute w-full h-full"></div>
     <div class="trees absolute w-full h-full z-[11]"></div>
     <div class="wild-beard z-10">
-      <img
-        class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]"
-        src="@/assets/wildbeard.svg">
-      <img
-        class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[90%] 2xl:left-[unset] 2xl:right-0 z-10"
-        src="@/assets/mountains.svg">
+      <div
+        class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]">
+        <SVGWildBeard class="w-full h-full" />
+      </div>
+      <div
+        class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[90%] 2xl:left-[unset] 2xl:right-0 z-10">
+        <SVGMountainBg class="w-full h-full" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-
 const sun = ref(null);
 const nightsky = ref(null);
 /**
@@ -105,7 +103,7 @@ function generateTrees(xOffset, yOffset, size) {
 
     lastX = randX;
     trees.push({
-      points: points,
+      points,
       x: randX,
       y: randY,
       color,
@@ -146,8 +144,8 @@ function drawStars(stars) {
 function drawTrees(trees) {
   const container = document.querySelector('.trees');
 
-  for (let size of ['large', 'medium', 'small']) {
-    for (let tree of trees[size]) {
+  for (const size of ['large', 'medium', 'small']) {
+    for (const tree of trees[size]) {
       const t = document.createElement('span');
       let p1 = '45px';
       let p2 = '100px';
@@ -234,7 +232,7 @@ onMounted(() => {
     updateSunPosition(height, startingSunPos, scrollY);
     const offsetDiff = percentDifference(height, height - scrollY) * 2;
     const steps = [3, 8, 12, 17, 22, 27, 32, 37, 42, 47];
-    const step = steps.findIndex((n) => n >= offsetDiff);
+    const step = steps.findIndex(n => n >= offsetDiff);
     const colorSteps = [
       '#442a51',
       '#482b51',
@@ -251,7 +249,7 @@ onMounted(() => {
     endColor = colorSteps.reverse()[step] ?? '#432951';
     nightsky.value.style.setProperty('--tw-gradient-to', endColor);
   };
-  let startingSunPos = parseInt(
+  const startingSunPos = parseInt(
     getComputedStyle(sun.value).bottom.replace('px', ''),
   );
 
@@ -277,9 +275,7 @@ onMounted(() => {
     display: block;
     width: 350px;
     height: 350px;
-    // background-color: #8d3d3e;
     border-radius: 50%;
-    content: ' ';
     z-index: 10;
 
     @apply bg-chestnut;

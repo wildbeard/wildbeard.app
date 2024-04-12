@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
+
+@font-face {
+  font-family: BudgetHobo;
+  src: url('/fonts/Hobo.TTF');
+  font-display: swap;
+}
+
+html {
+  color: #333;
+  font-size: 14pt;
+}
+
+body {
+  background-color: #f2f2f2;
+}
