@@ -251,7 +251,8 @@
             <NuxtImg
               src="/showering.svg"
               class="w-full"
-              alt="A portrait of me lost in the shower" />
+              alt="A portrait of me lost in the shower"
+              loading="lazy" />
           </div>
         </div>
       </div>
