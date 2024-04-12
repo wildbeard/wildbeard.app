@@ -20,6 +20,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/Le-Beard.png' },
+        { rel: 'preload', type: 'font/ttf', href: '/fonts/Hobo.TTF' },
         {
           rel: 'preconnect',
           href: 'https://fonts.gstatic.com',
@@ -34,6 +35,8 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   image: {
+    dir: 'assets',
+    /*
     provider: 'netlify',
     netlify: {
       baseURL: (() => {
@@ -44,6 +47,7 @@ export default defineNuxtConfig({
         return `https://${process.env.APP_ENV}--wildbeard.netlify.app/.netlify/images`;
       })(),
     },
+    */
   },
   // See: https://nuxt.com/docs/getting-started/styling#lcp-advanced-optimizations
   // However, some of the CSS files are still being included even though
