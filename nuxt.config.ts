@@ -2,12 +2,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'eng',
+        lang: 'en-US',
       },
-      title: 'Wild Beard',
+      title: 'Wild Beard aka Press',
       meta: [
         {
-          property: 'description',
+          name: 'description',
           content: 'Building and breaking things on the web.',
         },
         {

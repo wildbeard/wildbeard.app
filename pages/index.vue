@@ -33,7 +33,7 @@
                 <FontAwesomeIcon
                   :icon="faCodepen"
                   class="w-[0.875rem] lg:w-4 mr-1"
-                  aria-hidden="true " />
+                  aria-hidden="true" />
                 Codepen
               </NuxtLink>
             </li>
