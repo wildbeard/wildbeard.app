@@ -9,11 +9,11 @@
       <NuxtImg
         class="absolute -bottom-[20%] left-[22%] min-[390px]:-bottom-[15%] md:left-[32%] w-44 min-[390px]:w-48 md:w-64 lg:w-56 min-[1440px]:w-48 2xl:-bottom-[15%] z-[11]"
         preload
-        src="wildbeard.svg" />
+        src="/wildbeard.svg" />
       <NuxtImg
         class="absolute bottom-0 -left-1/2 w-[200%] max-w-none lg:w-[125%] lg:-left-[15%] 2xl:w-[90%] 2xl:left-[unset] 2xl:right-0 z-10"
         preload
-        src="mountains.svg" />
+        src="/mountains.svg" />
     </div>
   </div>
 </template>

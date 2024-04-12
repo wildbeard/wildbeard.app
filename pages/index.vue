@@ -6,7 +6,7 @@
         <NuxtImg
           preload
           class="mx-auto lg:mx-0 w-32"
-          src="logo.svg"
+          src="/logo.svg"
           title="The Wild Beard"
           alt="Wild Beard" />
         <nav
@@ -249,7 +249,7 @@
           </div>
           <div class="hidden md:block w-1/4 px-4">
             <NuxtImg
-              src="showering.svg"
+              src="/showering.svg"
               class="w-full"
               alt="A portrait of me lost in the shower" />
           </div>
