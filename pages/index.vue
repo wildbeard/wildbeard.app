@@ -249,7 +249,7 @@
           </div>
           <div class="hidden md:block w-1/4 px-4">
             <img
-              src="/showering.png"
+              src="@/assets/wildbeardtruck.svg"
               class="w-full"
               alt="A portrait of me lost in the shower"
               loading="lazy">
