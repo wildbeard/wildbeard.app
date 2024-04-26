@@ -13,18 +13,6 @@
           class="fixed right-0 bottom-0 left-0 lg:relative lg:right-[unset] lg:bottom-[unset] lg:left-[unset] lg:w-max py-2 px-5 lg:p-0 lg:text-xl bg-slate-200 lg:bg-transparent border-t-bossanova-800 border-t-4 lg:border-t-transparent lg:border-t-0 z-10">
           <ul class="flex justify-between">
             <li class="lg:mr-2">
-              <nuxt-link
-                no-prefetch
-                to="/resume"
-                class="text-bossanova lg:text-white md:py-3 md:px-2">
-                <FontAwesomeIcon
-                  :icon="faFileCode"
-                  class="w-[0.875rem] lg:w-4 mr-1"
-                  aria-hidden="true" />
-                Resume
-              </nuxt-link>
-            </li>
-            <li class="lg:mr-2">
               <NuxtLink
                 external
                 href="https://codepen.io/wildbeard"
