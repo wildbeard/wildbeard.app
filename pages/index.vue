@@ -1,48 +1,5 @@
 <template>
   <div>
-    <div class="absolute top-0 right-0 left-0 py-4 z-10">
-      <div
-        class="container mx-auto px-4 lg:px-0 lg:flex lg:items-center lg:justify-between">
-        <img
-          preload
-          class="mx-auto lg:mx-0 w-32"
-          src="/logo.png"
-          title="The Wild Beard"
-          alt="Wild Beard">
-        <nav
-          class="fixed right-0 bottom-0 left-0 lg:relative lg:right-[unset] lg:bottom-[unset] lg:left-[unset] lg:w-max py-2 px-5 lg:p-0 lg:text-xl bg-slate-200 lg:bg-transparent border-t-bossanova-800 border-t-4 lg:border-t-transparent lg:border-t-0 z-10">
-          <ul class="flex justify-between">
-            <li class="lg:mr-2">
-              <NuxtLink
-                external
-                href="https://codepen.io/wildbeard"
-                target="_blank"
-                class="text-bossanova lg:text-white md:py-3 md:px-2">
-                <FontAwesomeIcon
-                  :icon="faCodepen"
-                  class="w-[0.875rem] lg:w-4 mr-1"
-                  aria-hidden="true" />
-                Codepen
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                external
-                href="https://github.com/wildbeard"
-                target="_blank"
-                class="text-bossanova lg:text-white md:py-3 md:px-2">
-                <FontAwesomeIcon
-                  :icon="faGithub"
-                  class="w-[0.875rem] lg:w-4 mr-1"
-                  aria-hidden="true" />
-                Github
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
     <div class="relative bg-bossanova">
       <div
         class="absolute w-3/4 top-[20%] min-[420px]:top-[15%] left-[12.5%] xl:top-[25%] z-10">
@@ -251,10 +208,9 @@
 <script setup>
 // @todo: Get TS to work w/nvim
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import {
-  faCodepen,
-  faGithub,
-  faSteamSquare,
-} from '@fortawesome/free-brands-svg-icons';
-import { faFileCode } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faSteamSquare } from '@fortawesome/free-brands-svg-icons';
+
+definePageMeta({
+  layout: 'home',
+});
 </script>

@@ -71,6 +71,10 @@ import { faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons';
 import jobs from '~/assets/data/jobs.json';
 import skills from '~/assets/data/skills.json';
 
+definePageMeta({
+  layout: false,
+});
+
 jobs.reverse();
 </script>
 
