@@ -32,11 +32,7 @@
           <p>
             I don't have a ton of experience making games. But what I lack in
             making them I make up for in playing them and that's basically the
-            same thing -- right? While learning Godot I participated in my first
-            game jam:
-            <a
-              href="https://itch.io/jam/mini-jam-157-electric"
-              class="text-white font-semibold underline">Mini Jam 157: Electric</a>! You can read about the team's entry below.
+            same thing -- right?
           </p>
         </div>
       </div>
@@ -61,8 +57,14 @@
 
           <p class="mb-2">
             This was my first attempt at a functional game and not only that it
-            had to be done in three days or less as a part of Mini Jam 157:
-            Electric. I joined a team consisting of myself and the brotherly duo
+            had to be done in three days or less. Spin to Begin was submitted as
+            an entry to the
+            <a
+              href=""
+              target="_blank"
+              class="text-white font-semibold underline">Mini Jam 157: Electric</a>
+            game jam. I didn't tackle this alone, though. I joined a team
+            consisting of myself and the brotherly duo
             <a
               href="https://indigosingularity.itch.io/"
               class="text-white font-semibold underline"
@@ -75,11 +77,21 @@
           </p>
 
           <p class="mb-2">
-            It's a unique (or at least we think so) take on rogue-lites where
-            time is your health. As time ticks away, the music gets faster and
-            the enemies get harder. Collecting power from enemies rewinds time
-            and allows you to upgrade or swap out weapons to help you stay
-            alive.
+            It was an awesome learning experience and extremely fun to be a part
+            of a team making the game. I am already looking for more game jams
+            to enter into!
+            <br>
+            If you are wondering which weapon is the best: It's the shotgun
+            which was designed by yours truly.
+          </p>
+
+          <p class="mb-2">
+            <span class="font-semibold">Spin to Begin</span> is a unique (or at
+            least we think so) take on rogue-lites where time is your health. As
+            time ticks away, the music gets faster and the enemies get tougher.
+            <br>
+            Picking up batteries replinishes lost time and allows you to choose
+            from one of seven weapons and five different upgrade options.
           </p>
 
           <p>
@@ -114,7 +126,7 @@
 
           <p class="mb-2">
             I've always been enamoured with the art of blacksmithing. In every
-            game I play it's the first profression I take and max first. While I
+            game I play it's the first profession I take and max first. While I
             don't quite have the offline chops of a real smith I figured I'd
             turn the love into something a bit more accessible.
           </p>
