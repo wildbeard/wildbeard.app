@@ -45,7 +45,7 @@
             "<strong class='text-asa'>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
             "<strong class='text-asa'>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
             "<strong class='text-asa'>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
-            "<strong class='text-asa'>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
+            "<strong class='text-asa'>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' class='underline' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
             "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
             "Developed and managed the Umpire Rulebook Android application"
         ]
@@ -64,7 +64,7 @@
             "Work closely with clients, designers, and project managers in a creative agency environment",
             "Produced over 30 custom built sites and helped maintain over 100 client sites",
             "Help maintain and build onto an in-house Laravel based CMS",
-            "Collaborated on the <a href='https://kevindurant.com/' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' target='_blank'>Blake Griffin</a> projects"
+            "Collaborated on the <a href='https://kevindurant.com/' class='underline' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' class='underline' target='_blank'>Blake Griffin</a> projects"
         ]
     },
     {
