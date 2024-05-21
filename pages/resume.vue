@@ -82,8 +82,6 @@ import skills from '~/assets/data/skills.json';
 definePageMeta({
   layout: false,
 });
-
-jobs.reverse();
 </script>
 
 <style lang="scss" scoped>

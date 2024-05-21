@@ -1,70 +1,58 @@
 [
     {
         "company": {
-            "name": "Advanced Academics",
-            "class": "adv",
-            "site": "http://advancedacademics.com/"
+            "name": "Yardzen",
+            "class": "yardzen",
+            "site": "https://yardzen.com"
         },
-        "title": "508 Compliance Specialist",
-        "technologies": "HTML, CSS, Javascript",
-        "location": "Oklahoma City, OK",
-        "duration": "June 2011 - Dec. 2011",
+        "title": "Sr. Growth Engineer",
+        "technologies": "React, Next, Nest, Typescript",
+        "location": "Remote",
+        "duration": "Oct. 2023 - April 2024",
         "callouts": [
-            "Converted old course material to the updated 508 Compliance standards",
-            "Lead a small team of four to complete several courses ahead of schedule",
-            "Created scripts and styles to be implemented by other teams for future use"
+            "Collaborated with Product and Design teams to create impactful high-performing web pages with a focus on UI/UX",
+            "Contributed to the development of a marketplace using React, Next, Nest, and GraphQL in collaboration with Product, Design, and Engineering teams",
+            "Engaged in growth strategy discussions with Marketing, Product, and Design."
         ]
     },
     {
         "company": {
-            "name": "Mathis Brother's Studio",
-            "class": "math",
-            "site": "https://www.mathisbrothers.com/"
+            "name": "Wild Alaskan",
+            "class": "wild",
+            "site": "https://wildalaskancompany.com"
         },
-        "title": "Front End Developer",
-        "technologies": ".Net, ASP, ASP.Net, HTML, CSS, Javascript",
-        "location": "Oklahoma City, OK",
-        "duration": "June 2012 - Jan. 2013",
+        "title": "Sr. Software Engineer",
+        "technologies": "PHP, Laravel, Vue, Vuex",
+        "location": "Remote",
+        "duration": "Oct. 2020 - Oct. 2023",
         "callouts": [
-            "Help maintain Mathis Brother's eCommerce platforms",
-            "Increased website performance through image, style, and code optimization",
-            "Lead developer on updating and refreshing Mathis Sleep Studio and Big Red Warehouse"
+            "Worked closely with Performance Marketing and Growth teams to help increase overall on-boarding conversion rates",
+            "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
+            "Collaborated with Performance Marketing to create internal tools tailored for SEO/Marketing, reducing the pain points of managing SEO meta data",
+            "Collaborate with Product and Design as a strong voice for better UI/UX",
+            "Lead the transition of the fragmented Vue/Laravel SPA to Vue 3 &amp; Nuxt 3",
+            "Work with engineering to maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
+            "Work with engineering to improve site performance and reliability",
+            "Spearheaded the implementation of standardized code styles/standards within the Javascript ecosystem"
         ]
     },
     {
         "company": {
-            "name": "Amateur Softball Association",
-            "class": "asa",
-            "site": "https://www.teamusa.org/usa-softball/"
+            "name": "Fx5 Solutions",
+            "class": "fx5",
+            "site": "https://fx5solutions.com"
         },
-        "title": "Full Stack Developer",
-        "technologies": ".Net, ASP, ASP.Net, PHP, HTML, CSS, Javascript",
-        "location": "Oklahoma City, OK",
-        "duration": "May 2013 - Aug. 2015",
+        "title": "Software Developer",
+        "technologies": "PHP, Lumen, Redis, Docker, HTML, CSS/SASS, Vue, Javascript",
+        "location": "Westminster, CO & Remote",
+        "duration": "April 2019 - Oct. 2020",
         "callouts": [
-            "<strong class='text-asa'>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
-            "<strong class='text-asa'>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
-            "<strong class='text-asa'>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
-            "<strong class='text-asa'>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' class='underline' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
-            "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
-            "Developed and managed the Umpire Rulebook Android application"
-        ]
-    },
-    {
-        "company": {
-            "name": "liquidfish",
-            "class": "lf",
-            "site": "https://liquid.fish"
-        },
-        "title": "Full Stack Developer",
-        "technologies": "PHP, Laravel, HTML, CSS/SASS, Vue, Javascript",
-        "location": "Oklahoma City, OK",
-        "duration": "Aug. 2015 - Oct. 2017",
-        "callouts": [
-            "Work closely with clients, designers, and project managers in a creative agency environment",
-            "Produced over 30 custom built sites and helped maintain over 100 client sites",
-            "Help maintain and build onto an in-house Laravel based CMS",
-            "Collaborated on the <a href='https://kevindurant.com/' class='underline' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' class='underline' target='_blank'>Blake Griffin</a> projects"
+            "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
+            "Implement the Lumen Framework to serve as a central API",
+            "Implement Redis to improve system and report service performance",
+            "Help maintain server health and performance including planning maintenance windows for deployments, transitions, and upgrades",
+            "Create internal tooling to help the overall performance of all departments",
+            "Work with Support and QA to ensure proper resolution to incoming issues"
         ]
     },
     {
@@ -95,58 +83,70 @@
     },
     {
         "company": {
-            "name": "Fx5 Solutions",
-            "class": "fx5",
-            "site": "https://fx5solutions.com"
+            "name": "liquidfish",
+            "class": "lf",
+            "site": "https://liquid.fish"
         },
-        "title": "Software Developer",
-        "technologies": "PHP, Lumen, Redis, Docker, HTML, CSS/SASS, Vue, Javascript",
-        "location": "Westminster, CO & Remote",
-        "duration": "April 2019 - Oct. 2020",
+        "title": "Full Stack Developer",
+        "technologies": "PHP, Laravel, HTML, CSS/SASS, Vue, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "Aug. 2015 - Oct. 2017",
         "callouts": [
-            "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
-            "Implement the Lumen Framework to serve as a central API",
-            "Implement Redis to improve system and report service performance",
-            "Help maintain server health and performance including planning maintenance windows for deployments, transitions, and upgrades",
-            "Create internal tooling to help the overall performance of all departments",
-            "Work with Support and QA to ensure proper resolution to incoming issues"
+            "Work closely with clients, designers, and project managers in a creative agency environment",
+            "Produced over 30 custom built sites and helped maintain over 100 client sites",
+            "Help maintain and build onto an in-house Laravel based CMS",
+            "Collaborated on the <a href='https://kevindurant.com/' class='underline' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' class='underline' target='_blank'>Blake Griffin</a> projects"
         ]
     },
     {
         "company": {
-            "name": "Wild Alaskan",
-            "class": "wild",
-            "site": "https://wildalaskancompany.com"
+            "name": "Amateur Softball Association",
+            "class": "asa",
+            "site": "https://www.teamusa.org/usa-softball/"
         },
-        "title": "Sr. Software Engineer",
-        "technologies": "PHP, Laravel, Vue, Vuex",
-        "location": "Remote",
-        "duration": "Oct. 2020 - Oct. 2023",
+        "title": "Full Stack Developer",
+        "technologies": ".Net, ASP, ASP.Net, PHP, HTML, CSS, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "May 2013 - Aug. 2015",
         "callouts": [
-            "Worked closely with Performance Marketing and Growth teams to help increase overall on-boarding conversion rates",
-            "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
-            "Collaborated with Performance Marketing to create internal tools tailored for SEO/Marketing, reducing the pain points of managing SEO meta data",
-            "Collaborate with Product and Design as a strong voice for better UI/UX",
-            "Lead the transition of the fragmented Vue/Laravel SPA to Vue 3 &amp; Nuxt 3",
-            "Work with engineering to maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
-            "Work with engineering to improve site performance and reliability",
-            "Spearheaded the implementation of standardized code styles/standards within the Javascript ecosystem"
+            "<strong class='text-asa'>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
+            "<strong class='text-asa'>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
+            "<strong class='text-asa'>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
+            "<strong class='text-asa'>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' class='underline' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
+            "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
+            "Developed and managed the Umpire Rulebook Android application"
         ]
     },
     {
-      "company": {
-        "name": "Yardzen",
-        "class": "yardzen",
-        "site": "https://yardzen.com"
-      },
-      "title": "Sr. Growth Engineer",
-      "technologies": "React, Next, Nest, Typescript",
-      "location": "Remote",
-      "duration": "Oct. 2023 - April 2024",
-      "callouts": [
-        "Collaborated with Product and Design teams to create impactful high-performing web pages with a focus on UI/UX",
-        "Contributed to the development of a marketplace using React, Next, Nest, and GraphQL in collaboration with Product, Design, and Engineering teams",
-        "Engaged in growth strategy discussions with Marketing, Product, and Design."
-      ]
+        "company": {
+            "name": "Mathis Brother's Studio",
+            "class": "math",
+            "site": "https://www.mathisbrothers.com/"
+        },
+        "title": "Front End Developer",
+        "technologies": ".Net, ASP, ASP.Net, HTML, CSS, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "June 2012 - Jan. 2013",
+        "callouts": [
+            "Help maintain Mathis Brother's eCommerce platforms",
+            "Increased website performance through image, style, and code optimization",
+            "Lead developer on updating and refreshing Mathis Sleep Studio and Big Red Warehouse"
+        ]
+    },
+    {
+        "company": {
+            "name": "Advanced Academics",
+            "class": "adv",
+            "site": "http://advancedacademics.com/"
+        },
+        "title": "508 Compliance Specialist",
+        "technologies": "HTML, CSS, Javascript",
+        "location": "Oklahoma City, OK",
+        "duration": "June 2011 - Dec. 2011",
+        "callouts": [
+            "Converted old course material to the updated 508 Compliance standards",
+            "Lead a small team of four to complete several courses ahead of schedule",
+            "Created scripts and styles to be implemented by other teams for future use"
+        ]
     }
 ]
