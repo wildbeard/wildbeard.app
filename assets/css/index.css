@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
-
 @font-face {
   font-family: BudgetHobo;
   src: url('/fonts/Hobo.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Domine;
+  src: url('/fonts/Domine.ttf');
   font-display: swap;
 }
 

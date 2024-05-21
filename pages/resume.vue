@@ -12,13 +12,21 @@
           </li>
           <li>
             <a href="https://github.com/wildbeard" target="_blank">
-              <FontAwesomeIcon :icon="faGithub" aria-hidden="true" />
+              <FontAwesomeIcon
+                :icon="faGithub"
+                class="inline"
+                aria-hidden="true"
+                width="18" />
               github/wildbeard
             </a>
           </li>
           <li>
             <a href="https://github.com/wildbeard" target="_blank">
-              <FontAwesomeIcon :icon="faCodepen" aria-hidden="true" />
+              <FontAwesomeIcon
+                :icon="faCodepen"
+                class="inline"
+                aria-hidden="true"
+                width="18" />
               codepen/wildbeard
             </a>
           </li>
