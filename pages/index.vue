@@ -42,7 +42,16 @@
                 performance, A/B testing, and better UI/UX patterns.
               </p>
 
-              <h4 class="my-3 text-lg leading-6">
+              <p class="mb-2">
+                Speaking of UI/UX patterns I know it is a bit ironic that my
+                site isn't an accurate example of good UI/UX. This is
+                <span class="italic font-semibold">somewhat intentional.</span>
+                I wanted a place where I didn't have to worry about converion
+                rates, super-optimized readability, or any of those metrics
+                (outside of lighthouse 100s!).
+              </p>
+
+              <h4 class="mt-6 mb-4 text-xl leading-6">
                 What I Work With
               </h4>
 
