@@ -44,7 +44,7 @@
 
               <p class="mb-2">
                 Speaking of UI/UX patterns I know it is a bit ironic that my
-                site isn't an accurate example of good UI/UX. This is
+                site isn't an example of good UI/UX. This is
                 <span class="italic font-semibold">somewhat intentional.</span>
                 I wanted a place where I didn't have to worry about converion
                 rates, super-optimized readability, or any of those metrics
