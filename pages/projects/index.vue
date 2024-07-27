@@ -40,6 +40,12 @@
 
     <div class="container mt-8 mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
+        <div class="w-full mb-4 px-4">
+          <h3
+            class="my-4 font-hobo text-xl text-white tracking-wide leading-10">
+            Game Jam Games
+          </h3>
+        </div>
         <div class="w-full lg:w-1/4 mb-4 lg:mb-0 px-4">
           <a
             href="https://indigosingularity.itch.io/spintobegin"
@@ -60,7 +66,7 @@
             had to be done in three days or less. Spin to Begin was submitted as
             an entry to the
             <a
-              href=""
+              href="https://itch.io/jam/mini-jam-157-electric"
               target="_blank"
               class="text-white font-semibold underline">Mini Jam 157: Electric</a>
             game jam. I didn't tackle this alone, though. I joined a team
@@ -111,42 +117,101 @@
     </div>
     <div class="container mt-8 mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
+        <div class="w-full mb-4 px-4">
+          <h3
+            class="my-4 font-hobo text-xl text-white tracking-wide leading-10">
+            Personal Game Projects
+          </h3>
+        </div>
         <div class="flex items-center w-full lg:w-1/4 mb-4 lg:mb-0 px-4">
-          <a href="https://github.com/wildbeard/into-the-forge" target="_blank">
+          <a href="https://github.com/wildbeard/rpg" target="_blank">
             <img
-              src="@/assets/gross.png"
+              src="@/assets/roberts-rpg.png"
               alt="A gross collection of sprites"
               class="w-full">
           </a>
         </div>
         <div class="w-full lg:w-3/4 px-4">
           <p class="block mb-2 text-lg font-semibold">
-            Unnamed Blacksmithing Game
+            Robert's RPG
           </p>
 
           <p class="mb-2">
-            I've always been enamoured with the art of blacksmithing. In every
-            game I play it's the first profession I take and max first. While I
-            don't quite have the offline chops of a real smith I figured I'd
-            turn the love into something a bit more accessible.
+            Recently a friend, who has long since given up programming,
+            approached me with an idea for a game. A turn based Roughe-lite RPG
+            where gaining abilities, dungeons, and the encounters themselves are
+            randomized. I thought "Sure, why not." and decided to give it a
+            shot.
           </p>
 
           <p class="mb-2">
-            Currently, there isn't
-            <span class="font-semibold italic">much</span> of a game to show
-            off. But, the grand plan is a collection of fun mini-games centered
-            around the management of your very own blacksmith shop. I do have
-            one or two mini-games complete (proofs of concept really) at the
-            moment with more to come!
+            I fell out of playing turn based games with Pokemon Leaf Green &amp;
+            Fire Red so I'm not someone you would consider "experienced" with
+            these gameplay systems. There's a lot you don't think about in terms
+            of creating a "simple" turn based game. Stats, inventory, equipment,
+            skills, enemies, how enemies behave in combat, etc., all need to be
+            programmed from scratch. Then refactored because you learn something
+            along the way or something you thought made sense doesn't.
           </p>
 
           <p>
-            You can checkout the progress on my
+            Anyways, you can follow my progress on
+            <a
+              href="https://github.com/wildbeard/rpg"
+              target="_blank"
+              class="text-white font-semibold underline">Github</a>
+            so long as Robert doesn't delete all the files
+            <span class="italic font-semibold">again.</span>
+          </p>
+        </div>
+
+        <div class="flex w-full flex-wrap mt-8 pb-8 lg:mb-24">
+          <div class="flex items-center w-full mb-4 lg:w-1/4 lg:mb-0 px-4">
             <a
               href="https://github.com/wildbeard/into-the-forge"
-              target="_blank"
-              class="text-white font-semibold underline">Github</a>.
-          </p>
+              target="_blank">
+              <img
+                src="@/assets/gross.png"
+                alt="A gross collection of sprites"
+                class="w-full">
+            </a>
+          </div>
+          <div class="w-full lg:w-3/4 px-4">
+            <p class="block mb-2 text-lg font-semibold">
+              Unnamed Blacksmithing Game
+            </p>
+
+            <p class="mb-2">
+              I've always been enamoured with the art of blacksmithing. In every
+              game I play it's the first profession I take and max first. While
+              I don't quite have the offline chops of a real smith I figured I'd
+              turn the love into something a bit more accessible.
+            </p>
+
+            <p class="mb-2">
+              Currently, there isn't
+              <span class="font-semibold italic">much</span> of a game to show
+              off. But, the grand plan is a collection of fun mini-games
+              centered around the management of your very own blacksmith shop. I
+              do have one or two mini-games complete (proofs of concept really)
+              at the moment with more to come!
+            </p>
+
+            <p class="mb-2">
+              As of 07/2024 this game is likely dead. It just didn't feel
+              <span class="italic font-semibold">fun.</span> I might circle back
+              to it when I figure out better mini-games or something to make it
+              feel more engaging.
+            </p>
+
+            <p>
+              You can checkout the progress on my
+              <a
+                href="https://github.com/wildbeard/into-the-forge"
+                target="_blank"
+                class="text-white font-semibold underline">Github</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
