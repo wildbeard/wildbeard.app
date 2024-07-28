@@ -38,10 +38,11 @@ export default defineNuxtConfig({
     enabled: process.env.APP_ENV !== 'production',
   },
   ssr: true,
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/content'],
   image: {
     provider: 'ipx',
   },
+  content: {},
   // See: https://nuxt.com/docs/getting-started/styling#lcp-advanced-optimizations
   // However, some of the CSS files are still being included even though
   // everything is inlined.
