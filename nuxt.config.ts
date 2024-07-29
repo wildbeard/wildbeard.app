@@ -5,19 +5,7 @@ export default defineNuxtConfig({
         lang: 'en-US',
       },
       title: 'Wild Beard aka Press',
-      meta: [
-        {
-          name: 'description',
-          content: 'Building and breaking things on the web.',
-        },
-        {
-          property: 'og:description',
-          content: 'Building and breaking things on the web.',
-        },
-        { property: 'og:image', content: '/Le-Beard.png' },
-        { property: 'og:title', content: 'Wild Beard' },
-        { property: 'og:url', content: 'https://wildbeard.dev' },
-      ],
+      meta: [],
       link: [
         { rel: 'icon', type: 'image/png', href: '/Le-Beard.png' },
         {

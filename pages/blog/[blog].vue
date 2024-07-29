@@ -5,7 +5,8 @@
         {{ post.title }}
       </h1>
       <p class="text-sm text-center italic">
-        {{ post.dateStr }} | {{ post.description }}
+        {{ post.description }} <br>
+        {{ post.dateStr }}
       </p>
       <hr class="mt-3 mx-auto border-t-logo md:w-1/2">
     </div>
@@ -62,5 +63,16 @@ const post = computed<Post>(() => {
     date,
     dateStr: Intl.DateTimeFormat('en-US', dateFmtOpts).format(date) || '',
   };
+});
+
+useSeoMeta({
+  titleTemplate: title => `${post.value.title} | ${title}`,
+  author: 'Wild Beard',
+  // @todo: Figure out how to load title from above into here
+  ogTitle: `${post.value.title}`,
+  description: post.value.description,
+  ogDescription: post.value.description,
+  ogUrl: `https://wildbeard.dev${post.value.path}`,
+  ogType: 'article',
 });
 </script>
