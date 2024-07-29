@@ -16,7 +16,7 @@ All games, good or bad, start with an idea. But this idea was not my own, and th
 
 [Robert's RPG]{.text-logo} is simple on paper: a 2D turn-based RPG Rougelite*. When you level, you are presented with a handful of options to choose from, like new skills or extra stats. When you beat a boss, you might get some gold, or you might get a legendary weapon. All in all, you have the chance to do really well or really poorly, and it is all thanks to RNG.
 
-While I thought the game couldn't be that hard to make, it actually is quite difficult. All of the systems I am building from scratch. Don't get me started on item and skill balancing. And my math? OOF. I really should have paid better attention in class.
+While I thought the game couldn't be that hard to make, it actually is quite difficult. I am building everything from scratch. Item and skill balancing? My math? I really should have paid better attention in class.
 
 [*=A Rougelite is like a <a href="https://en.wikipedia.org/wiki/Roguelike" target="_blank">Rougelike</a>, but maybe not as hardcore.]{.text-xs.italic}
 
