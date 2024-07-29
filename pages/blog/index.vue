@@ -72,7 +72,7 @@
               <NuxtLink
                 :to="post.path"
                 class="transition-colors text-logo text-sm underline">
-                Read More
+                Read Post
               </NuxtLink>
             </p>
           </div>
