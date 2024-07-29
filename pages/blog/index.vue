@@ -14,18 +14,23 @@
 
     <div class="flex flex-wrap -mx-4 px-4 lg:w-3/4 lg:mx-auto">
       <div class="w-full md:w-1/4 md:order-2 md:mb-0">
-        <h2 class="hidden mb-2 text-lg text-center md:block">
+        <h2 class="mb-2 text-lg text-center md:block">
           Tags:
         </h2>
         <div class="flex justify-center flex-wrap mb-4">
-          <span
+          <button
             v-for="tag in allTags"
             :key="tag"
-            class="mr-2 mb-2.5 py-1 px-1.5 text-xs bg-slate-600 rounded hover:cursor-pointer"
-            :class="selectedTags.includes(tag) ? 'bg-green-400' : ''"
+            type="button"
+            class="mr-2 mb-2.5 py-1 px-1.5 text-xs rounded z-0 hover:cursor-pointer"
+            :class="
+              selectedTags.includes(tag)
+                ? 'text-slate-800 bg-green-400'
+                : 'bg-slate-600'
+            "
             @click="toggleTag(tag)">
             {{ tag }}
-          </span>
+          </button>
         </div>
       </div>
 
