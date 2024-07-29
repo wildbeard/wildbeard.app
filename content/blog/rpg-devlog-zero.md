@@ -1,6 +1,6 @@
 ---
 title: 'Devlog 000: The Start of an RPG'
-description: "\"Robert's RPG\" has been kicked off."
+description: "Robert's RPG has been kicked off."
 date: 2024-07-28
 tags: ['godot', 'games', 'devlog', 'robert']
 draft: false
@@ -20,7 +20,7 @@ While I thought the game couldn't be that hard to make, it actually is quite dif
 
 [*=A Rougelite is like a <a href="https://en.wikipedia.org/wiki/Roguelike" target="_blank">Rougelike</a>, but maybe not as hardcore.]{.text-xs.italic}
 
-### Godot
+### The Game Engine 
 I had thought about using Unity, but after the <a href="https://www.theverge.com/23873852/unity-new-pricing-model-news-updates" target="_blank">shitstorm</a> Unity caused for itself, I decided against it. Obviously, there are any number of other options, like Godot, Unreal, RPGMaker, and the list goes on. I settled with Godot because it is free, open source, community-driven, lightweight, and (to my novice eyes) performant and capable. If you're interested in seeing some of the games made with Godot, check out <a href="https://godotengine.org/showcase/" target="_blank">Godot's showcase</a>. If you're on Reddit, the <a href="https://reddit.com/r/godot" target="_blank">Godot subreddit</a> is very active with showcases, demos, and helpful people. It's even being considered by the <a href="https://caseyyano.com/on-evaluating-godot-b35ea86e8cf4" target="_blank">Slay the Spire devs</a>. Their writeup can explain the pros/cons of the engine better than I can, so give it a read.
 
 Now, my choice might have been biased, as I've tinkered with Godot for a little while now. What started with following a <a href="https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a" target="_blank">good tutorial</a> by <a href="https://www.youtube.com/@uheartbeast/videos" target="_blank">Heartbeast</a> has led me to make a small game myself, and to participate in a <a href="https://itch.io/jam/mini-jam-157-electric/results" target="_blank">Game Jam</a> with a small team. Not to brag, but our game, <a href="https://indigosingularity.itch.io/spintobegin" target="_blank">Spin to Begin</a>, came in 7<sup>th</sup> overall and 2<sup>nd</sup> in usage of the limitation. Outside of the tutorial, the game jam, and a side project (since abandoned; it wasn't fun), that's about where my experience ends with Godot.
