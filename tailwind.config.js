@@ -13,6 +13,7 @@ export default {
         fx5: '#ba9c75',
         wild: '#0d334c',
         yardzen: '#4e5a44',
+        logo: '#E97A31',
         chestnut: {
           DEFAULT: '#BD584C',
           50: '#EED5D2',
