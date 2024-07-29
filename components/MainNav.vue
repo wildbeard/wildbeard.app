@@ -8,7 +8,7 @@
           class="text-bossanova lg:text-white md:py-3 md:px-2">
           <FontAwesomeIcon
             :icon="faToiletPaper"
-            class="w-[0.875rem] lg:w-4 mr-1"
+            class="w-[0.875rem] lg:w-4 mr-1 align-middle"
             aria-hidden="true" />
           Blog
         </NuxtLink>
@@ -21,7 +21,7 @@
           class="text-bossanova lg:text-white md:py-3 md:px-2">
           <FontAwesomeIcon
             :icon="faCodepen"
-            class="w-[0.875rem] lg:w-4 mr-1"
+            class="w-[0.875rem] lg:w-4 mr-1 align-middle"
             aria-hidden="true" />
           Codepen
         </NuxtLink>
@@ -34,7 +34,7 @@
           class="text-bossanova lg:text-white md:py-3 md:px-2">
           <FontAwesomeIcon
             :icon="faGithub"
-            class="w-[0.875rem] lg:w-4 mr-1"
+            class="w-[0.875rem] lg:w-4 mr-1 align-middle"
             aria-hidden="true" />
           Github
         </NuxtLink>
