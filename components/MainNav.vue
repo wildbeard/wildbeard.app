@@ -4,13 +4,13 @@
     <ul class="flex justify-between">
       <li class="lg:mr-2">
         <NuxtLink
-          to="/projects"
+          to="/blog"
           class="text-bossanova lg:text-white md:py-3 md:px-2">
           <FontAwesomeIcon
-            :icon="faCode"
-            class="w-[0.875rem] lg:w-4 mr-1"
+            :icon="faToiletPaper"
+            class="w-[0.875rem] lg:w-4 mr-1 align-middle"
             aria-hidden="true" />
-          Projects
+          Blog
         </NuxtLink>
       </li>
       <li class="lg:mr-2">
@@ -21,7 +21,7 @@
           class="text-bossanova lg:text-white md:py-3 md:px-2">
           <FontAwesomeIcon
             :icon="faCodepen"
-            class="w-[0.875rem] lg:w-4 mr-1"
+            class="w-[0.875rem] lg:w-4 mr-1 align-middle"
             aria-hidden="true" />
           Codepen
         </NuxtLink>
@@ -34,7 +34,7 @@
           class="text-bossanova lg:text-white md:py-3 md:px-2">
           <FontAwesomeIcon
             :icon="faGithub"
-            class="w-[0.875rem] lg:w-4 mr-1"
+            class="w-[0.875rem] lg:w-4 mr-1 align-middle"
             aria-hidden="true" />
           Github
         </NuxtLink>
@@ -45,6 +45,6 @@
 
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faToiletPaper } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>

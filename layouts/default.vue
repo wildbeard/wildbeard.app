@@ -2,7 +2,7 @@
   <div>
     <header class="py-4 z-10">
       <div
-        class="container mx-auto px-4 lg:px-0 lg:flex lg:items-center lg:justify-between">
+        class="container mx-auto px-4 lg:flex lg:items-center lg:justify-between">
         <NuxtLink to="/">
           <img
             preload

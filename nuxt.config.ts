@@ -5,19 +5,7 @@ export default defineNuxtConfig({
         lang: 'en-US',
       },
       title: 'Wild Beard aka Press',
-      meta: [
-        {
-          name: 'description',
-          content: 'Building and breaking things on the web.',
-        },
-        {
-          property: 'og:description',
-          content: 'Building and breaking things on the web.',
-        },
-        { property: 'og:image', content: '/Le-Beard.png' },
-        { property: 'og:title', content: 'Wild Beard' },
-        { property: 'og:url', content: 'https://wildbeard.dev' },
-      ],
+      meta: [],
       link: [
         { rel: 'icon', type: 'image/png', href: '/Le-Beard.png' },
         {
@@ -38,9 +26,14 @@ export default defineNuxtConfig({
     enabled: process.env.APP_ENV !== 'production',
   },
   ssr: true,
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/content'],
   image: {
     provider: 'ipx',
+  },
+  content: {
+    markdown: {
+      anchorLinks: false,
+    },
   },
   // See: https://nuxt.com/docs/getting-started/styling#lcp-advanced-optimizations
   // However, some of the CSS files are still being included even though
