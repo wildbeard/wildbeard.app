@@ -14,11 +14,11 @@ It is true, though; I did get let go on April Fool's Day. Imagine trying to expl
 ### The Idea
 All games, good or bad, start with an idea. But this idea was not my own, and this is why the game is called "[Robert's RPG]{.text-logo}." Robert approached me and asked if I wanted to use their idea and make game of it. After some back and forth, I said "Sure, it can't be that hard."
 
-[Robert's RPG]{.text-logo} is simple on paper: a 2D turn-based RPG Rougelite*. When you level, you are presented with a handful of options to choose from, like new skills or extra stats. When you beat a boss, you might get some gold, or you might get a legendary weapon. All in all, you have the chance to do really well or really poorly, and it is all thanks to RNG.
+[Robert's RPG]{.text-logo} is simple on paper: a 2D turn-based RPG Roguelite*. When you level, you are presented with a handful of options to choose from, like new skills or extra stats. When you beat a boss, you might get some gold, or you might get a legendary weapon. All in all, you have the chance to do really well or really poorly, and it is all thanks to RNG.
 
 While I thought the game couldn't be that hard to make, it actually is quite difficult. I am building everything from scratch. Item and skill balancing? My math? I really should have paid better attention in class.
 
-[*=A Rougelite is like a <a href="https://en.wikipedia.org/wiki/Roguelike" target="_blank">Rougelike</a>, but maybe not as hardcore.]{.text-xs.italic}
+[*=A Roguelite is like a <a href="https://en.wikipedia.org/wiki/Roguelike" target="_blank">Roguelike</a>, but maybe not as hardcore.]{.text-xs.italic}
 
 ### The Game Engine 
 I had thought about using Unity, but after the <a href="https://www.theverge.com/23873852/unity-new-pricing-model-news-updates" target="_blank">shitstorm</a> Unity caused for itself, I decided against it. Obviously, there are any number of other options, like Godot, Unreal, RPGMaker, and the list goes on. I settled with Godot because it is free, open source, community-driven, lightweight, and (to my novice eyes) performant and capable. If you're interested in seeing some of the games made with Godot, check out <a href="https://godotengine.org/showcase/" target="_blank">Godot's showcase</a>. If you're on Reddit, the <a href="https://reddit.com/r/godot" target="_blank">Godot subreddit</a> is very active with showcases, demos, and helpful people. It's even being considered by the <a href="https://caseyyano.com/on-evaluating-godot-b35ea86e8cf4" target="_blank">Slay the Spire devs</a>. Their writeup can explain the pros/cons of the engine better than I can, so give it a read.
