@@ -3,7 +3,7 @@ title: 'Devlog 001: This is not a How To'
 description: 'In the words of Adam Savage: "[One day builds] are not a how to but a what happened."'
 date: 2024-08-01
 tags: ['games', 'devlog']
-draft: false
+draft: true
 ---
 
 ### This isn't a How To
