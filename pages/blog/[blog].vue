@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-6 px-4 md:pb-12">
+  <div class="container max-w-3xl mx-auto mt-6 px-4 md:pb-12">
     <div>
       <h1 class="mb-4 font-hobo text-3xl text-center text-logo">
         {{ post.title }}
@@ -43,6 +43,10 @@ const prose = [
   'prose-em:text-white',
   'prose-strong:text-white',
   'prose-li:text-white',
+  'prose-li:my-1',
+  'prose-code:bg-slate-700',
+  'prose-code:rounded',
+  'prose-code:text-neutral-200',
   'max-w-none',
 ];
 const post = computed<Post>(() => {

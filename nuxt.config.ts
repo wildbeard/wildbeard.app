@@ -34,6 +34,10 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: false,
     },
+    highlight: {
+      theme: 'github-dark',
+      langs: ['javascript', 'typescript', 'gdscript'],
+    },
   },
   // See: https://nuxt.com/docs/getting-started/styling#lcp-advanced-optimizations
   // However, some of the CSS files are still being included even though
