@@ -20,7 +20,7 @@ Not knowing anything about abilities or how they would look and function was the
 The [Game Design Document]{.text-logo} or [GDD]{.text-logo} is basically an on-paper proof of concept that lays out a lot of [what]{.text-logo} your game is, [who]{.text-logo} the game is for, and [how]{.text-logo} it should look, feel, and function. It starts out with a high level concept, think of a Tweet in the pre-Elon Twitter days, and usually ends with detailed game systems designs. Since I have never built anything like this before I could no longer pull systems out of thin air. It was time to look to writing systems down that we agreed on. I think rushing to code instead of the high level design is a very important step that we dropped the ball on.
 
 ### Our Game Design Document
-<img src="/blog/gdd-fun.png" class="w-full h-72 mt-0 mb-4 object-cover" alt="Our GDD is really cool." />
+<img src="https://wildbeard.dev/blog/gdd-fun.png" class="w-full h-72 mt-0 mb-4 object-cover" alt="Our GDD is really cool." />
 Our GDD is far from perfect. I mean this is the first half of the first page and we already have memes and abaondonded systems in it! But, the GDD doesn't need to be perfect. We started with some game systems like abilities, leveling, and stats; then we documented how these systems would interact with each other. We can fill in gaps like setting, monetization, a name, etc., later. So Robert and I took to Discord, joined a call, and talked about a lot of following:
 * What is the core gameplay loop? What keeps the player wanting to play?
 * What does Leveling look like? Can you level up mid combat? What do you get from leveling?
