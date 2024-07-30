@@ -42,6 +42,7 @@ const prose = [
   'prose-p:text-white',
   'prose-em:text-white',
   'prose-strong:text-white',
+  'prose-li:text-white',
   'max-w-none',
 ];
 const post = computed<Post>(() => {
