@@ -12,7 +12,7 @@ Well, well, well, what do we have here? A video game and a blog post? It sounds 
 It is true, though; I did get let go on April Fool's Day. Imagine trying to explain that to friends and family on "prank day." Regardless, we're here now, so let's get **[Devlog 000]{.text-logo}** started.
 
 ### The Idea
-All games, good or bad, start with an idea. But this idea was not my own, and this is why the game is called "[Robert's RPG]{.text-logo}." Robert approached me and asked if I wanted to use their idea and make an idea of it. After some back and forth, I said "Sure, it can't be that hard."
+All games, good or bad, start with an idea. But this idea was not my own, and this is why the game is called "[Robert's RPG]{.text-logo}." Robert approached me and asked if I wanted to use their idea and make game of it. After some back and forth, I said "Sure, it can't be that hard."
 
 [Robert's RPG]{.text-logo} is simple on paper: a 2D turn-based RPG Rougelite*. When you level, you are presented with a handful of options to choose from, like new skills or extra stats. When you beat a boss, you might get some gold, or you might get a legendary weapon. All in all, you have the chance to do really well or really poorly, and it is all thanks to RNG.
 
