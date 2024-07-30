@@ -14,7 +14,8 @@
 
     <div class="flex flex-wrap -mx-4 px-4 lg:w-3/4 lg:mx-auto">
       <div class="w-full md:w-1/4 md:order-2 md:mb-0">
-        <h2 class="mb-2 text-lg text-center md:block">
+        <h2
+          class="invisible w-0 h-0 mb-2 text-lg text-center md:visible md:w-auto md:h-auto">
           Tags:
         </h2>
         <div class="flex justify-center flex-wrap mb-4">
@@ -100,11 +101,13 @@ const dateFmtOpts: Intl.DateTimeFormatOptions = {
   year: 'numeric',
 };
 const allTags = computed(() => {
-  const tags: string[] = [];
+  let tags: string[] = [];
 
   data.value?.forEach(post =>
     post.tags?.length ? tags.push(...post.tags) : null,
   );
+
+  tags = [...new Set(tags)];
 
   return tags;
 });
