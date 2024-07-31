@@ -1,7 +1,7 @@
 ---
 title: 'Devlog 000: The Start of an RPG'
 description: "Robert's RPG has been kicked off."
-date: 2024-07-28
+date: 2024-07-28 GMT-600
 tags: ['godot', 'games', 'devlog', 'robert']
 draft: false
 ---
