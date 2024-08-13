@@ -1,3 +1,5 @@
+import { globSync } from 'glob';
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -53,6 +55,18 @@ export default defineNuxtConfig({
           manifest[key].css = [];
         }
       }
+    },
+    'nitro:config'(nitroConfig) {
+      if (nitroConfig.dev) {
+        return;
+      }
+
+      const slugs = globSync('./content/blog/**/*.md').map((path) => {
+        const slugPath = path.replace('content', '').replace('.md', '');
+        return slugPath;
+      });
+
+      nitroConfig.prerender?.routes?.push(...slugs);
     },
   },
 });
