@@ -66,7 +66,7 @@ export default defineNuxtConfig({
         return slugPath;
       });
 
-      nitroConfig.prerender?.routes?.push(...slugs);
+      nitroConfig.prerender?.routes?.push('/blog', ...slugs);
     },
   },
 });
