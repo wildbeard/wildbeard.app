@@ -14,7 +14,7 @@ We rushed in and quickly got in over our heads! That's what happened. In my hast
 
 So I added a little bit more functionality to the battlefield. The player could now pick *which* enemy they wanted to hit for randomized damage. Great! I can now target enemies! But this is where progress came to a screeching halt. I now needed to add abilities the player and enemies could use.
 
-Not knowing anything about abilities or how they would look and function was the first big roadblock we hit. This might be due to the lack of a [Game Design Document]{.text-logo}
+Not knowing anything about abilities or how they would look and function was the first big roadblock we hit. This might be due to the lack of a [Game Design Document]{.text-logo}.
 
 ### The Game Design Document
 The [Game Design Document]{.text-logo} or, [GDD]{.text-logo}, is basically an on-paper proof of concept that lays out a lot of [what]{.text-logo} your game is, [who]{.text-logo} the game is for, and [how]{.text-logo} it should look, feel, and function. It starts out with a high-level concept (think of a Tweet in the pre-Elon Twitter days) and usually ends with detailed game system designs. Since I have never built anything like this before, I can no longer pull systems out of thin air. It was time to start documenting systems we agreed on. With these system designs in place, I could theoretically get to work. But first let's talk about...
