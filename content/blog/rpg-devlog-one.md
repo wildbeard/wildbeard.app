@@ -20,7 +20,7 @@ Not knowing anything about abilities or how they would look and function was the
 The [Game Design Document]{.text-logo} or, [GDD]{.text-logo}, is basically an on-paper proof of concept that lays out a lot of [what]{.text-logo} your game is, [who]{.text-logo} the game is for, and [how]{.text-logo} it should look, feel, and function. It starts out with a high-level concept (think of a Tweet in the pre-Elon Twitter days) and usually ends with detailed game system designs. Since I have never built anything like this before, I can no longer pull systems out of thin air. It was time to start documenting systems we agreed on. With these system designs in place, I could theoretically get to work. But first let's talk about...
 
 ### Our Game Design Document
-<img src="https://wildbeard.dev/blog/gdd-fun.png" class="w-full h-72 mt-0 mb-4 object-cover" alt="Our GDD is really cool." />
+![Our GDD is really cool.](/blog/gdd-fun.png){.w-full.h-72.mt-4.mb-4.object-cover}
 
 Our GDD is far from perfect. I mean, the above is the first half of the first page, and we already have memes and abandoned systems in it! But the GDD doesn't need to be perfect. We started with some game systems like abilities, leveling, and stats; then we documented how these systems would interact with each other. We can fill in gaps like setting, monetization, a name, etc., later. So Robert and I took to Discord, joined a call, and talked about a lot of the following:
 * What is the Core Gameplay Loop? What keeps the player wanting to play?
@@ -51,7 +51,7 @@ Okay, great! Now that I have the *basic* structure of an ability, I can build a 
 
 Below is how the `Ability.gd` class started. I extracted the values from the GDD, like cooldown, base damage, and weapon damage percent, and turned them into structured data the game can understand.
 
-<img alt="Ability creation in Godot" src="https://wildbeard.dev/blog/ability-godot-ui.png" class="float-right my-0 pl-4" />
+<img alt="Ability creation in Godot" src="/blog/ability-godot-ui.png" class="float-right my-0 pl-4" />
 
 ```gdscript Ability.gd
 extends Resource
