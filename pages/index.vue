@@ -23,11 +23,11 @@
 
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap -mx-4">
-          <div class="hidden md:block w-1/4 px-4">
+          <div class="order-2 w-full my-6 px-4 md:order-none md:w-1/4 md:my-0">
             <SVGAnimatedDesk class="w-full" />
           </div>
 
-          <div class="md:w-3/4 px-4">
+          <div class="order-1 md:w-3/4 px-4">
             <div class="text-white">
               <p class="mb-2">
                 I'm a frontend developer who enjoys translating designs into
@@ -50,7 +50,11 @@
                 rates, super-optimized readability, or any of those metrics
                 (outside of lighthouse 100s!).
               </p>
+            </div>
+          </div>
 
+          <div class="order-3">
+            <div class="px-4 text-white">
               <h4 class="mt-6 mb-4 text-xl leading-6">
                 What I Work With
               </h4>
