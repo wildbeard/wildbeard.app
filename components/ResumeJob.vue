@@ -41,8 +41,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-
 defineProps<{
   job: {
     company: {
@@ -54,13 +52,9 @@ defineProps<{
     location: string;
     duration: string;
     technologies?: string;
-    callouts: string[];
+    callouts: string[] | { desc: string; callouts: string[] }[];
   };
 }>();
-
-const companyClass = computed(() => {
-  return `text-${props.job.company.class}`;
-});
 </script>
 
 <style lang="scss" scoped>
