@@ -18,22 +18,8 @@
       <div class="title font-bold">
         {{ job.title }}
       </div>
-      <template v-if="job.technologies">
-        <div class="technologies">
-          <span
-            class="font-bold"
-            :class="job.company.class">
-            Technologies Used:
-          </span>
-          <span class="font-sans">
-            {{ job.technologies }}
-          </span>
-        </div>
-      </template>
       <ul class="callouts">
-        <li
-          v-for="(callout, index) in job.callouts"
-          :key="index">
+        <li v-for="(callout, index) in job.callouts" :key="index">
           <template v-if="typeof callout === 'object'">
             {{ callout.desc }}
             <ul class="flex flex-wrap side-by-side">
@@ -54,15 +40,23 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue';
 
-const props = defineProps({
+defineProps<{
   job: {
-    type: Object,
-    required: true,
-  },
-});
+    company: {
+      name: string;
+      class: string;
+      site?: string;
+    };
+    title: string;
+    location: string;
+    duration: string;
+    technologies?: string;
+    callouts: string[];
+  };
+}>();
 
 const companyClass = computed(() => {
   return `text-${props.job.company.class}`;
@@ -140,5 +134,8 @@ const companyClass = computed(() => {
 }
 .adv {
   @apply text-adv;
+}
+.bsd {
+  @apply text-bsd;
 }
 </style>

@@ -13,6 +13,7 @@ export default {
         fx5: '#ba9c75',
         wild: '#0d334c',
         yardzen: '#4e5a44',
+        bsd: '#5b1f91',
         logo: '#E97A31',
         chestnut: {
           DEFAULT: '#BD584C',
@@ -54,7 +55,7 @@ export default {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    plugin(function({ addBase, theme }) {
+    plugin(function ({ addBase, theme }) {
       addBase({
         h1: {
           fontFamily: theme('fontFamily.serif'),
