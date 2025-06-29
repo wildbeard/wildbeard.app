@@ -1,6 +1,24 @@
 [
     {
         "company": {
+            "name": "Bayfield School District",
+            "class": "bsd",
+            "site": "https://bayfield.k12.co.us"
+        },
+        "title": "IT Technician",
+        "technologies": "Windows, Linux, Google Admin",
+        "location": "Bayfield, CO.",
+        "duration": "October 2024 - Present",
+        "callouts": [
+            "Lead modernization efforts to migrate legacy bash scripts to Go, improving maintainability and reliability of Student Information System (SIS) integrations",
+            "Establish version control practices by moving server-side automation code to GitHub, enhancing collaboration and code quality",
+            "Provide technical support across 4 schools, managing device deployment and repair, security infrastructure, and network administration",
+            "Collaborate with Data Service Coordinator to enhance Student Information System (SIS) integrations with Active Directory",
+            "Implement and maintain Google Admin and Active Directory policies, ensuring secure and efficient user management"
+        ]
+    },
+    {
+        "company": {
             "name": "Yardzen",
             "class": "yardzen",
             "site": "https://yardzen.com"
@@ -10,9 +28,9 @@
         "location": "Remote",
         "duration": "Oct. 2023 - April 2024",
         "callouts": [
-            "Collaborated with Product and Design teams to create impactful high-performing web pages with a focus on UI/UX",
-            "Contributed to the development of a marketplace using React, Next, Nest, and GraphQL in collaboration with Product, Design, and Engineering teams",
-            "Engaged in growth strategy discussions with Marketing, Product, and Design."
+            "Partnered with Product and Design teams to develop high-impact, high-performance web pages with a strong emphasis on UI/UX.",
+            "Contributed to building a dynamic marketplace using React, Next.js, NestJS, and GraphQL, working collaboratively with Product, Design, and Engineering teams.",
+            "Participated in growth discussions with Marketing, Product, and Design teams to align technical solutions with business objectives."
         ]
     },
     {
@@ -26,14 +44,13 @@
         "location": "Remote",
         "duration": "Oct. 2020 - Oct. 2023",
         "callouts": [
-            "Worked closely with Performance Marketing and Growth teams to help increase overall on-boarding conversion rates",
-            "Increased conversion rates by up to 57% and lowered cost per acquisition by 11% through performance audits on customer facing marketing pages",
-            "Collaborated with Performance Marketing to create internal tools tailored for SEO/Marketing, reducing the pain points of managing SEO meta data",
-            "Collaborate with Product and Design as a strong voice for better UI/UX",
-            "Lead the transition of the fragmented Vue/Laravel SPA to Vue 3 &amp; Nuxt 3",
-            "Work with engineering to maintain the in-house logistics application that allows the delivery of fresh Alaskan fish",
-            "Work with engineering to improve site performance and reliability",
-            "Spearheaded the implementation of standardized code styles/standards within the Javascript ecosystem"
+            "Reduced onboarding bounce rates by 57%, increasing conversion rates by 11% and reducing acquisition costs through performance optimization",
+            "Developed internal SEO/marketing tools with Performance Marketing to streamline the management of SEO metadata, addressing key pain points.",
+            "Worked closely with Data Analytics and Performance Marketing to ensure a seamless transition to the Google Analytics 4 platform, including sweeping changes to the front and backend systems",
+            "Advocated for better UI/UX design in partnership with Product and Design teams, driving improvements in user experience.",
+            "Led migration from Vue/Laravel SPA to modern Vue 3 and Nuxt 3 architecture, improving maintainability",
+            "Enhanced site performance and reliability through collaborative engineering efforts, contributing to a more robust online presence.",
+            "Established standardized code styles and best practices for JavaScript and Vue frameworks"
         ]
     },
     {
@@ -47,12 +64,11 @@
         "location": "Westminster, CO & Remote",
         "duration": "April 2019 - Oct. 2020",
         "callouts": [
-            "Maintaining SaaS product while implementing and improving coding standards in a proprietary MVC framework",
-            "Implement the Lumen Framework to serve as a central API",
-            "Implement Redis to improve system and report service performance",
-            "Help maintain server health and performance including planning maintenance windows for deployments, transitions, and upgrades",
-            "Create internal tooling to help the overall performance of all departments",
-            "Work with Support and QA to ensure proper resolution to incoming issues"
+            "Implemented Lumen to create centralized API architecture, streamlining data processing",
+            "Enhanced system performance through Redis integration and SQL query and view optimizations",
+            "Maintained SaaS product while improving coding standards",
+            "Helped monitor server health and performance, including planning and executing maintenance windows for deployments and upgrades",
+            "Collaborated with Support and QA teams to ensure timely and effective resolution of incoming issues"
         ]
     },
     {
@@ -66,19 +82,10 @@
         "location": "Denver, CO",
         "duration": "Oct. 2017 - April 2019",
         "callouts": [
-            "Maintain internal web apps that are utilized by all global offices",
-            "Managed incoming bug reports and feature requests",
-            "Collaborate with client facing teams to create extensions to internal apps for client use",
-            {
-                "desc": "Notable Projects: ",
-                "callouts": [
-                    "<strong class='text-tig'>Hey Listen</strong>: NodeJS powered real time notification system. Used to push notifications to all internal web apps with custom triggers",
-                    "<strong class='text-tig'>Intranet</strong>: Internal site housing employee, team, department, and agency documents utilizing Laravel, Vue, and Algolia",
-                    "<strong class='text-tig'>Hey Listen Bot</strong>: Slack Bot used to integrate with internal apps to streamline support actions",
-                    "<strong class='text-tig'>Email Templates</strong>: Packaged and distributed custom mailer including functionality for HTML templates",
-                    "<strong class='text-tig'>Lincoln Logs</strong>: Unified logging system across internal web apps"
-                ]
-            }
+            "Developed and maintained global office web applications within the LAMP stack and modern frontend technologies like Vue",
+            "Created \"Hey Listen\" - a custom push notification system integrating websockets, Node.js, LDAP, and Slack",
+            "Developed custom Slack Bot functions to automate support team operations",
+            "Developed an internal Composer package for standardizing email templates"
         ]
     },
     {
@@ -92,10 +99,11 @@
         "location": "Oklahoma City, OK",
         "duration": "Aug. 2015 - Oct. 2017",
         "callouts": [
-            "Work closely with clients, designers, and project managers in a creative agency environment",
-            "Produced over 30 custom built sites and helped maintain over 100 client sites",
-            "Help maintain and build onto an in-house Laravel based CMS",
-            "Collaborated on the <a href='https://kevindurant.com/' class='underline' target='_blank'>Kevin Durant</a> and <a href='https://blakegriffin.com/' class='underline' target='_blank'>Blake Griffin</a> projects"
+            "Collaborated with clients, designers, and project managers in a creative agency environment to deliver custom tailored brand and web solutions",
+            "Developed 30+ custom websites primarily within the LAMP stack and Laravel, managing Linux server configurations and deployments",
+            "Contributed to an in-house Laravel CMS",
+            "Implemented and optimized nginx configurations for high-traffic client websites",
+            "Contributed to the development of high-profile projects for professional athletes, including Kevin Durant and Blake Griffin"
         ]
     },
     {
@@ -109,12 +117,10 @@
         "location": "Oklahoma City, OK",
         "duration": "May 2013 - Aug. 2015",
         "callouts": [
-            "<strong class='text-asa'>Register ASA:</strong> Resolved complex issues with RegisterASA's design &amp; functionality to cater to 300,000+ annual users",
-            "<strong class='text-asa'>ACE Certification:</strong> Rebuilt and brought the ACE Certification platform in-house",
-            "<strong class='text-asa'>ACE Video Platform:</strong> Built a gated video platform for the coach certification and safety training",
-            "<strong class='text-asa'>Softball Outlet:</strong> Lead the development of <a href='https://softballoutlet.com/' class='underline' target='_blank'>Softball Outlet</a> -- a custom PHP eCommerce platform",
-            "Developed the Women's College World Series Bracket Challenge that was hosted on ESPN for the duration of the tournament",
-            "Developed and managed the Umpire Rulebook Android application"
+            "Enhanced Register ASA platform serving 300,000+ annual users",
+            "Developed the ACE Certification platform and video training system",
+            "Created a Women's College World Series Bracket Challenge featured on ESPN",
+            "Built and maintained the Umpire Rulebook Android application"
         ]
     },
     {

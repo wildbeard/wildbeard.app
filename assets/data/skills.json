@@ -1,26 +1,44 @@
 [
   {
-    "name": "PHP",
-    "duration": "10 Years (5.3, 5.6, 7, 7.2, 8.1)",
-    "additional": "<strong>Frameworks</strong>: Laravel/Lumen 6 years",
-    "desc": "Custom Sites &amp; Data Driven Apps, Resourceful API Integration, Custom MVC Frameworks &amp; ORMs, Reporting &amp; CRM SaaS Applications"
+    "name": "Frontend",
+    "duration": "",
+    "additional": "Vue.js, React, Nuxt.js, Next.js, TypeScript, TailwindCSS, SASS/SCSS",
+    "desc": ""
   },
   {
-    "name": "Javascript",
-    "duration": "10 Years",
-    "additional": "<strong>Vue</strong>: Vue 2 (6 years), Vue 3 (2.5 year), Nuxt 2 (3 years), Nuxt 3 (1.5 year)<br><strong>React</strong>: React (0.5 year), Next (0.5 year)<br><strong>Typescript</strong>: 2 years",
+    "name": "Backend",
+    "duration": "",
+    "additional": "PHP, Golang, Laravel, Lumen, Node.js, GraphQL",
     "desc": ""
   },
   {
     "name": "Databases",
-    "duration": "9 Years",
-    "additional": "MySql (9 years), MariaDB (1.5 year), PSql (1.5 year), Redis (1 year), MongoDB (2 years), MsSql (1.5 year)",
+    "duration": "",
+    "additional": "MySQL, PostgreSQL, MongoDB, Sqlite, Redis",
     "desc": ""
   },
   {
-    "name": "Misc",
+    "name": "Testing &amp; Automation",
     "duration": "",
-    "additional": "",
-    "desc": "TailwindCSS (3 years), Sass (6 years), Data &amp; Analytics (3 years; GTM, GA4, Segment), Figma (2 years), Docker (2 years), nginx (2.5 years)"
+    "additional": "Laravel Dusk, PHPUnit, Jest, Vitest, Selenium",
+    "desc": ""
+  },
+  {
+    "name": "DevOps &amp; Tools",
+    "duration": "",
+    "additional": "Linux, nginx, Docker, Vite, Webpack, Git, Github Actions",
+    "desc": ""
+  },
+  {
+    "name": "Analytics, Split Testing &amp; Monitoring",
+    "duration": "",
+    "additional": "Google Analytics (GA4), Snowflake, Auryc, FullStory, Sentry.io, VWO, Split.io",
+    "desc": ""
+  },
+  {
+    "name": "Enterprise Systems",
+    "duration": "",
+    "additional": "Google Workspace, Google Admin, Active Directory, LDAP, EdTech SIS",
+    "desc": ""
   }
 ]

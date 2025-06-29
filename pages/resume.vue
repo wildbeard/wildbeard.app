@@ -36,35 +36,50 @@
 
       <div>
         <div class="skills">
-          <h2 class="my-4 text-2xl">
-            About Me
-          </h2>
-
           <p>
-            Hey, I'm Press! I am a Front End Engineer focusing on quality user
-            experiences and site performance. In my professional journey I've
-            lent my skill set to multiple different industries, ranging from
-            sports and distilling to outdoor landscaping design and creative
-            agencies. I enjoy the process of translating designs into
-            pixel-perfect pages and user experiences.
+            Senior Software Engineer with 12+ years of experience specializing
+            in:
           </p>
 
-          <h2 class="my-4 text-2xl">
-            Skills
+          <ul class="list-disc list-inside mt-4 mb-8 pl-4">
+            <li>
+              Full-stack development with expertise in modern JavaScript
+              frameworks and LAMP/LEMP ecosystems
+            </li>
+            <li>
+              Marketing site optimization and performance tuning, achieving 11%
+              higher conversion rates
+            </li>
+            <li>
+              Building scalable applications across e-commerce, sports,
+              compliance, and creative industries
+            </li>
+            <li>
+              Translating complex requirements into pixel-perfect, user-centric
+              solutions
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-9">
+          <h2 class="mb-4 text-2xl">
+            Experience
           </h2>
+          <hr class="mb-9">
+
+          <ResumeJob v-for="job in jobs" :key="job.company.name" :job="job" />
+        </div>
+
+        <div class="mt-9 pb-9">
+          <h2 class="mb-4 text-2xl">
+            Technical Skills
+          </h2>
+          <hr class="mb-9">
+
           <ResumeSkill
             v-for="skill in skills"
             :key="skill.name"
             :skill="skill" />
-        </div>
-        <!-- !.skills -->
-
-        <div class="mt-9">
-          <hr class="mb-9">
-          <h2 class="mb-4 text-2xl">
-            Experience
-          </h2>
-          <ResumeJob v-for="job in jobs" :key="job.company.name" :job="job" />
         </div>
       </div>
     </div>

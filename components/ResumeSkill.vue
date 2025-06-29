@@ -2,37 +2,22 @@
   <div class="skill">
     <div class="name">
       <span
-        class="font-bold font-serif"
+        class="pr-1 font-bold font-serif leading-relaxed"
         v-html="skill.name"></span>
-      <span
-        v-if="skill.duration != ''"
-        class="font-sans"> | {{ skill.duration }}</span>
+      <span v-if="skill.additional != ''" class="additional">
+        {{ skill.additional }}
+      </span>
     </div>
-    <div
-      v-if="skill.additional != ''"
-      class="additional"
-      v-html="skill.additional"></div>
-    <div
-      v-if="skill.desc != ''"
-      class="desc"
-      v-html="skill.desc"></div>
   </div>
 </template>
 
-<script setup>
-defineProps({
+<script setup lang="ts">
+defineProps<{
   skill: {
-    type: Object,
-    required: true,
-  },
-});
+    name: string;
+    additional: string;
+    duration: string;
+    desc: string;
+  };
+}>();
 </script>
-
-<style lang="scss" scoped>
-.skill {
-  @apply mb-4 leading-relaxed;
-}
-.additional ::v-deep strong {
-  @apply font-serif;
-}
-</style>
