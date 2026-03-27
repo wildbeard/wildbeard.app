@@ -1,19 +1,17 @@
 <template>
   <div class="container mx-auto px-4">
     <div class="my-8 md:mt-8 md:mb-16">
-      <h1 class="font-hobo text-logo text-center text-4xl">
-        Ramblings
-      </h1>
+      <h1 class="font-hobo text-logo text-center text-4xl">Ramblings</h1>
 
       <p class="mt-3 text-sm italic text-center">
         The occasional thoughts of someone with poor writing skills.
       </p>
 
-      <hr class="mt-3 mx-auto border-t-logo md:w-1/2">
+      <hr class="mt-3 mx-auto border-t-logo md:w-1/2" >
     </div>
 
     <div class="flex flex-wrap -mx-4 px-4 lg:w-3/4 lg:mx-auto">
-      <div class="w-full md:w-1/4 md:order-2 md:mb-0">
+      <div v-if="allTags.length" class="w-full md:w-1/4 md:order-2 md:mb-0">
         <h2
           class="invisible w-0 h-0 mb-2 text-lg text-center md:visible md:w-auto md:h-auto">
           Tags:
@@ -89,10 +87,10 @@
 </template>
 
 <script lang="ts" setup>
-import type { Post } from '~/types/Post';
+import type { Post } from '@@/types/Post';
 
-const { data } = useAsyncData('posts', () =>
-  queryContent('blog').sort({ date: -1 }).find(),
+const { data } = await useAsyncData('blog', () =>
+  queryCollection('blog').order('published_at', 'DESC').all(),
 );
 
 const dateFmtOpts: Intl.DateTimeFormatOptions = {
@@ -103,7 +101,7 @@ const dateFmtOpts: Intl.DateTimeFormatOptions = {
 const allTags = computed(() => {
   let tags: string[] = [];
 
-  data.value?.forEach(post =>
+  data.value?.forEach((post) =>
     post.tags?.length ? tags.push(...post.tags) : null,
   );
 
@@ -127,11 +125,11 @@ const posts = computed<Post[]>(() => {
         }
       })
       .map((post) => {
-        const date = new Date(post.date);
+        const date = new Date(post.published_at);
 
         return {
-          id: post._id || 'id',
-          path: post._path as string,
+          id: post.id || 'id',
+          path: post.path,
           title: post.title || 'title',
           description: post.description || 'description',
           date,
@@ -144,7 +142,7 @@ const posts = computed<Post[]>(() => {
 
 function toggleTag(tag: string) {
   selectedTags.value.includes(tag)
-    ? (selectedTags.value = selectedTags.value.filter(t => t !== tag))
+    ? (selectedTags.value = selectedTags.value.filter((t) => t !== tag))
     : selectedTags.value.push(tag);
 }
 </script>

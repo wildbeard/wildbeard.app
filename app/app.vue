@@ -16,5 +16,5 @@ useSeoMeta({
 </script>
 
 <style lang="postcss">
-@import '~/assets/css/index.css';
+@import '@/assets/css/index.css';
 </style>

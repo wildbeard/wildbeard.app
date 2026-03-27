@@ -5,10 +5,10 @@
         {{ post.title }}
       </h1>
       <p class="text-sm text-center italic">
-        {{ post.description }} <br>
+        {{ post.description }} <br >
         {{ post.dateStr }}
       </p>
-      <hr class="mt-3 mx-auto border-t-logo md:w-1/2">
+      <hr class="mt-3 mx-auto border-t-logo md:w-1/2" >
     </div>
 
     <div :class="prose">
@@ -24,10 +24,11 @@
 </template>
 
 <script lang="ts" setup>
-import type { Post } from '~/types/Post';
+import { useAsyncData } from 'nuxt/app';
+import type { Post } from '@@/types/Post';
 const { path } = useRoute();
-const { data: articles, error } = useAsyncData(`blog-post-${path}`, () =>
-  queryContent(path).findOne(),
+const { data: articles, error } = await useAsyncData(path, () =>
+  queryCollection('blog').first(),
 );
 
 if (error.value) {
@@ -50,8 +51,8 @@ const prose = [
   'max-w-none',
 ];
 const post = computed<Post>(() => {
-  const date = articles.value?.date
-    ? new Date(articles.value.date)
+  const date = articles.value?.published_at
+    ? new Date(articles.value.published_at)
     : new Date();
   const dateFmtOpts: Intl.DateTimeFormatOptions = {
     month: 'short',
@@ -60,8 +61,8 @@ const post = computed<Post>(() => {
   };
 
   return {
-    id: articles.value?._id || '',
-    path: articles.value?._path || '',
+    id: articles.value?.id || '',
+    path: articles.value?.path || '',
     title: articles.value?.title || 'title unavail',
     description: articles.value?.description || 'description unavail',
     tags: articles.value?.tags || [],
@@ -71,7 +72,7 @@ const post = computed<Post>(() => {
 });
 
 useSeoMeta({
-  titleTemplate: title => `${post.value.title} | ${title}`,
+  titleTemplate: (title) => `${post.value.title} | ${title}`,
   author: 'Wild Beard',
   // @todo: Figure out how to load title from above into here
   ogTitle: `${post.value.title}`,
