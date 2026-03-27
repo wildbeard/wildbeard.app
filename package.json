@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "nuxt dev --port 3369",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
