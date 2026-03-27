@@ -1,9 +1,9 @@
 ---
 title: 'Devlog 001: This is not a How To'
 description: 'This is not a how-to guide, but rather what happened.'
-date: 2024-07-30 GMT-600
-tags: ['games', 'devlog', 'godot']
+published_at: 2024-07-30 GMT-600
 draft: false
+published: false
 ---
 
 ### This isn't a How-To

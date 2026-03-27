@@ -1,7 +1,7 @@
 <template>
   <div
     ref="nightsky"
-    class="night-sky relative h-[calc(100vh-50px)] md:h-[75vh] w-lvw bg-gradient-to-b from-[#2a2c3b] to-chestnut-600">
+    class="night-sky relative h-[calc(100vh-50px)] md:h-[75vh] w-full bg-gradient-to-b from-[#2a2c3b] to-chestnut-600">
     <div ref="sun" class="sun"></div>
     <div class="stars absolute w-full h-full"></div>
     <div class="trees absolute w-full h-full z-[11]"></div>
@@ -232,7 +232,7 @@ onMounted(() => {
     updateSunPosition(height, startingSunPos, scrollY);
     const offsetDiff = percentDifference(height, height - scrollY) * 2;
     const steps = [3, 8, 12, 17, 22, 27, 32, 37, 42, 47];
-    const step = steps.findIndex(n => n >= offsetDiff);
+    const step = steps.findIndex((n) => n >= offsetDiff);
     const colorSteps = [
       '#442a51',
       '#482b51',
